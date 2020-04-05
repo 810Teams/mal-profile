@@ -3,3 +3,6 @@ __pycache__
 
 # MacOS
 .DS_Store
+
+# Custom
+charts/
