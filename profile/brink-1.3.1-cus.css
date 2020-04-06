@@ -96,7 +96,6 @@
 	--toggleStats: visible;
 	--togglePV: visible;
 	--toggleInfoBG: visible;
-	--infoBGOpacity: 65%;
 	--bgDimness: 15%;
 	--imageBrightness: 100%;
 	--imageBrightnessHov: 50%;
@@ -112,26 +111,31 @@
 	 * More advanced CSS may be required if this is the case.
 	 */
 	
-	--bg: 240, 3%, 9%;
-	--bgAlt: 240, 3%, 14%;
-	--btn: 240, 3%, 16%;
-	--btnLight: 240, 2.7%, 19%;
-	--btnAccent: 240, 17%, 34%;
-	--border: 240, 5%, 6%;
-	--accent: 240, 75%, 77%;
+	--bg: 196, 3%, 8%;
+	--bgAlt: 196, 3%, 12%;
+	--btn: 196, 3%, 14%;
+	--btnLight: 196, 2.7%, 16%;
+	--btnAccent: 196, 17%, 29%;
+	--border: 196, 5%, 5%;
+	--accent: 196, 94%, 66%;
 	
 	--textBright: 0, 0%, 100%;
 	--textMid: 0, 0%, 88%;
 	--textDim: 0, 0%, 80%;
 	--textProminent: 27, 87%, 67%;
-	--textLinkHov: 240, 50%, 80%;
+	--textLinkHov: 196, 94%, 69%;
 	--textIcon: 0, 0%, 83%;
 	
-	--current: 35, 49%, 46%;
-	--completed: 324, 49%, 46%;
-	--paused: 80, 91%, 23%;
-	--dropped: 6, 44%, 46%;
-	--planned: 56, 18%, 56%;
+	--current: 125, 59.3%, 43.3%;
+	--completed: 223, 58%, 35.5%;
+	--paused: 46, 93.1%, 65.9%;
+	--dropped: 359, 54.8%, 40.8%;
+	--planned: 0, 0%, 76.5%;
+
+	/* CUSTOM VARIABLE */
+	--statusButtonOpacity: 75%;		/* Status button opacity (unselected) */
+	--infoBGOpacity: 65%; 			/* Item information background opacity */
+	--statusBorderBottomWidth: 5px;	/* Status bottom border size (hover) */
 }
 
 
@@ -856,7 +860,7 @@ body::before {
 }
 
 #status-menu .status-button::before {
-	color: hsla(var(--textDim), 60%);
+	color: hsla(var(--textDim), var(--statusButtonOpacity));
 	font-size: 18px;
 	display: block;
 	transition: all var(--timeButtonLarge) var(--bezierSmooth);
@@ -1350,7 +1354,7 @@ body::before {
 	width: 100% !important;
 	height: 100%;
 	background: none !important;
-	border-bottom-width: 4px !important;
+	border-bottom-width: var(--statusBorderBottomWidth) !important;
 	border-radius: 6px;
 	
 	pointer-events: none;
