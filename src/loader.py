@@ -29,6 +29,7 @@ def fetch_file(file_format='gz', target=-1):
     except IndexError:
         return None
 
+
 def get_document(file_name):
     return minidom.parse('{}{}'.format(DIR, file_name))
 
