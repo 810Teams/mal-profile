@@ -4,9 +4,9 @@
 
 from xml.dom import minidom
 
-from src.loader import extract
 from src.loader import fetch_file
 from src.loader import get_document
+from src.loader import get_element
 from src.loader import get_score
 from src.render import render_by_level
 from src.statistics import average
@@ -24,13 +24,15 @@ DIR = 'data/'
 
 def main():
     ''' Main function '''
-    extract(fetch_file(file_format='gz'))
-    scores = get_score(get_document(fetch_file(file_format='xml')))
+    document = get_document(fetch_file(file_format='xml'))
+    scores = get_score(document)
 
     print()
-    print('Average: {:.2f}'.format(average(scores)))
-    print('Median: {:.0f}'.format(median(scores)))
-    print('STD Dev: {:.2f}'.format(standard_dev(scores)))
+    print(' - {}\'s Anime List Statistics -'.format(get_element(document, 'user_name', is_single=True)))
+    print()
+    print('   Average: {:.2f}'.format(average(scores)))
+    print('   Median: {:.0f}'.format(median(scores)))
+    print('   STD Dev: {:.2f}'.format(standard_dev(scores)))
     print()
 
     scores_sum = [scores.count(i) for i in range(1, 11)]
@@ -38,11 +40,13 @@ def main():
 
     try:
         if platform.system() == 'Windows':
-            pass
+            notice('Opening chart files automatically is unsupported on Windows.')
         else:
             os.system('open charts/*')
             notice('Opening chart files.')
     except (FileNotFoundError, OSError, PermissionError):
         error('Something unexpected happened, please try again.')
+
+    print()
 
 main()

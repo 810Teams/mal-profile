@@ -13,16 +13,6 @@ import platform
 DIR = 'data/'
 
 
-def extract(file_name):
-    try:
-        if platform.system() == 'Windows':
-            error('Auto-extract unsupported on Windows')
-        else:
-            os.system('unzip -o {}{}'.format(DIR, file_name))
-    except (FileNotFoundError, OSError, PermissionError):
-        pass
-
-
 def fetch_file(file_format='gz', target=-1):
     try:
         return [i for i in os.listdir(DIR) if i[-len(file_format):] == file_format][target]
@@ -32,6 +22,16 @@ def fetch_file(file_format='gz', target=-1):
 
 def get_document(file_name):
     return minidom.parse('{}{}'.format(DIR, file_name))
+
+
+def get_element(document, element_name, convert=str, is_single=False):
+    items = document.getElementsByTagName(element_name)
+    items = [convert(i.firstChild.data) for i in items]
+
+    if is_single:
+        items = items[0]
+
+    return items
 
 
 def get_score(document, include_unrated=False):

@@ -17,7 +17,7 @@ def render_by_level(data, max_y_labels=15, style=DarkStyle):
     chart.add('Rated', [{'value': i, 'label': '{:.2f}%'.format(i / (sum(data) + (sum(data) == 0)) * 100)} for i in data])
 
     # Chart Titles
-    chart.title = 'Rated'
+    chart.title = 'Rated Titles'
 
     # Chart Labels
     chart.x_labels = [i for i in range(1, 11, 1)]
@@ -39,10 +39,10 @@ def y_labels(data_min, data_max, max_y_labels=15, skip=False):
     data_max = ceil(data_max)
     
     preset = 1, 2, 5
+    i = 0
     
     if not skip:
         data_range = list(range(0, data_min - 1, -1)) + list(range(0, data_max + 1, 1))
-        i = 0
 
         while len(data_range) > max_y_labels:
             data_range = list(range(0, data_min - preset[i % 3] * 10 ** (i // 3), -1 * preset[i % 3] * 10 ** (i // 3)))
@@ -51,7 +51,6 @@ def y_labels(data_min, data_max, max_y_labels=15, skip=False):
     else:
         data_min = int(data_min/10) * 10
         data_range = list(range(data_min, data_max + 1, 1))
-        i = 0
 
         while len(data_range) > max_y_labels:
             data_range = list(range(data_min, data_max + preset[i % 3] * 10 ** (i // 3), preset[i % 3] * 10 ** (i // 3)))
