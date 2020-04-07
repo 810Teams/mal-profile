@@ -1,0 +1,2 @@
+mkdir charts
+mkdir data
