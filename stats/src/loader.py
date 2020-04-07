@@ -24,9 +24,11 @@ def get_document(file_name):
     return minidom.parse('{}{}'.format(DIR, file_name))
 
 
-def get_element(document, element_name, convert=str, is_single=False):
+def get_element(document, element_name, convert=str, get_data=False, is_single=False):
     items = document.getElementsByTagName(element_name)
-    items = [convert(i.firstChild.data) for i in items]
+
+    if get_data:
+        items = [convert(i.firstChild.data) for i in items]
 
     if is_single:
         items = items[0]

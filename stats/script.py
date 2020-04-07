@@ -28,7 +28,7 @@ def main():
     scores = get_score(document)
 
     print()
-    print(' - {}\'s Anime List Statistics -'.format(get_element(document, 'user_name', is_single=True)))
+    print(' - {}\'s Anime List Statistics -'.format(get_element(document, 'user_name', get_data=True, is_single=True)))
     print()
     print('   Average: {:.2f}'.format(average(scores)))
     print('   Median: {:.0f}'.format(median(scores)))
