@@ -19,60 +19,52 @@ class Font:
     MATH_SANS_BOLD_ITALIC = '𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯'
     MATH_SANS_ITALIC = '𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻'
     PARENTHESIZED = '⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵'
-    REGIONAL_INDICATOR = '🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿'
 
 
     def __init__(self):
         pass
     
 
-    def transform(self, message, source='normal', target='small_caps'):
+    def transform(self, message, tag_name=None, source='normal', target='small_caps'):
         source_font = eval('Font.' + source.upper())
         target_font = eval('Font.' + target.upper())
 
         message = list(message)
         is_in_tag = False
 
-        for i in range(len(message)):
-            if message[i] == '[':
-                is_in_tag = True
-            elif message[i] == ']':
-                is_in_tag = False
-            
-            if not is_in_tag:
-                try:
-                    message[i] = target_font[source_font.index(message[i])]
-                except (IndexError, ValueError):
-                    pass
+        # Normal Transformation
+        if tag_name == None:
+            for i in range(len(message)):
+                if message[i] == '[':
+                    is_in_tag = True
+                elif message[i] == ']':
+                    is_in_tag = False
+                
+                if not is_in_tag:
+                    try:
+                        message[i] = target_font[source_font.index(message[i])]
+                    except (IndexError, ValueError):
+                        pass
+    
+        # Inside-tag Transformation
+        else:
+            i = 0
+            while i < len(message):
+                if message[i:i + len(tag_name) + 2] == list('<{}>'.format(tag_name)):
+                    is_in_tag = True
+                    message = message[:i] + message[i + len(tag_name) + 2:]
+                elif message[i:i + len(tag_name) + 3] == list('</{}>'.format(tag_name)):
+                    is_in_tag = False
+                    message = message[:i] + message[i + len(tag_name) + 3:]
+                
+                if is_in_tag:
+                    try:
+                        message[i] = target_font[source_font.index(message[i])]
+                    except (IndexError, ValueError):
+                        pass
+                
+                i += 1
         
-        message = ''.join(message)
-        
-        return message
-
-
-    def transform_tag(self, message, tag_name='title', source='normal', target='math_sans_bold_italic'):
-        source_font = eval('Font.' + source.upper())
-        target_font = eval('Font.' + target.upper())
-
-        message = list(message)
-        is_in_tag = False
-
-        i = 0
-        while i < len(message):
-            if message[i:i + len(tag_name) + 2] == list('<{}>'.format(tag_name)):
-                is_in_tag = True
-                message = message[:i] + message[i + len(tag_name) + 2:]
-            elif message[i:i + len(tag_name) + 3] == list('</{}>'.format(tag_name)):
-                is_in_tag = False
-                message = message[:i] + message[i + len(tag_name) + 3:]
-            
-            if is_in_tag:
-                try:
-                    message[i] = target_font[source_font.index(message[i])]
-                except (IndexError, ValueError):
-                    pass
-            
-            i += 1
         
         message = ''.join(message)
         
