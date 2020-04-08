@@ -10,6 +10,7 @@ def main():
     convert('profile_editor.txt', 'profile_decorized.txt', 'normal', 'math_sans_bold_italic', 'small_caps')
     convert('profile_editor.txt', 'profile_plain.txt', 'normal', 'normal', 'normal')
 
+
 def convert(file_in_name, file_out_name, original_font_name, title_font_name, content_font_name):
     ''' Convert function '''
     font = Font()
