@@ -126,9 +126,9 @@
 	--textLinkHov: 196, 94%, 69%;
 	--textIcon: 0, 0%, 83%;
 	
-	--current: 125, 59.3%, 43.3%;
+	--watching: 125, 59.3%, 43.3%;
 	--completed: 223, 58%, 35.5%;
-	--paused: 46, 93.1%, 65.9%;
+	--on-hold: 46, 93.1%, 65.9%;
 	--dropped: 359, 54.8%, 40.8%;
 	--planned: 0, 0%, 76.5%;
 
@@ -793,13 +793,13 @@ body::before {
 	height: 2px;
 } [data-query*='status":1'] .list-block::before,
 [data-query*='status":1'] #status-menu::before {
-	--accent: var(--current);
+	--accent: var(--watching);
 } [data-query*='status":2'] .list-block::before,
 [data-query*='status":2'] #status-menu::before {
 	--accent: var(--completed);
 } [data-query*='status":3'] .list-block::before,
 [data-query*='status":3'] #status-menu::before {
-	--accent: var(--paused);
+	--accent: var(--on-hold);
 } [data-query*='status":4'] .list-block::before,
 [data-query*='status":4'] #status-menu::before {
 	--accent: var(--dropped);
@@ -869,11 +869,11 @@ body::before {
 	content: "ALL";
 } #status-menu .status-button.watching::before,
 #status-menu .status-button.reading::before {
-	content: "CURRENT";
+	content: "WATCHING";
 } #status-menu .status-button.completed::before {
 	content: "COMPLETED";
 } #status-menu .status-button.onhold::before {
-	content: "PAUSED";
+	content: "ON-HOLD";
 } #status-menu .status-button.dropped::before {
 	content: "DROPPED";
 } #status-menu .status-button.plantowatch::before,
@@ -1360,11 +1360,11 @@ body::before {
 	pointer-events: none;
 } .data.status.watching,
 .data.status.reading {
-	border-color: hsl(var(--current));
+	border-color: hsl(var(--watching));
 } .data.status.completed {
 	border-color: hsl(var(--completed));
 } .data.status.onhold {
-	border-color: hsl(var(--paused));
+	border-color: hsl(var(--on-hold));
 } .data.status.dropped {
 	border-color: hsl(var(--dropped));
 } .data.status.plantowatch,
@@ -1545,11 +1545,11 @@ body::before {
 
 [data-query*='"status":7'] .watching ~ .data.score::before,
 [data-query*='"status":7'] .reading ~ .data.score::before {
-	content: "Current |";
+	content: "Watching |";
 } [data-query*='"status":7'] .completed ~ .data.score::before {
 	content: "Completed |";
 } [data-query*='"status":7'] .onhold ~ .data.score::before {
-	content: "Paused |";
+	content: "On-Hold |";
 } [data-query*='"status":7'] .dropped ~ .data.score::before {
 	content: "Dropped |";
 } [data-query*='"status":7'] .plantowatch ~ .data.score::before,
