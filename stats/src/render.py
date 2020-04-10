@@ -4,33 +4,47 @@
 
 from math import ceil
 from math import floor
-from pygal.style import *
+from pygal.style import DarkStyle
 
 import pygal
 
 
-def render_by_level(data, max_y_labels=15, style=DarkStyle):
+def render_by_score(data, file_name='untitled', max_y_labels=15, style=DarkStyle, title=''):
     ''' Function: Renders '''
     chart = pygal.HorizontalStackedBar()
 
     # Chart Data
-    chart.add('Rated', [{'value': i, 'label': '{:.2f}%'.format(i / (sum(data) + (sum(data) == 0)) * 100)} for i in data])
+    if isinstance(data, list):
+        chart.add('Rated', [{'value': i, 'label': '{:.2f}%'.format(i / (sum(data) + (sum(data) == 0)) * 100)} for i in data])
+    elif isinstance(data, dict):
+        for i in data:
+            chart.add(i, [{'value': j, 'label': '{:.2f}%'.format(j / (sum(data[i]) + (sum(data[i]) == 0)) * 100)} for j in data[i]])
 
     # Chart Titles
-    chart.title = 'Rated Titles'
+    chart.title = title
 
     # Chart Labels
     chart.x_labels = [i for i in range(1, 11, 1)]
-    chart.y_labels = y_labels(0, max(data), max_y_labels=max_y_labels)
+
+    if isinstance(data, list):
+        chart.y_labels = y_labels(0, max(data), max_y_labels=max_y_labels)
+    elif isinstance(data, dict):
+        data_r = [data[i] for i in data]
+        data_r = [[data_r[j][i] for j in range(len(data_r))] for i in range(len(data_r[0]))]
+        data_r = [sum(i) for i in data_r]
+        chart.y_labels = y_labels(0, max(data_r), max_y_labels=max_y_labels)
     
     # Chart Legends
-    chart.show_legend = False
+    if isinstance(data, list):
+        chart.show_legend = False
+    elif isinstance(data, dict):
+        chart.show_legend = True
     chart.legend_at_bottom = False
     chart.legend_box_size = 15
 
     # Chart Render
     chart.style = style
-    chart.render_to_file('charts/rated.svg')
+    chart.render_to_file('charts/{}.svg'.format(file_name.replace('.svg', '')))
 
 
 def y_labels(data_min, data_max, max_y_labels=15, skip=False):

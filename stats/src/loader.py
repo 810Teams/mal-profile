@@ -11,7 +11,6 @@ from src.data import User
 from src.utils import error
 
 import os
-import platform
 
 
 class Loader:

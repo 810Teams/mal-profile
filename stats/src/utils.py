@@ -2,8 +2,6 @@
     `utils.py`
 '''
 
-from math import floor
-
 
 def error(message, show=True, end='\n'):
     ''' Display error message '''
