@@ -1,65 +1,65 @@
 [size=120][color=#0f0f0f][color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　About Me
+　　<title>About Me</title>
 　　　✦ Nicknamed 'Saint' (セント)
 　　　✦ 20 Years old
 　　　✦ Thai, English, and Japanese
 
-　　What I am
+　　<title>What I am</title>
 　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★
 
-　　What I love
+　　<title>What I love</title>
 　　　✶ Games ✶ Anime ✶ Fate/Grand Order ✶ Aimer (エメ) ✶
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　Loved Genres
+　　<title>Loved Genres</title>
 　　　❤ [url="https://myanimelist.net/anime/genre/1/Action"]Action[/url] ❤ [url="https://myanimelist.net/anime/genre/10/Fantasy"]Fantasy[/url] ❤ [url="https://myanimelist.net/anime/genre/16/Magic"]Magic[/url] ❤  [url="https://myanimelist.net/anime/genre/31/Super_Power"]Super Power[/url] ❤ [url="https://myanimelist.net/anime/genre/37/Supernatural"]Supernatural[/url] ❤
 
-　　Liked Genres
+　　<title>Liked Genres</title>
 　　　✤ [url="https://myanimelist.net/anime/genre/2/Adventure"]Adventure[/url] ✤ [url="https://myanimelist.net/anime/genre/8/Drama"]Drama[/url] ✤ [url="https://myanimelist.net/anime/genre/11/Game"]Game[/url] ✤ [url="https://myanimelist.net/anime/genre/23/School"]School[/url] ✤ [url="https://myanimelist.net/anime/genre/24/Sci-Fi"]Sci-Fi[/url] ✤ [url="https://myanimelist.net/anime/genre/27/Shounen"]Shounen[/url] ✤
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　My Messages
+　　<title>My Messages</title>
 　　　◆ I consider anime as a piece of art, created by artists with effort. Arts has its own beauty, so does anime.
-　　　◆ I love writing anime reviews, so please try checking them out [url="https://myanimelist.net/profile/810Teams/reviews"]here[/url]! A vote up would be appreciated.
+　　　◆ I love writing anime reviews, so please try checking them out! A vote up would be appreciated.
 　　　◆ I like to keep my review as short and structured as possible, in order to maintain readability.
-　　　◆ I don't read manga, I'm an only-anime guy.
+　　　◆ I don't read manga, I'm an only-anime guy, so my reviews will be only anime-based.
 　　　◆ My scores may sometimes change due to having more comparisons overtime.
-　　　◆ My scoring may seem a bit harsh, but it was to rank them and point out flaws more accurately.
-　　　◆ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]Twitter[/url].
+　　　◆ My scores may seem a bit harsh, but it was to rank them and point out flaws more accurately.
+　　　◆ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]my Twitter[/url].
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　My Scoring Criteria
+　　<title>My Scoring Criteria</title>
 　　　Scores are mainly based on enjoyment, impression, emotional impact, and memorability, resulting from various
-　　　elements of the anime, including story, storytelling, logic, uniǫueness, animation ǫuality, animation eye-friendliness,
+　　　elements of the anime, including story, storytelling, logic, uniǫueness, animation ǫuality, eye-friendliness,
 　　　theme songs, insert songs, soundtracks, mood and tone, voice acting, character design, character personality,
 　　　character development, character story, and character purpose.
 
-　　My Scoring Levels
+　　<title>My Scoring Levels</title>
 　　　🏆 [b][[color=darkgreen]10[/color]] Masterpiece[/b] - A true masterpiece, perfectly composed and outstanding, leaving a strong impression.
 　　　🥇 [b][[color=forestgreen]9[/color]] Ideal[/b] - An excellent anime, excellently composed, leaving an impression.
 　　　🥈 [b][[color=limegreen]8[/color]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
 　　　🥉 [b][[color=yellowgreen]7[/color]] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
-　　　👌 [b][[color=gold]6[/color]] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
+　　　📦 [b][[color=gold]6[/color]] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
 　　　💬 [b][[color=orange]5[/color]] Acceptable[/b] - A barely-passed anime, missing some elements, giving a minimal amount of joy.
-　　　👎 [b][[color=red]4[/color]] Failure[/b] - A failed anime, missing some important elements, unenjoyable to me.
+　　　⛔️ [b][[color=red]4[/color]] Failure[/b] - A failed anime, missing some important elements, unenjoyable to me.
 　　　🚮 [b][[color=firebrick]3[/color]] Problematic[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
 　　　💀 [b][[color=darkred]2[/color]] Horrible[/b] - A horrible anime, an anime itself is the issue, giving a difficult experience.
 　　　💩 [b][[color=maroon]1[/color]] Garbage[/b] - A piece of garbage, exists only to give me a traumatic experience.
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　Friend Request Acceptation Conditions
+　　<title>Friend Request Acceptation Conditions</title>
 　　　✔ Has mean scores of 6 or above, or unrated at all.
 　　　✔ No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
 　　　✔ Please attach a personal message introducing yourself along with the friend reǫuest.
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
-　　Credits
+　　<title>Credits</title>
 　　　◆ Profile made using [url="https://fsymbols.com/generators/smallcaps/"]small caps font generator[/url], [url="https://qaz.wtf/u/convert.cgi?text=Hi+there"]unicode converter[/url], and symbols from [url="https://coolsymbol.com/"]coolsymbols.com[/url].
 　　　◆ List design credits go to [url="https://myanimelist.net/profile/Valerio_Lyndon"]Valerio Lyndon[/url].
 　　　◆ Wallpaper credits go to [url="https://twitter.com/anyotete"]@anyotete[/url] on Twitter.
