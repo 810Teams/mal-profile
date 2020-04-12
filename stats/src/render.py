@@ -6,10 +6,12 @@ from math import ceil
 from math import floor
 from pygal.style import DarkStyle
 
+from src.utils import notice
+
 import pygal
 
 
-def render_by_score(data, file_name='untitled', max_y_labels=15, style=DarkStyle, title=''):
+def render_by_score(data, file_name='untitled_chart', max_y_labels=15, style=DarkStyle, title=''):
     ''' Function: Renders '''
     chart = pygal.HorizontalStackedBar()
 
@@ -27,18 +29,17 @@ def render_by_score(data, file_name='untitled', max_y_labels=15, style=DarkStyle
     chart.x_labels = [i for i in range(1, 11, 1)]
 
     if isinstance(data, list):
-        chart.y_labels = y_labels(0, max(data), max_y_labels=max_y_labels)
+        y_labels = get_y_labels(0, max(data), max_y_labels=max_y_labels)
     elif isinstance(data, dict):
         data_r = [data[i] for i in data]
         data_r = [[data_r[j][i] for j in range(len(data_r))] for i in range(len(data_r[0]))]
         data_r = [sum(i) for i in data_r]
-        chart.y_labels = y_labels(0, max(data_r), max_y_labels=max_y_labels)
+        y_labels = get_y_labels(0, max(data_r), max_y_labels=max_y_labels)
     
+    chart.y_labels = y_labels
+
     # Chart Legends
-    if isinstance(data, list):
-        chart.show_legend = False
-    elif isinstance(data, dict):
-        chart.show_legend = True
+    chart.show_legend = isinstance(data, dict)
     chart.legend_at_bottom = False
     chart.legend_box_size = 15
 
@@ -46,8 +47,11 @@ def render_by_score(data, file_name='untitled', max_y_labels=15, style=DarkStyle
     chart.style = style
     chart.render_to_file('charts/{}.svg'.format(file_name.replace('.svg', '')))
 
+    # Notice
+    notice('Chart \'{}\' successfully exported.'.format(file_name))
 
-def y_labels(data_min, data_max, max_y_labels=15, skip=False):
+
+def get_y_labels(data_min, data_max, max_y_labels=15, skip=False):
     ''' Function: Calculates y labels of the chart '''
     data_min = floor(data_min)
     data_max = ceil(data_max)
