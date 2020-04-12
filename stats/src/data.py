@@ -6,12 +6,15 @@ from math import sqrt
 
 
 class User:
+    ''' User class '''
     def __init__(self, info, anime_list):
+        ''' Constructor '''
         self.info = info
         self.anime_list = anime_list
 
 
 class Info:
+    ''' User information class '''
     def __init__(
         self,
         user_id,
@@ -24,6 +27,7 @@ class Info:
         user_total_dropped,
         user_total_plantowatch
     ):
+        ''' Constructor '''
         self.user_id = user_id
         self.user_name = user_name
         self.user_export_type = user_export_type
@@ -36,13 +40,17 @@ class Info:
 
 
 class AnimeList:
+    ''' User anime list class '''
     def __init__(self, data=list()):
+        ''' Constructor '''
         self.data = data
 
     def add_anime(self, anime):
+        ''' Add anime object to the anime list by object '''
         self.data.append(anime)
 
     def get_anime(self, anime_id):
+        ''' Get anime object from the anime list by anime ID '''
         for i in range(len(self.data)):
             if self.data[i].series_animedb_id == anime_id:
                 return self.data[i]
@@ -50,20 +58,27 @@ class AnimeList:
         return None
 
     def delete_anime(self, anime_id):
+        ''' Delete anime object from the anime list by anime ID '''
         for i in range(len(self.data)):
             if self.data[i].series_animedb_id == anime_id:
                 return self.data.pop(i)
 
         return None
 
+    def get_anime_list(self, query='True'):
+        ''' Get anime list with query '''
+        return [i for i in self.data if eval(query)]
+
     def get_scores(self, include_unrated=False):
+        ''' Get anime scores '''
         return [i.my_score for i in self.data if i.my_score != 0 or include_unrated]
 
     def get_summed_scores(self, include_unrated=False):
-        scores = [self.get_scores(include_unrated=include_unrated).count(i) for i in range(1 - include_unrated, 11)]
-        return scores
+        ''' Get summed anime scores '''
+        return [self.get_scores(include_unrated=include_unrated).count(i) for i in range(1 - include_unrated, 11)]
 
     def get_grouped_scores(self, include_unrated=False, group_by='series_type'):
+        ''' Get grouped anime scores '''
         scores = dict()
         categories = list()
 
@@ -81,7 +96,8 @@ class AnimeList:
         return scores
     
     def get_summed_grouped_scores(self, include_unrated=False, group_by='series_type'):
-        scores = self.get_grouped_scores(group_by=group_by)
+        ''' Get summed grouped anime scores '''
+        scores = self.get_grouped_scores(group_by=group_by, include_unrated=include_unrated)
         
         for i in scores:
             scores[i] = [scores[i].count(j) for j in range(1 - include_unrated, 11)]
@@ -89,27 +105,37 @@ class AnimeList:
         return scores
 
     def get_min(self):
+        ''' Get a minimum of the anime list scores '''
         return min(self.get_scores())
 
     def get_max(self):
+        ''' Get a maximum of the anime list scores '''
         return max(self.get_scores())
 
     def get_average(self):
+        ''' Get an average of the anime list scores '''
         scores = self.get_scores()
         return sum(scores) / len(scores)
 
     def get_median(self):
+        ''' Get a median of the anime list scores '''
         scores = sorted(self.get_scores())
         if len(scores) % 2 == 0:
             return (scores[len(scores) // 2 - 1] + scores[len(scores) // 2]) / 2
         return scores[len(scores) // 2]
 
+    def get_mode(self):
+        ''' Get a mode of the anime list scores '''
+        return max(self.get_summed_scores())
+
     def get_sd(self):
+        ''' Get a standard deviation of the anime list scores '''
         scores = self.get_scores()
         return sqrt(sum([(i - self.get_average()) ** 2 for i in scores])/len(scores))
 
 
 class Anime:
+    ''' Anime class '''
     def __init__(
         self,
         series_animedb_id=None,
@@ -133,6 +159,7 @@ class Anime:
         my_rewatching_ep=None,
         update_on_import=None
     ):
+        ''' Constructor '''
         self.series_animedb_id = series_animedb_id
         self.series_title = series_title
         self.series_type = series_type
