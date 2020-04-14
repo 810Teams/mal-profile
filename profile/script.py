@@ -1,5 +1,5 @@
 '''
-    `convert.py`
+    `script.py`
 '''
 
 from src.font import Font
