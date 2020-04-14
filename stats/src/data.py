@@ -65,73 +65,124 @@ class AnimeList:
 
         return None
 
-    def get_anime_list(self, query='True'):
+    def get_anime_list(self, include_unrated=False, include_planned=False):
         ''' Get anime list with query '''
-        return [i for i in self.data if eval(query)]
+        return [
+            i for i in self.data
+            if (i.my_score != 0 or include_unrated) and (i.my_status != 'Plan to Watch' or include_planned)
+        ]
 
-    def get_scores(self, include_unrated=False):
+    def get_scores(self, include_unrated=False, include_planned=False):
         ''' Get anime scores '''
-        return [i.my_score for i in self.data if i.my_score != 0 or include_unrated]
+        return [
+            i.my_score 
+            for i in self.get_anime_list(
+                include_unrated=include_unrated,
+                include_planned=include_planned
+            )
+        ]
 
-    def get_summed_scores(self, include_unrated=False):
+    def get_summed_scores(self, include_unrated=False, include_planned=False):
         ''' Get summed anime scores '''
-        return [self.get_scores(include_unrated=include_unrated).count(i) for i in range(1 - include_unrated, 11)]
+        return [
+            self.get_scores(
+                include_unrated=include_unrated,
+                include_planned=include_planned
+            ).count(i)
+            for i in range(1 - include_unrated, 11)
+        ]
 
-    def get_grouped_scores(self, include_unrated=False, group_by='series_type'):
+    def get_grouped_scores(self, include_unrated=False, include_planned=False, group_by='series_type'):
         ''' Get grouped anime scores '''
         scores = dict()
         categories = list()
 
-        anime_list_filtered = [i for i in self.data if i.my_score != 0 or include_unrated]
+        anime_list_filtered = self.get_anime_list(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        )
 
         for _ in anime_list_filtered:
             if eval('_.{}'.format(group_by)) not in categories:
                 categories.append(eval('_.{}'.format(group_by)))
         
-        categories.sort(key=lambda i: ([eval('j.{}'.format(group_by)) for j in self.data].count(i)), reverse=True)
+        categories.sort(
+            key=lambda i: [eval('j.{}'.format(group_by)) for j in self.data].count(i),
+            reverse=True
+        )
 
         for i in categories:
             scores[i] = [j.my_score for j in self.data if eval('j.{}'.format(group_by)) == i]
 
         return scores
     
-    def get_summed_grouped_scores(self, include_unrated=False, group_by='series_type'):
+    def get_summed_grouped_scores(self, include_unrated=False, include_planned=False, group_by='series_type'):
         ''' Get summed grouped anime scores '''
-        scores = self.get_grouped_scores(group_by=group_by, include_unrated=include_unrated)
+        scores = self.get_grouped_scores(
+            group_by=group_by,
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        )
         
         for i in scores:
             scores[i] = [scores[i].count(j) for j in range(1 - include_unrated, 11)]
         
         return scores
 
-    def get_min(self):
+    def get_min(self, include_unrated=False, include_planned=False):
         ''' Get a minimum of the anime list scores '''
-        return min(self.get_scores())
+        return min(self.get_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        ))
 
-    def get_max(self):
+    def get_max(self, include_unrated=False, include_planned=False):
         ''' Get a maximum of the anime list scores '''
-        return max(self.get_scores())
+        return max(self.get_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        ))
 
-    def get_average(self):
+    def get_average(self, include_unrated=False, include_planned=False):
         ''' Get an average of the anime list scores '''
-        scores = self.get_scores()
+        scores = self.get_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        )
         return sum(scores) / len(scores)
 
-    def get_median(self):
+    def get_median(self, include_unrated=False, include_planned=False):
         ''' Get a median of the anime list scores '''
-        scores = sorted(self.get_scores())
+        scores = sorted(self.get_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        ))
+
         if len(scores) % 2 == 0:
             return (scores[len(scores) // 2 - 1] + scores[len(scores) // 2]) / 2
         return scores[len(scores) // 2]
 
-    def get_mode(self):
+    def get_mode(self, include_unrated=False, include_planned=False):
         ''' Get a mode of the anime list scores '''
-        return max(self.get_summed_scores())
+        return max(self.get_summed_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        ))
 
-    def get_sd(self):
+    def get_sd(self, include_unrated=False, include_planned=False):
         ''' Get a standard deviation of the anime list scores '''
-        scores = self.get_scores()
-        return sqrt(sum([(i - self.get_average()) ** 2 for i in scores])/len(scores))
+        scores = self.get_scores(
+            include_unrated=include_unrated,
+            include_planned=include_planned
+        )
+
+        return sqrt(sum([
+            (i - self.get_average(
+                include_unrated=include_unrated,
+                include_planned=include_planned
+            )) ** 2
+            for i in scores
+        ]) / len(scores))
 
 
 class Anime:

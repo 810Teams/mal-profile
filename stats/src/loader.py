@@ -57,7 +57,7 @@ class Loader:
         
         # Prodecure: Retrieve a single element or data
         if get_single:
-            # Exception Case: Element name does not exist
+            # Exception Case: Invalid element name
             try:
                 items = items[0]
             except IndexError:
