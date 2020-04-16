@@ -65,11 +65,16 @@ class Loader:
 
         return items
     
-    def get_user_object(self):
+    def get_user_object(self, include_watching=False, include_onhold=False, include_dropped=False, include_planned=False):
         ''' Retrieve user object '''
         return User(
             info=self.get_info_object(),
-            anime_list=self.get_anime_list_object()
+            anime_list=self.get_anime_list_object(
+                include_watching=include_watching,
+                include_onhold=include_onhold,
+                include_dropped=include_dropped,
+                include_planned=include_planned
+            )
         )
     
     def get_info_object(self):
@@ -88,9 +93,15 @@ class Loader:
             user_total_plantowatch=self.get_element(my_info, 'user_total_plantowatch', get_data=True, get_single=True)
         )
     
-    def get_anime_list_object(self):
+    def get_anime_list_object(self, include_watching=False, include_onhold=False, include_dropped=False, include_planned=False):
         ''' Retrieve user anime list object '''
-        return AnimeList(data=[self.get_anime_object(i) for i in self.get_element(self.document, 'anime')])
+        return AnimeList(
+            data=[self.get_anime_object(i) for i in self.get_element(self.document, 'anime')],
+            include_watching=include_watching,
+            include_onhold=include_onhold,
+            include_dropped=include_dropped,
+            include_planned=include_planned
+        )
 
     def get_anime_object(self, anime_element):
         ''' Retrieve anime object '''
