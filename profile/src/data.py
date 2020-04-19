@@ -2,6 +2,7 @@
     `font.py`
 '''
 
+
 class Font:
     NORMAL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     SMALL_CAPS = tuple('ABCDEFGHIJKLMNOPQRSTUVWXYZᴀʙᴄᴅᴇғɢʜɪᴊᴋʟᴍɴᴏᴘ') + ('ᴏ̨',) + tuple('ʀsᴛᴜᴠᴡxʏᴢ')
@@ -21,11 +22,32 @@ class Font:
     PARENTHESIZED = '⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵'
 
 
-    def __init__(self):
-        pass
-    
+class TextFileConverter:
+    def __init__(self, file_in_name, file_out_name):
+        self.file_in_name = file_in_name
+        self.file_out_name = file_out_name
+        self.refresh()
 
-    def transform(self, message, tag_name=None, source='normal', target='small_caps'):
+    def refresh(self):
+        self.file_in = [i.replace('\n', '') for i in open(self.file_in_name, encoding='utf-8')]
+        self.file_out = open(self.file_out_name, 'w', encoding='utf-8')
+
+    def convert(self, original_font='normal', title_font='math_sans_bold_italic', content_font='small_caps'):
+        ''' Convert function '''
+        self.refresh()
+    
+        # Transform line by line
+        for i in range(len(self.file_in)):
+            self.file_in[i] = self.convert_line(self.file_in[i], tag_name='title', source=original_font, target=title_font)
+            self.file_in[i] = self.convert_line(self.file_in[i], source=original_font, target=content_font)
+
+        self.file_in = '\n'.join(self.file_in)
+        self.file_out.write(self.file_in)
+        self.file_out.close()
+
+        print('[NOTICE] Successfully created `{}` from `{}`.'.format(self.file_out_name, self.file_in_name))
+
+    def convert_line(self, message, tag_name=None, source='normal', target='small_caps'):
         source_font = eval('Font.' + source.upper())
         target_font = eval('Font.' + target.upper())
 
@@ -64,7 +86,6 @@ class Font:
                         pass
                 
                 i += 1
-        
         
         message = ''.join(message)
         
