@@ -6,6 +6,7 @@ from math import ceil
 from math import floor
 from pygal.style import DefaultStyle
 
+from src.utils import error
 from src.utils import notice
 
 import pygal
@@ -14,6 +15,7 @@ import pygal
 class RenderMachine:
     def __init__(
         self,
+        chart_dir,
         legend_at_bottom=False,
         legend_box_size=15,
         max_y_labels=15,
@@ -21,6 +23,7 @@ class RenderMachine:
         y_labels_preset=(1, 2, 5),
         y_labels_skip=False
     ):
+        self.chart_dir = chart_dir
         self.legend_at_bottom = legend_at_bottom
         self.legend_box_size = legend_box_size
         self.max_y_labels = max_y_labels
@@ -28,19 +31,42 @@ class RenderMachine:
         self.y_labels_preset = y_labels_preset
         self.y_labels_skip = y_labels_skip
 
-    def render_by_score(self, data, file_name='untitled_chart', title=''):
-        ''' Function: Renders '''
+    def render_pie_chart(self, data, file_name='untitled_chart', title=''):
+        ''' Function: Render pie chart '''
+        # Chart Initialization
+        chart = pygal.Pie()
+
+        # Chart Data
+        total = sum([len(data[category]) for category in data])
+        for category in data:
+            chart.add(str(category), [{
+                    'value': len(data[category]),
+                    'label': '{}/{} ({:.2f}%)'.format(len(data[category]), total, 100 * len(data[category]) / total)
+                }]
+            )
+        
+        # Finish Chart
+        self.finish_chart(chart, file_name=file_name, show_legend=True, title=title)
+
+    def render_bar_chart(self, data, file_name='untitled_chart', title=''):
+        ''' Function: Render bar chart '''
+        # Chart Initialization
         chart = pygal.HorizontalStackedBar()
 
         # Chart Data
         if isinstance(data, list):
-            chart.add('Rated', [{'value': i, 'label': '{}/{} ({:.2f}%)'.format(i, sum(data), i / (sum(data) + (sum(data) == 0)) * 100)} for i in data])
+            total = sum(data)
+            chart.add('Scored', [
+                {'value': i, 'label': '{}/{} ({:.2f}%)'.format(i, total, 100 * i / total)}
+                for i in data
+            ])
         elif isinstance(data, dict):
-            for i in data:
-                chart.add(i, [{'value': j, 'label': '{}/{} ({:.2f}%)'.format(j, sum(data[i]), j / (sum(data[i]) + (sum(data[i]) == 0)) * 100)} for j in data[i]])
-
-        # Chart Titles
-        chart.title = title
+            total = sum([sum(data[category]) for category in data])
+            for category in data:
+                chart.add(category, [
+                    {'value': i, 'label': '{}/{} ({:.2f}%)'.format(i, total, 100 * i / total)}
+                    for i in data[category]
+                ])
 
         # Chart Labels
         if isinstance(data, list):
@@ -53,21 +79,49 @@ class RenderMachine:
             data_r = [sum(i) for i in data_r]
             chart.y_labels = self.get_y_labels(0, max(data_r))
         
+        # Finish Chart
+        self.finish_chart(chart, file_name=file_name, show_legend=isinstance(data, dict), title=title)
+
+    def render_treemap(self, data, value=0, label=1, ignore_value=False, file_name='untitled_chart', title=''):
+        ''' Function: renders Treemap chart '''
+        # Chart Initialization
+        chart = pygal.Treemap()
+
+        # Chart Data
+        if isinstance(data, list):
+            chart.add('Anime', [{'value': i[value] * (not ignore_value) + ignore_value, 'label': str(i[label])} for i in data])
+        elif isinstance(data, dict):
+            for category in data:
+                chart.add(str(category), [{'value': i[value] * (not ignore_value) + ignore_value, 'label': str(i[label])} for i in data[category]])
+
+        # Finish Chart
+        self.finish_chart(chart, file_name=file_name, show_legend=isinstance(data, dict), title=title)
+
+    def finish_chart(self, chart, file_name='untitled_chart', show_legend=True, title=''):
+        ''' Function: Common chart setup and rendering steps '''
+        # Chart Titles
+        chart.title = title
+        
         # Chart Legends
-        chart.show_legend = isinstance(data, dict)
+        chart.show_legend = show_legend
         chart.legend_at_bottom = self.legend_at_bottom
         chart.legend_box_size = self.legend_box_size
 
         # Chart Render
         chart.style = self.style
-        chart.render_to_file('charts/{}.svg'.format(file_name.replace('.svg', '')))
+        chart.render_to_file(
+            '{}{}{}.svg'.format(
+                self.chart_dir,
+                '/' * (self.chart_dir[-1] != '/'),
+                file_name.replace('.svg', '')
+            )
+        )
 
         # Notice
         notice('Chart \'{}\' successfully exported.'.format(file_name))
 
-
     def get_y_labels(self, data_min, data_max):
-        ''' Function: Calculates y labels of the chart '''
+        ''' Function: Calculates y-labels of the chart '''
         data_min = floor(data_min)
         data_max = ceil(data_max)
         

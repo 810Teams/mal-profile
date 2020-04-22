@@ -41,7 +41,14 @@ class Info:
 
 class AnimeList:
     ''' User anime list class '''
-    def __init__(self, data=list(), include_watching=False, include_onhold=False, include_dropped=False, include_planned=False):
+    def __init__(
+        self,
+        data=list(),
+        include_watching=False,
+        include_onhold=False,
+        include_dropped=False,
+        include_planned=False
+    ):
         ''' Constructor '''
         self.data = data
         self.include_watching = include_watching
@@ -70,7 +77,7 @@ class AnimeList:
         return None
 
     def get_anime_list(self, include_unscored=False):
-        ''' Get anime list with query '''
+        ''' Get anime list '''
         return [
             i for i in self.data
             if (i.my_status != 'Watching' or self.include_watching)
@@ -79,6 +86,65 @@ class AnimeList:
             and (i.my_status != 'Plan to Watch' or self.include_planned)
             and (i.my_score != 0 or include_unscored)
         ]
+    
+    def get_grouped_anime_list(
+        self,
+        include_unscored=False,
+        group_by='series_type', 
+        sort_method='most_common',
+        sort_order='descending',
+        manual_sort=None,
+        disassemble_key=None
+    ):
+        ''' Get grouped anime list '''
+        grouped_anime_list = dict()
+        categories = list()
+
+        filtered_anime_list = self.get_anime_list(include_unscored=include_unscored)
+
+        # Category Retrieval
+        for _ in filtered_anime_list:
+            if eval('_.{}'.format(group_by)) not in categories:
+                categories.append(eval('_.{}'.format(group_by)))
+        
+        # Category Sorting
+        if sort_method == 'most_common':
+            categories.sort(
+                key=lambda i: [eval('j.{}'.format(group_by)) for j in filtered_anime_list].count(i),
+                reverse=sort_order != 'ascending'
+            )
+        elif sort_method == 'alphabetical':
+            categories.sort(
+                reverse=sort_order != 'ascending'
+            )
+        
+        # Manual Sort Override
+        if manual_sort != None:
+            old_categories = [i for i in categories]
+            categories = list()
+
+            for i in manual_sort:
+                if i in old_categories:
+                    categories.append(i)
+                    old_categories.remove(i)
+            
+            categories += old_categories
+
+        # Packing Categories
+        for i in categories:
+            grouped_anime_list[i] = [j for j in filtered_anime_list if eval('j.{}'.format(group_by)) == i]
+
+        # Desired Data Retrieval
+        if disassemble_key != None:
+            for i in grouped_anime_list:
+                for j in range(len(grouped_anime_list[i])):
+                    temp = ['grouped_anime_list[i][j].{}'.format(k) for k in disassemble_key]
+                    for k in range(len(temp)):
+                        temp[k] = eval(temp[k])
+                    grouped_anime_list[i][j] = temp
+
+        # Return
+        return grouped_anime_list
 
     def get_scores(self, include_unscored=False):
         ''' Get anime scores '''
@@ -91,30 +157,45 @@ class AnimeList:
             for i in range(1 - include_unscored, 11)
         ]
 
-    def get_grouped_scores(self, include_unscored=False, group_by='series_type'):
+    def get_grouped_scores(
+        self,
+        include_unscored=False,
+        group_by='series_type',
+        sort_method='most_common',
+        sort_order='descending',
+        manual_sort=None
+    ):
         ''' Get grouped anime scores '''
-        scores = dict()
-        categories = list()
-
-        anime_list_filtered = self.get_anime_list(include_unscored=include_unscored)
-
-        for _ in anime_list_filtered:
-            if eval('_.{}'.format(group_by)) not in categories:
-                categories.append(eval('_.{}'.format(group_by)))
-        
-        categories.sort(
-            key=lambda i: [eval('j.{}'.format(group_by)) for j in anime_list_filtered].count(i),
-            reverse=True
+        grouped_anime_list = self.get_grouped_anime_list(
+            include_unscored=False,
+            group_by=group_by,
+            sort_method=sort_method,
+            sort_order=sort_order,
+            manual_sort=manual_sort
         )
-
-        for i in categories:
-            scores[i] = [j.my_score for j in anime_list_filtered if eval('j.{}'.format(group_by)) == i]
-
-        return scores
+       
+        for i in grouped_anime_list:
+            for j in range(len(grouped_anime_list[i])):
+                grouped_anime_list[i][j] = grouped_anime_list[i][j].my_score
+        
+        return grouped_anime_list
     
-    def get_summed_grouped_scores(self, include_unscored=False, group_by='series_type'):
+    def get_summed_grouped_scores(
+        self,
+        include_unscored=False,
+        group_by='series_type',
+        sort_method='most_common',
+        sort_order='descending',
+        manual_sort=None
+    ):
         ''' Get summed grouped anime scores '''
-        scores = self.get_grouped_scores(include_unscored=include_unscored, group_by=group_by)
+        scores = self.get_grouped_scores(
+            include_unscored=include_unscored,
+            group_by=group_by,
+            sort_method=sort_method,
+            sort_order=sort_order,
+            manual_sort=manual_sort
+        )
         
         for i in scores:
             scores[i] = [scores[i].count(j) for j in range(1 - include_unscored, 11)]
