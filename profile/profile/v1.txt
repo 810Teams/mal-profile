@@ -19,16 +19,9 @@
 　　<title>Liked Genres</title>
 　　　✤ [url="https://myanimelist.net/anime/genre/2/Adventure"]Adventure[/url] ✤ [url="https://myanimelist.net/anime/genre/8/Drama"]Drama[/url] ✤ [url="https://myanimelist.net/anime/genre/11/Game"]Game[/url] ✤ [url="https://myanimelist.net/anime/genre/23/School"]School[/url] ✤ [url="https://myanimelist.net/anime/genre/24/Sci-Fi"]Sci-Fi[/url] ✤ [url="https://myanimelist.net/anime/genre/27/Shounen"]Shounen[/url] ✤
 
-[color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
-
-　　<title>My Thoughts</title>
-　　　◆ I consider anime as a piece of art, created by artists with effort. Arts has its own beauty, so does anime.
-　　　◆ I love writing anime reviews, so please try checking them out! A vote up would be appreciated.
-　　　◆ My reviews are anime-based, no manga comparison, I don't read manga anyway.
-　　　◆ My reviews tend to be polite, structured, and not too long. I don't criticize for hate.
-　　　◆ My anime list in the recommended ordering [url="https://myanimelist.net/animelist/810Teams?order=4&order2=6&status=7"]here[/url].
-　　　◆ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]my Twitter[/url].
-
+　　<title>Highlights</title>
+　　　★ [url="https://myanimelist.net/animelist/810Teams?order=4&order2=6&status=7"]My Anime List (Recommended Ordering)[/url] ★ [url="https://myanimelist.net/profile/810Teams/reviews"]My Reviews[/url] ★
+　　　
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
 　　<title>My Scoring Criteria</title>
@@ -37,7 +30,7 @@
 　　　theme songs, insert songs, soundtracks, mood and tone, voice acting, character design, character personality,
 　　　character development, character story, and character purpose.
 
-　　<title>My Scoring Levels</title>
+　　<title>My Scoring System</title>
 　　　🏆 [b][[color=darkgreen]10[/color]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
 　　　🥇 [b][[color=forestgreen]9[/color]] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
 　　　🥈 [b][[color=limegreen]8[/color]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
@@ -51,11 +44,28 @@
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
+　　<title>About My Scoring</title>
+　　　◆ In a simpler term, a score of 5 means neutral, 6 or above means positive, and 4 or below means negative.
+　　　◆ Scoring does not apply to dropped series, ads, or previews.
+　　　◆ Scores may change due to having more comparison overtime.
+　　　◆ Music videos scoring is calculated by my music preference and the animation quality.
+
+　　<title>About My Reviews</title>
+　　　◆ My reviews concepts are polite, structured, and not too long.
+　　　◆ My reviews are anime-based, no manga comparison.
+　　　◆ My reviews appreciate with love, criticize with hope for improvements, not with hate.
+
+[color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+
 　　<title>Friend Request Acceptation</title>
-　　　✔ Has mean scores of 5.5 or above, or unrated at all.
+　　　✔ Has mean scores of 5 or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
-　　　✔ Please attach a personal message introducing yourself along with the friend reǫuest.
+
+　　<title>Other Notes</title>
+　　　✔ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
+　　　✔ I disagree a saying of a certain anime being underrated and overrated, since everyone gets to score them.
+　　　✔ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]my Twitter[/url].
 
 [color=#E8E8E8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
 
