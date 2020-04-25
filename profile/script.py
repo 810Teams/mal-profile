@@ -15,8 +15,8 @@ def main():
     print()
 
     converter = TextFileConverter(
-        '{}{}'.format(DIR, 'v1.txt'),
-        '{}{}'.format(DIR, 'v1_fancy.txt')
+        '{}{}'.format(DIR, 'v2.txt'),
+        '{}{}'.format(DIR, 'v2_fancy.txt')
     )
 
     converter.convert(
