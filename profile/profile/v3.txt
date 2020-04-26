@@ -9,11 +9,16 @@
 　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★
 
 　　<title>What I love</title>
-　　　★ Games ★ Anime ★ Fate/Grand Order ★ Aimer (エメ) ★
+　　　✶ Games ✶ Anime ✶ Fate/Grand Order ✶ Aimer (エメ) ✶
 
-　　<title>Highlights</title>
-　　　✶ [animelist=810Teams?order=4&order2=6&status=7]My Anime List (Recommended Ordering)[/animelist] ✶ [profile=810Teams/reviews]My Reviews[/url] ✶
-　　　
+<hr>
+
+　　<title>Loved Genres</title>
+　　　❤ [genre=1]Action[/genre] ❤ [genre=10]Fantasy[/genre] ❤ [genre=16]Magic[/genre] ❤  [genre=31]Super Power[/genre] ❤ [genre=37]Supernatural[/genre] ❤
+
+　　<title>Liked Genres</title>
+　　　✤ [genre=2]Adventure[/genre] ✤ [genre=8]Drama[/genre] ✤ [genre=11]Game[/genre] ✤ [genre=23]School[/genre] ✤ [genre=24]Sci-Fi[/genre] ✤ [genre=27]Shounen[/genre] ✤
+
 <hr>
 
 　　<title>My Scoring Criteria</title>
@@ -37,10 +42,23 @@
 <hr>
 
 　　<title>Reviews</title>
-　　　◆10 [review=333070]Violet Evergarden[/review] ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review] ◆10 [review=333217]Kimi no Na wa[/review] ◆10 [review=332885]Sora Yori mo Tooi Basho[/review] ◆10 [review=333436]Tenki no Ko[/review]
-　　　◆10 [review=333750]Fullmetal Alchemist: Brotherhood[/review] ◆10 [review=334043]Fate/Zero[/review] ◆9 [review=333450]Irozuku Sekai no Ashita kara[/review]
-　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review] ◆9 [review=337070]Tsuki ga Kirei[/review] ◆8 [review=334226]Psycho-Pass[/review] ◆7 [review=333051]Somali to Mori no Kamisama[/review]
-　　　◆7 [review=334171]Hotarubi no Mori e[/review] ◆6 [review=335183]Another World[/review] ◆6 [review=335363]Fairy Tail[/review] ◆5 [review=335470]Kenja no Mago[/review] ◆4 [review=335889]Infinite Dendrogram[/review]
+　　　◆10 [review=333070]Violet Evergarden[/review]
+<<<< ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review]
+<<<< ◆10 [review=333217]Kimi no Na wa[/review]
+<<<< ◆10 [review=332885]Sora Yori mo Tooi Basho[/review]
+<<<< ◆10 [review=333436]Tenki no Ko[/review]
+　　　◆10 [review=333750]Fullmetal Alchemist: Brotherhood[/review]
+<<<< ◆10 [review=334043]Fate/Zero[/review]
+<<<< ◆9 [review=333450]Irozuku Sekai no Ashita kara[/review]
+　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review]
+<<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
+<<<< ◆8 [review=334226]Psycho-Pass[/review]
+<<<< ◆7 [review=333051]Somali to Mori no Kamisama[/review]
+　　　◆7 [review=334171]Hotarubi no Mori e[/review]
+<<<< ◆6 [review=335183]Another World[/review]
+<<<< ◆6 [review=335363]Fairy Tail[/review]
+<<<< ◆5 [review=335470]Kenja no Mago[/review]
+<<<< ◆4 [review=335889]Infinite Dendrogram[/review]
 
 <hr>
 
@@ -50,16 +68,17 @@
 　　　✔ No [people=8700]this guy[/people] on favorites.
 
 　　<title>Other Notes</title>
-　　　✔ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
-　　　✔ I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
-　　　✔ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url=https://twitter.com/810TeamsEX]my Twitter[/url].
+　　　✎ Link to [animelist=810Teams?order=4&order2=6&status=7]my anime list (recommended ordering)[/animelist].
+　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
+　　　✎ I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
+　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
 
 <hr>
 
 　　<title>Credits</title>
-　　　✎ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Hi+there]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
-　　　✎ Profile picture by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
-　　　✎ Wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
-　　　✎ List design by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
+　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Hi+there]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
+　　　✒ Profile picture by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
+　　　✒ Wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
+　　　✒ List design by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
 
 <hr></profile>
