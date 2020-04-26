@@ -1,5 +1,5 @@
 '''
-    `font.py`
+    `data.py`
 '''
 
 
@@ -21,72 +21,112 @@ class Font:
     MATH_SANS_ITALIC = '𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻'
     PARENTHESIZED = '⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵'
 
+class TagData:
+    def __init__(self, name, target_font_name='math_sans_bold_italic'):
+        self.name = name
+        self.target_font_name = target_font_name
+        self.state = 0
+    
+    def to_list(self):
+        return [self.name, self.target_font_name, self.state]
+
+    def to_dict(self):
+        return {
+            'name': self.name,
+            'target_font_name': self.target_font_name,
+            'state': self.state
+        }
+
+class AutoReplacementData:
+    def __init__(self, original, target):
+        self.original = original
+        self.target = target
+    
+    def to_list(self):
+        return [self.original, self.target]
+    
+    def to_dict(self):
+        return {
+            'original': self.original,
+            'target': self.target
+        }
 
 class TextFileConverter:
-    def __init__(self, file_in_name, file_out_name):
+    def __init__(self, file_in_name='a.txt', original_font_name='normal'):
         self.file_in_name = file_in_name
-        self.file_out_name = file_out_name
-        self.refresh()
+        self.original_font_name = original_font_name
 
-    def refresh(self):
-        self.file_in = [i.replace('\n', '') for i in open(self.file_in_name, encoding='utf-8')]
-        self.file_out = open(self.file_out_name, 'w', encoding='utf-8')
+    def convert(
+        self,
+        file_out_name='out.txt',
+        target_font_name='small_caps',
+        tag=None,
+        auto_replacement_list=list()
+    ):
+        file_in = [i.replace('\n', '') for i in open(self.file_in_name, encoding='utf-8')]
+        file_out = open(file_out_name, 'w', encoding='utf-8')
 
-    def convert(self, original_font='normal', title_font='math_sans_bold_italic', content_font='small_caps'):
-        ''' Convert function '''
-        self.refresh()
-    
-        # Transform line by line
-        for i in range(len(self.file_in)):
-            self.file_in[i] = self.convert_line(self.file_in[i], tag_name='title', source=original_font, target=title_font)
-            self.file_in[i] = self.convert_line(self.file_in[i], source=original_font, target=content_font)
+        # Transform line-by-line
+        for i in range(len(file_in)):
+            file_in[i] = self.convert_line(
+                file_in[i],
+                target_font_name=target_font_name,
+                tag=tag,
+                auto_replacement_list=auto_replacement_list
+            )
 
-        self.file_in = '\n'.join(self.file_in)
-        self.file_out.write(self.file_in)
-        self.file_out.close()
+        file_in = '\n'.join(file_in)
+        file_out.write(file_in)
+        file_out.close()
 
-        print('[NOTICE] Successfully created `{}` from `{}`.'.format(self.file_out_name, self.file_in_name))
+        print('[NOTICE] Successfully created `{}` from `{}`.'.format(file_out_name, self.file_in_name))
 
-    def convert_line(self, message, tag_name=None, source='normal', target='small_caps'):
-        source_font = eval('Font.' + source.upper())
-        target_font = eval('Font.' + target.upper())
 
+    def convert_line(self, message, target_font_name='small_caps', tag=None, auto_replacement_list=list()):
+        original_font = eval('Font.' + self.original_font_name.upper())
+        target_font = eval('Font.' + target_font_name.upper())
+        tag_target_font = eval('Font.' + tag.target_font_name.upper())
+       
+        # Auto Replacement Transformation
+        for i in auto_replacement_list:
+            message = message.replace(i.original, i.target)
+        
         message = list(message)
-        is_in_tag = False
 
-        # Normal Transformation
-        if tag_name == None:
-            for i in range(len(message)):
-                if message[i] == '[':
-                    is_in_tag = True
-                elif message[i] == ']':
-                    is_in_tag = False
-                
-                if not is_in_tag:
-                    try:
-                        message[i] = target_font[source_font.index(message[i])]
-                    except (IndexError, ValueError):
-                        pass
-    
-        # Inside-tag Transformation
-        else:
+        # Tag Transformation
+        if isinstance(tag, TagData):
             i = 0
             while i < len(message):
-                if message[i:i + len(tag_name) + 2] == list('<{}>'.format(tag_name)):
-                    is_in_tag = True
-                    message = message[:i] + message[i + len(tag_name) + 2:]
-                elif message[i:i + len(tag_name) + 3] == list('</{}>'.format(tag_name)):
-                    is_in_tag = False
-                    message = message[:i] + message[i + len(tag_name) + 3:]
-                
-                if is_in_tag:
+                if message[i:i + len(tag.name) + 2] == list('<{}>'.format(tag.name)):
+                    tag.state += 1
+                    message = message[:i] + message[i + len(tag.name) + 2:]
+                elif message[i:i + len(tag.name) + 3] == list('</{}>'.format(tag.name)):
+                    tag.state -= 1
+                    message = message[:i] + message[i + len(tag.name) + 3:]
+                    
+                if tag.state > 0:
                     try:
-                        message[i] = target_font[source_font.index(message[i])]
+                        message[i] = tag_target_font[original_font.index(message[i])]
                     except (IndexError, ValueError):
                         pass
-                
                 i += 1
+
+        # Normal Transformation
+        is_in_bb_tag = False
+
+        for i in range(len(message)):
+            if message[i] == '[':
+                is_in_bb_tag = True
+            elif message[i] == ']':
+                is_in_bb_tag = False
+            
+            if not is_in_bb_tag:
+                try:
+                    message[i] = target_font[original_font.index(message[i])]
+                except (IndexError, ValueError):
+                    pass
         
         message = ''.join(message)
         
         return message
+    
