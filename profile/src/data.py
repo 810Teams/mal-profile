@@ -60,8 +60,9 @@ class TextFileConverter:
         self,
         file_out_name='out.txt',
         target_font_name='small_caps',
-        tag=None,
-        auto_replacement_list=list()
+        auto_replacement_list=list(),
+        collapse=None,
+        tag=None
     ):
         file_in = [i.replace('\n', '') for i in open(self.file_in_name, encoding='utf-8')]
         file_out = open(file_out_name, 'w', encoding='utf-8')
@@ -76,6 +77,10 @@ class TextFileConverter:
             )
 
         file_in = '\n'.join(file_in)
+
+        if collapse != None:
+            file_in = file_in.replace('\n{}'.format(collapse), '')
+
         file_out.write(file_in)
         file_out.close()
 
