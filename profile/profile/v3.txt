@@ -1,4 +1,4 @@
-[size=120][color=#0f0f0f][color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+<profile><hr>
 
 　　<title>About Me</title>
 　　　✦ Nicknamed 'Saint' (セント)
@@ -14,7 +14,7 @@
 　　<title>Highlights</title>
 　　　✶ [url="https://myanimelist.net/animelist/810Teams?order=4&order2=6&status=7"]My Anime List (Recommended Ordering)[/url] ✶ [url="https://myanimelist.net/profile/810Teams/reviews"]My Reviews[/url] ✶
 　　　
-[color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+<hr>
 
 　　<title>My Scoring Criteria</title>
 　　　Scores are mainly based on enjoyment, impression, emotional impact, and memorability, resulting from various
@@ -23,43 +23,43 @@
 　　　character development, character story, and character purpose.
 
 　　<title>My Scoring System</title>
-　　　🏆 [b][[color="#57bb8a"]10[/color]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
-　　　🥇 [b][[color="#81c281"]9[/color]] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
-　　　🥈 [b][[color="#abc978"]8[/color]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
-　　　🥉 [b][[color="#d5d06f"]7[/color]] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
-　　　🙆‍♂️ [b][[color="#ffd666"]6[/color]] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
-　　　🤷‍♂️ [b][[color="#fac469"]5[/color]] Acceptable[/b] - A barely-passed anime, missing some elements, giving a minimal amount of joy.
-　　　🤦‍♂️ [b][[color="#f5b26c"]4[/color]] Failure[/b] - A failed anime, missing some important elements, disappointing and unenjoyable to me.
-　　　🚮 [b][[color="#f0a06e"]3[/color]] Problematic[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
-　　　💀 [b][[color="#eb8e71"]2[/color]] Horrible[/b] - A horrible anime, an anime itself is the issue, giving a difficult experience.
-　　　💩 [b][[color="#e67C73"]1[/color]] Garbage[/b] - A piece of garbage, exists only to give me a traumatic experience.
+　　　🏆 [b][<score_10>] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
+　　　🥇 [b][<score_9>] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
+　　　🥈 [b][<score_8>] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
+　　　🥉 [b][<score_7>] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
+　　　🙆‍♂️ [b][<score_6>] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
+　　　🤷‍♂️ [b][<score_5>] Acceptable[/b] - A barely-passed anime, missing some elements, giving a minimal amount of joy.
+　　　🤦‍♂️ [b][<score_4>] Failure[/b] - A failed anime, missing some important elements, disappointing and unenjoyable to me.
+　　　🚮 [b][<score_3>] Problematic[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
+　　　💀 [b][<score_2>] Horrible[/b] - A horrible anime, an anime itself is the issue, giving a difficult experience.
+　　　💩 [b][<score_1>] Garbage[/b] - A piece of garbage, exists only to give me a traumatic experience.
 
-[color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+<hr>
 
 　　<title>Reviews</title>
-　　　[color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333070"]Violet Evergarden[/url] [color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333038"]Shigatsu wa Kimi no Uso[/url] [color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333217"]Kimi no Na wa[/url] [color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=332885"]Sora Yori mo Tooi Basho[/url] [color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333436"]Tenki no Ko[/url]
-　　　[color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333750"]Fullmetal Alchemist: Brotherhood[/url] [color="#57bb8a"]◆[/color] [url="https://myanimelist.net/reviews.php?id=334043"]Fate/Zero[/url] [color="#81c281"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333450"]Irozuku Sekai no Ashita kara[/url]
-　　　[color="#81c281"]◆[/color] [url="https://myanimelist.net/reviews.php?id=335913"]Emiya-san Chi no Kyou no Gohan[/url] [color="#81c281"]◆[/color] [url="https://myanimelist.net/reviews.php?id=337070"]Tsuki ga Kirei[/url] [color="#abc978"]◆[/color] [url="https://myanimelist.net/reviews.php?id=334226"]Psycho-Pass[/url] [color="#d5d06f"]◆[/color] [url="https://myanimelist.net/reviews.php?id=333051"]Somali to Mori no Kamisama[/url]
-　　　[color="#d5d06f"]◆[/color] [url="https://myanimelist.net/reviews.php?id=334171"]Hotarubi no Mori e[/url] [color="#ffd666"]◆[/color] [url="https://myanimelist.net/reviews.php?id=335183"]Another World[/url] [color="#ffd666"]◆[/color] [url="https://myanimelist.net/reviews.php?id=335363"]Fairy Tail[/url] [color="#fac469"]◆[/color] [url="https://myanimelist.net/reviews.php?id=335470"]Kenja no Mago[/url] [color="#f5b26c"]◆[/color] [url="https://myanimelist.net/reviews.php?id=335889"]Infinite Dendrogram[/url]
+　　　◆10 [rv=333070]Violet Evergarden[/rv] ◆10 [rv=333038]Shigatsu wa Kimi no Uso[/rv] ◆10 [rv=333217]Kimi no Na wa[/rv] ◆10 [rv=332885]Sora Yori mo Tooi Basho[/rv] ◆10 [rv=333436]Tenki no Ko[/rv]
+　　　◆10 [rv=333750]Fullmetal Alchemist: Brotherhood[/rv] ◆10 [rv=334043]Fate/Zero[/rv] ◆9 [rv=333450]Irozuku Sekai no Ashita kara[/rv]
+　　　◆9 [rv=335913]Emiya-san Chi no Kyou no Gohan[/rv] ◆9 [rv=337070]Tsuki ga Kirei[/rv] ◆8 [rv=334226]Psycho-Pass[/rv] ◆7 [rv=333051]Somali to Mori no Kamisama[/rv]
+　　　◆7 [rv=334171]Hotarubi no Mori e[/rv] ◆6 [rv=335183]Another World[/rv] ◆6 [rv=335363]Fairy Tail[/rv] ◆5 [rv=335470]Kenja no Mago[/rv] ◆4 [rv=335889]Infinite Dendrogram[/rv]
 
-[color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+<hr>
 
 　　<title>Friend Request Acceptation</title>
-　　　[color="#57bb8a"]✔[/color] Has mean scores of [b][color="#fac469"]5[/color][/b] or above, or unrated at all.
-　　　[color="#57bb8a"]✔[/color] Not a hater or toxic anime fan.
-　　　[color="#57bb8a"]✔[/color] No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
+　　　✔ Has mean scores of [b][color="#fac469"]5[/color][/b] or above, or unrated at all.
+　　　✔ Not a hater or toxic anime fan.
+　　　✔ No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
 
 　　<title>Other Notes</title>
-　　　[color="#57bb8a"]✔[/color] Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
-　　　[color="#57bb8a"]✔[/color] I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
-　　　[color="#57bb8a"]✔[/color] I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]my Twitter[/url].
+　　　✔ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
+　　　✔ I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
+　　　✔ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [url="https://twitter.com/810TeamsEX"]my Twitter[/url].
 
-[color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color]
+<hr>
 
 　　<title>Credits</title>
-　　　[color="#ffd666"]✎[/color] Profile made using [url="https://fsymbols.com/generators/smallcaps/"]small caps font generator[/url], [url="https://qaz.wtf/u/convert.cgi?text=Hi+there"]unicode converter[/url], and [url="https://coolsymbol.com/"]coolsymbols.com[/url].
-　　　[color="#ffd666"]✎[/color] Profile picture by [url="https://twitter.com/haya_kewi"]@haya_kewi[/url] on Twitter.
-　　　[color="#ffd666"]✎[/color] Wallpaper by [url="https://twitter.com/anyotete"]@anyotete[/url] on Twitter.
-　　　[color="#ffd666"]✎[/color] List design by [url="https://myanimelist.net/profile/Valerio_Lyndon"]Valerio_Lyndon[/url].
+　　　✎ Profile made using [url="https://fsymbols.com/generators/smallcaps/"]small caps font generator[/url], [url="https://qaz.wtf/u/convert.cgi?text=Hi+there"]unicode converter[/url], and [url="https://coolsymbol.com/"]coolsymbols.com[/url].
+　　　✎ Profile picture by [url="https://twitter.com/haya_kewi"]@haya_kewi[/url] on Twitter.
+　　　✎ Wallpaper by [url="https://twitter.com/anyotete"]@anyotete[/url] on Twitter.
+　　　✎ List design by [url="https://myanimelist.net/profile/Valerio_Lyndon"]Valerio_Lyndon[/url].
 
-[color=#e8e8e8]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/color][/color][/size]
+<hr></profile>
