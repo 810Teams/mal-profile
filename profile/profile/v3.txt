@@ -14,7 +14,7 @@
 <hr>
 
 　　<title>Loved Genres</title>
-　　　❤ [genre=1]Action[/genre] ❤ [genre=10]Fantasy[/genre] ❤ [genre=16]Magic[/genre] ❤  [genre=31]Super Power[/genre] ❤ [genre=37]Supernatural[/genre] ❤
+　　　❤ [genre=1]Action[/genre] ❤ [genre=10]Fantasy[/genre] ❤ [genre=16]Magic[/genre] ❤ [genre=31]Super Power[/genre] ❤ [genre=37]Supernatural[/genre] ❤
 
 　　<title>Liked Genres</title>
 　　　✤ [genre=2]Adventure[/genre] ✤ [genre=8]Drama[/genre] ✤ [genre=11]Game[/genre] ✤ [genre=23]School[/genre] ✤ [genre=24]Sci-Fi[/genre] ✤ [genre=27]Shounen[/genre] ✤
@@ -68,7 +68,7 @@
 　　　✔ No [people=8700]this guy[/people] on favorites.
 
 　　<title>Other Notes</title>
-　　　✎ Link to [animelist=810Teams?order=4&order2=6&status=7]my anime list (recommended ordering)[/animelist].
+　　　✎ Link to [animelist=810Teams?order=4&order2=6&status=7]my anime list with recommended ordering[/animelist].
 　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
 　　　✎ I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
 　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
