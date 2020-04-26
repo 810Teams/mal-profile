@@ -45,7 +45,7 @@
 <hr>
 
 　　<title>About My Scoring</title>
-　　　◆ In a simpler term, a score of [b][color="#fac469"]5[/color][/b] means neutral, [b][color="#ffd666"]6[/color][/b] or above means positive, and [b][color="#f5b26c"]4[/color][/b] or below means negative.
+　　　◆ In a simpler term, a score of [b]<score_5>[/b] means neutral, [b]<score_6>[/b] or above means positive, and [b]<score_4>[/b] or below means negative.
 　　　◆ Scoring does not apply to dropped series, ads, or previews.
 　　　◆ Scores may change due to having more comparison overtime.
 　　　◆ Scoring on music videos is calculated by my music preference and the animation quality.
@@ -58,7 +58,7 @@
 <hr>
 
 　　<title>Friend Request Acceptation</title>
-　　　✔ Has mean scores of [b][color="#fac469"]5[/color][/b] or above, or unrated at all.
+　　　✔ Has mean scores of [b]<score_5>[/b] or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
 

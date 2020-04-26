@@ -45,7 +45,7 @@
 <hr>
 
 　　<title>Friend Request Acceptation</title>
-　　　✔ Has mean scores of [b][color="#fac469"]5[/color][/b] or above, or unrated at all.
+　　　✔ Has mean scores of [b]<score_5>[/b] or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [url="https://myanimelist.net/people/8700/Adolf_Hitler"]this guy[/url] on favorites.
 
