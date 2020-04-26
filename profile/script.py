@@ -62,8 +62,16 @@ def main():
         # BB Code Tag Altering
         AutoReplacementData('[genre=', '[url=https://myanimelist.net/anime/genre/'),
         AutoReplacementData('[/genre]', '[/url]'),
-        AutoReplacementData('[rv=', '[url=https://myanimelist.net/reviews.php?id='),
-        AutoReplacementData('[/rv]', '[/url]'),
+        AutoReplacementData('[animelist=', '[url=https://myanimelist.net/animelist/'),
+        AutoReplacementData('[/animelist]', '[/url]'),
+        AutoReplacementData('[profile=', '[url=https://myanimelist.net/profile/'),
+        AutoReplacementData('[/profile]', '[/url]'),
+        AutoReplacementData('[people=', '[url=https://myanimelist.net/people/'),
+        AutoReplacementData('[/people]', '[/url]'),
+        AutoReplacementData('[review=', '[url=https://myanimelist.net/reviews.php?id='),
+        AutoReplacementData('[/review]', '[/url]'),
+        AutoReplacementData('[twitter=', '[url=https://twitter.com/'),
+        AutoReplacementData('[/twitter]', '[/url'),
         # Auto-coloring
         AutoReplacementData('✔', '[color={}]✔[/color]'.format(PALETTE_SCORE[10])),
         AutoReplacementData('✎', '[color={}]✎[/color]'.format(PALETTE_SCORE[6])),
