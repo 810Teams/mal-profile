@@ -1,5 +1,9 @@
 '''
     `script.py`
+
+    References
+    - https://serennu.com/colour/hsltorgb.php
+    - https://colorpalettes.net/color-palette-4202/
 '''
 
 from src.data import AutoReplacementData
@@ -24,7 +28,7 @@ PALETTE = {
         3: '#f0a06e',
         2: '#eb8e71',
         1: '#e67c73',
-    }
+    },
 }
 
 
