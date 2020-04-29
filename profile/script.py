@@ -54,8 +54,8 @@ AUTO_REPLACEMENT_LIST = [
     # New Tags
     AutoReplacementData('<profile>', '[size=120][color={}]'.format(PALETTE['font'])),
     AutoReplacementData('</profile>', '[/color][/size]'),
-    AutoReplacementData('<signature>', '[size=120][color={}][right]'.format(PALETTE['font'])),
-    AutoReplacementData('</signature>', '[/right][/color][/size]'),
+    AutoReplacementData('<signature>', '[right][size=100][color={}][i]'.format(PALETTE['font'])),
+    AutoReplacementData('</signature>', '[/i][/color][/size][/right]'),
     AutoReplacementData('<hr>', ('[color={}]{}[/color]').format(PALETTE['hr'], 60 * '━')),
     # Text Variables
     AutoReplacementData('<score_10>', '[color={}]10[/color]'.format(PALETTE['score'][10])),
@@ -128,7 +128,7 @@ def main():
     )
     converter.convert(
         file_out_name=DIR + 'signature_fancy.txt',
-        target_font_name='math_sans_italic',
+        target_font_name='normal',
         auto_replacement_list=AUTO_REPLACEMENT_LIST
     )
 
