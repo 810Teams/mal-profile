@@ -90,7 +90,9 @@ class TextFileConverter:
     def convert_line(self, message, target_font_name='small_caps', tag=None, auto_replacement_list=list()):
         original_font = eval('Font.' + self.original_font_name.upper())
         target_font = eval('Font.' + target_font_name.upper())
-        tag_target_font = eval('Font.' + tag.target_font_name.upper())
+
+        if tag != None:
+            tag_target_font = eval('Font.' + tag.target_font_name.upper())
        
         # Auto Replacement Transformation
         for i in auto_replacement_list:
