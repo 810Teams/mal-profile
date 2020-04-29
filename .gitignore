@@ -5,5 +5,5 @@ __pycache__
 .DS_Store
 
 # Custom
-charts/
-data/
+stats/charts/
+stats/data/
