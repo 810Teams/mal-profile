@@ -41,21 +41,24 @@
 
 <hr>
 
-　　<title>Reviews</title>
+　　<title>My Reviews</title>
 　　　◆10 [review=333070]Violet Evergarden[/review]
 <<<< ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review]
 <<<< ◆10 [review=333217]Kimi no Na wa[/review]
 <<<< ◆10 [review=332885]Sora Yori mo Tooi Basho[/review]
-<<<< ◆10 [review=333436]Tenki no Ko[/review]
-　　　◆10 [review=333750]Fullmetal Alchemist: Brotherhood[/review]
+　　　◆10 [review=333436]Tenki no Ko[/review]
+<<<< ◆10 [review=333750]Fullmetal Alchemist: Brotherhood[/review]
 <<<< ◆10 [review=334043]Fate/Zero[/review]
 <<<< ◆9 [review=333450]Irozuku Sekai no Ashita kara[/review]
 　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review]
 <<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
+<<<< ◆9 [review=337543]Yuru Camp△[/review]
 <<<< ◆8 [review=334226]Psycho-Pass[/review]
+<<<< ◆8 [review=337650]Heya Camp△[/review]
+　　　◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
 <<<< ◆7 [review=333051]Somali to Mori no Kamisama[/review]
-　　　◆7 [review=334171]Hotarubi no Mori e[/review]
-<<<< ◆6 [review=335183]Another World[/review]
+<<<< ◆7 [review=334171]Hotarubi no Mori e[/review]
+　　　◆6 [review=335183]Another World[/review]
 <<<< ◆6 [review=335363]Fairy Tail[/review]
 <<<< ◆5 [review=335470]Kenja no Mago[/review]
 <<<< ◆4 [review=335889]Infinite Dendrogram[/review]
@@ -70,7 +73,6 @@
 　　<title>Other Notes</title>
 　　　✎ Link to [animelist=810Teams?order=4&order2=6&status=2]my anime list with recommended ordering[/animelist].
 　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
-　　　✎ I disagree a saying of a certain anime being underrated or overrated, since everyone gets to score them.
 　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
 
 <hr>

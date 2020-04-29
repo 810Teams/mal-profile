@@ -31,7 +31,7 @@ PALETTE = {
     },
 }
 AUTO_REPLACEMENT_LIST = [
-    # Tags
+    # New Tags
     AutoReplacementData('<profile>', '[size=120][color={}]'.format(PALETTE['font'])),
     AutoReplacementData('</profile>', '[/color][/size]'),
     AutoReplacementData('<hr>', ('[color={}]{}[/color]').format(PALETTE['hr'], 60 * '━')),
@@ -46,7 +46,7 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('<score_3>', '[color={}]3[/color]'.format(PALETTE['score'][3])),
     AutoReplacementData('<score_2>', '[color={}]2[/color]'.format(PALETTE['score'][2])),
     AutoReplacementData('<score_1>', '[color={}]1[/color]'.format(PALETTE['score'][1])),
-    # BB Code Tag Altering
+    # BB Code Tags Altering
     AutoReplacementData('[genre=', '[url=https://myanimelist.net/anime/genre/'),
     AutoReplacementData('[/genre]', '[/url]'),
     AutoReplacementData('[animelist=', '[url=https://myanimelist.net/animelist/'),
