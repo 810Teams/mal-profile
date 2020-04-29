@@ -4,6 +4,7 @@
     References
     - https://serennu.com/colour/hsltorgb.php
     - https://colorpalettes.net/color-palette-4202/
+    - https://www.color-hex.com/color-palette/65486
 '''
 
 from src.data import AutoReplacementData
@@ -13,7 +14,7 @@ from src.data import TextFileConverter
 import platform
 
 
-DIR = 'profile/'
+DIR = 'data/'
 PALETTE = {
     'hr': '#e8e8e8',
     'font': '#0f0f0f',
@@ -29,11 +30,32 @@ PALETTE = {
         2: '#eb8e71',
         1: '#e67c73',
     },
+    'score_dim': {
+        10: '#48b07e',
+        6: '#ffcd42',
+        4: '#f2a14a',
+    },
+    '#4202': [
+        '#9579d1', # purple
+        '#be9ddf', # light purple
+        '#ffa5d8', # pink
+        '#92ddea', # aqua
+        '#7eb8da', # light blue
+    ],
+    'pink_martini': [
+        '#dfffff', # aqua
+        '#acd0ea', # light blue
+        '#7f9fd0', # blue
+        '#6760aa', # purple
+        '#ffc5e8', # pink
+    ]
 }
 AUTO_REPLACEMENT_LIST = [
     # New Tags
     AutoReplacementData('<profile>', '[size=120][color={}]'.format(PALETTE['font'])),
     AutoReplacementData('</profile>', '[/color][/size]'),
+    AutoReplacementData('<signature>', '[size=120][color={}][right]'.format(PALETTE['font'])),
+    AutoReplacementData('</signature>', '[/right][/color][/size]'),
     AutoReplacementData('<hr>', ('[color={}]{}[/color]').format(PALETTE['hr'], 60 * '━')),
     # Text Variables
     AutoReplacementData('<score_10>', '[color={}]10[/color]'.format(PALETTE['score'][10])),
@@ -71,14 +93,14 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('◆2', '[color={}]◆[/color]'.format(PALETTE['score'][2])),
     AutoReplacementData('◆1', '[color={}]◆[/color]'.format(PALETTE['score'][1])),
     # Auto bullets coloring
-    AutoReplacementData('✦', '[color={}]✦[/color]'.format('#9579d1')),
-    AutoReplacementData('★', '[color={}]★[/color]'.format('#be9ddf')),
-    AutoReplacementData('✶', '[color={}]✶[/color]'.format('#ffa5d8')),
-    AutoReplacementData('❤', '[color={}]❤[/color]'.format('#92ddea')),
-    AutoReplacementData('✤', '[color={}]✤[/color]'.format('#7eb8da')),
-    AutoReplacementData('✔', '[b][color={}]✔[/color][/b]'.format('#48b07e')),
-    AutoReplacementData('✎', '[color={}]✎[/color]'.format('#ffcd42')),
-    AutoReplacementData('✒', '[color={}]✒[/color]'.format('#f2a14a')),
+    AutoReplacementData('✦', '[color={}]✦[/color]'.format(PALETTE['#4202'][0])),
+    AutoReplacementData('★', '[color={}]★[/color]'.format(PALETTE['#4202'][1])),
+    AutoReplacementData('✶', '[color={}]✶[/color]'.format(PALETTE['#4202'][2])),
+    AutoReplacementData('❤', '[color={}]❤[/color]'.format(PALETTE['#4202'][3])),
+    AutoReplacementData('✤', '[color={}]✤[/color]'.format(PALETTE['#4202'][4])),
+    AutoReplacementData('✔', '[b][color={}]✔[/color][/b]'.format(PALETTE['score_dim'][10])),
+    AutoReplacementData('✎', '[color={}]✎[/color]'.format(PALETTE['score_dim'][6])),
+    AutoReplacementData('✒', '[color={}]✒[/color]'.format(PALETTE['score_dim'][4])),
 ]
 
 
@@ -86,31 +108,28 @@ def main():
     ''' Main function '''
     print()
 
-    # v2
+    # Profile
     converter = TextFileConverter(
-        file_in_name=DIR + 'v2.txt',
+        file_in_name=DIR + 'profile.txt',
         original_font_name='normal'
     )
     converter.convert(
-        file_out_name=DIR + 'v2_fancy.txt',
+        file_out_name=DIR + 'profile_fancy.txt',
         target_font_name='small_caps',
         auto_replacement_list=AUTO_REPLACEMENT_LIST,
         collapse='<<<<',
         tag=TagData('title', target_font_name='math_sans_bold_italic')
-        
     )
 
-    # v3
+    # Signature
     converter = TextFileConverter(
-        file_in_name=DIR + 'v3.txt',
+        file_in_name=DIR + 'signature.txt',
         original_font_name='normal'
     )
     converter.convert(
-        file_out_name=DIR + 'v3_fancy.txt',
-        target_font_name='small_caps',
-        auto_replacement_list=AUTO_REPLACEMENT_LIST,
-        collapse='<<<<',
-        tag=TagData('title', target_font_name='math_sans_bold_italic')
+        file_out_name=DIR + 'signature_fancy.txt',
+        target_font_name='math_sans_italic',
+        auto_replacement_list=AUTO_REPLACEMENT_LIST
     )
 
     if platform.system() != 'Windows':
