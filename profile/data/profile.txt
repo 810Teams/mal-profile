@@ -14,10 +14,19 @@
 <hr>
 
 　　<title>Loved Genres</title>
-　　　❤ [genre=1]Action[/genre] ❤ [genre=10]Fantasy[/genre] ❤ [genre=16]Magic[/genre] ❤ [genre=31]Super Power[/genre] ❤ [genre=37]Supernatural[/genre] ❤
+　　　❤ [genre=1]Action[/genre]
+<<<< ❤ [genre=10]Fantasy[/genre]
+<<<< ❤ [genre=16]Magic[/genre]
+<<<< ❤ [genre=31]Super Power[/genre]
+<<<< ❤ [genre=37]Supernatural[/genre] ❤
 
 　　<title>Liked Genres</title>
-　　　✤ [genre=2]Adventure[/genre] ✤ [genre=8]Drama[/genre] ✤ [genre=11]Game[/genre] ✤ [genre=23]School[/genre] ✤ [genre=24]Sci-Fi[/genre] ✤ [genre=27]Shounen[/genre] ✤
+　　　✤ [genre=2]Adventure[/genre]
+<<<< ✤ [genre=8]Drama[/genre]
+<<<< ✤ [genre=11]Game[/genre]
+<<<< ✤ [genre=23]School[/genre]
+<<<< ✤ [genre=24]Sci-Fi[/genre]
+<<<< ✤ [genre=27]Shounen[/genre] ✤
 
 <hr>
 
@@ -78,7 +87,7 @@
 <hr>
 
 　　<title>Credits</title>
-　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Hi+there]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
+　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
 　　　✒ Profile picture by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
 　　　✒ Wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
 　　　✒ List design by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
