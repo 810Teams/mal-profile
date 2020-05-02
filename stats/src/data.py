@@ -2,6 +2,10 @@
     `objects.py`
 '''
 
+from src.utils import error
+
+from math import ceil
+from math import floor
 from math import sqrt
 
 
@@ -117,6 +121,9 @@ class AnimeList:
             categories.sort(
                 reverse=sort_order != 'ascending'
             )
+        else:
+            error('Invalid sort_method `{}` of get_grouped_anime_list().'.format(sort_method))
+            return None
         
         # Manual Sort Override
         if manual_sort != None:
@@ -232,6 +239,59 @@ class AnimeList:
         scores = self.get_scores()
 
         return sqrt(sum([(i - self.get_average()) ** 2 for i in scores]) / len(scores))
+
+    def get_partial(self, percentage, part='top', rounding_method='roundx', include_unscored=False):
+        ''' Get partial anime list '''
+        # Anime List Initiation
+        anime_list = self.get_anime_list(include_unscored=include_unscored)
+        anime_list.sort(key=lambda i: i.my_score, reverse=True)
+        
+        # Anime Count Calculation
+        anime_count = percentage / 100 * len(anime_list)
+
+        # Anime Count Rounding Method
+        if rounding_method == 'floor':
+            anime_count = floor(anime_count)
+        elif rounding_method == 'ceil':
+            anime_count = ceil(anime_count)
+        elif rounding_method == 'round':
+            anime_count = round(anime_count)
+        elif rounding_method == 'roundx':
+            if anime_count % 0.5 == 0:
+                anime_count = floor(anime_count)
+            else:
+                anime_count = round(anime_count)
+        else:
+            error('Invalid rounding_method `{}` of get_partial().'.format(rounding_method))
+            return None
+
+        # Anime List Slicing
+        if part == 'top':
+            return anime_list[:anime_count]
+        elif part == 'bottom':
+            anime_list.reverse()
+            return anime_list[:anime_count]
+        elif part == 'middle':
+            middle = len(anime_list)//2
+            upper = middle + floor(anime_count/2)
+            lower = middle - ceil(anime_count/2)
+
+            return anime_list[lower:upper]
+        else:
+            error('Invalid part `{}` of get_partial().'.format(part))
+            return None
+    
+    def get_partial_average(self, percentage, part='top', rounding_method='roundx', include_unscored=False):
+        ''' Get partial anime list average '''
+        anime_list = self.get_partial(
+            percentage=percentage,
+            part=part,
+            rounding_method=rounding_method,
+            include_unscored=include_unscored
+        )
+        scores = [i.my_score for i in anime_list]
+
+        return sum(scores)/len(scores)
 
 
 class Anime:

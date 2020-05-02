@@ -48,7 +48,7 @@ def main():
     print()
 
     render_machine = RenderMachine('charts/', style=DarkStyle)
-    manual_sort = ['TV', 'Movie', 'OVA', 'Special', 'ONA', 'Music']
+    manual_sort = ['TV', 'Movie', 'Special', 'OVA', 'ONA', 'Music']
 
     render_machine.render_pie_chart(
         user.anime_list.get_grouped_anime_list(
@@ -91,8 +91,32 @@ def main():
     except (FileNotFoundError, OSError, PermissionError):
         error('Something unexpected happened, please try again.')
 
+    # experimental_zone()
+
     if platform.system() != 'Windows':
         print()
+
+
+def experimental_zone():
+    ''' Experimental zone '''
+    loader = Loader('data/')
+    loader.create_document(auto_fetch=True)
+    user = loader.get_user_object(
+        include_watching=True,
+        include_onhold=True,
+        include_dropped=False,
+        include_planned=False
+    )
+    
+    print()
+    print('- Partial Averages -')
+    print('  Top 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='top')))
+    print('  Top 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='top')))
+    print('  Top 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='top')))
+    print('  Middle 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='middle')))
+    print('  Bottom 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='bottom')))
+    print('  Bottom 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='bottom')))
+    print('  Bottom 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='bottom')))
 
 
 main()
