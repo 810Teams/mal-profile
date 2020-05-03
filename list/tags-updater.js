@@ -129,7 +129,7 @@
   
     const TAGS_ARRAY = {
       anime: [
-        { id: T_.TYPE, text: 'Type', has_prefix: true, prefix: '', def: true },
+        { id: T_.TYPE, text: 'Type', has_prefix: true, prefix: '', def: false },
         { id: T_.GENRES, text: 'Genres', has_prefix: false, prefix: '', def: false },
         { id: T_.STUDIOS, text: 'Studios', has_prefix: false, prefix: '', def: false },
         { id: T_.LICENSORS, text: 'Licensors', has_prefix: false, prefix: '', def: false },
