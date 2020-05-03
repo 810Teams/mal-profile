@@ -91,14 +91,17 @@ def main():
     except (FileNotFoundError, OSError, PermissionError):
         error('Something unexpected happened, please try again.')
 
-    # experimental_zone()
+    experimental_zone()
 
     if platform.system() != 'Windows':
         print()
 
 
-def experimental_zone():
+def experimental_zone(enable=False):
     ''' Experimental zone '''
+    if not enable:
+        return
+
     loader = Loader('data/')
     loader.create_document(auto_fetch=True)
     user = loader.get_user_object(
@@ -108,15 +111,23 @@ def experimental_zone():
         include_planned=False
     )
     
-    print()
-    print('- Partial Averages -')
-    print('  Top 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='top')))
-    print('  Top 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='top')))
-    print('  Top 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='top')))
-    print('  Middle 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='middle')))
-    print('  Bottom 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='bottom')))
-    print('  Bottom 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='bottom')))
-    print('  Bottom 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='bottom')))
+    # print()
+    # print('- Partial Averages -')
+    # print('  Top 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='top')))
+    # print('  Top 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='top')))
+    # print('  Top 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='top')))
+    # print('  Middle 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='middle')))
+    # print('  Bottom 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='bottom')))
+    # print('  Bottom 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='bottom')))
+    # print('  Bottom 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='bottom')))
+
+    # print()
+    # anime_list = user.anime_list.get_anime_list(include_unscored=False)
+
+    # for i in anime_list:
+    #     print(i.series_title)
+    # for i in anime_list:
+    #     print(i.my_score)
 
 
 main()
