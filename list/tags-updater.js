@@ -123,7 +123,8 @@
       RND_SCORE: 105,
       YEAR_SHORT: 106,
       SEASON_SHORT: 107,
-      PERIOD_SHORT: 108
+      PERIOD_SHORT: 108,
+      CUSTOM: 999
     };
   
     const TAGS_ARRAY = {
@@ -152,7 +153,8 @@
         { id: T_.RANK, text: 'Rank', has_prefix: true, prefix: 'Ranked: ', def: false },
         { id: T_.POPULARITY, text: 'Popularity', has_prefix: true, prefix: 'Popularity: ', def: false },
         { id: T_.MEMBERS, text: 'Members', has_prefix: true, prefix: 'Members: ', def: false },
-        { id: T_.FAVORITES, text: 'Favorites', has_prefix: true, prefix: 'Favorites: ', def: false }
+        { id: T_.FAVORITES, text: 'Favorites', has_prefix: true, prefix: 'Favorites: ', def: false },
+        { id: T_.CUSTOM, text: 'Custom', has_prefix: true, prefix: '', def: false }
       ],
       manga: [
         { id: T_.TYPE, text: 'Type', has_prefix: true, prefix: '', def: false },
@@ -173,7 +175,8 @@
         { id: T_.RANK, text: 'Rank', has_prefix: true, prefix: 'Ranked: ', def: false },
         { id: T_.POPULARITY, text: 'Popularity', has_prefix: true, prefix: 'Popularity: ', def: false },
         { id: T_.MEMBERS, text: 'Members', has_prefix: true, prefix: 'Members: ', def: false },
-        { id: T_.FAVORITES, text: 'Favorites', has_prefix: true, prefix: 'Favorites: ', def: false }
+        { id: T_.FAVORITES, text: 'Favorites', has_prefix: true, prefix: 'Favorites: ', def: false },
+        { id: T_.CUSTOM, text: 'Custom', has_prefix: true, prefix: '', def: false }
       ]
     };
   
@@ -819,6 +822,9 @@
             if (re !== 'N/A' || prefix.length > 0) {
               result.push(prefix + re);
             }
+            break;
+          case T_.CUSTOM:
+            result.push(prefix)
             break;
         }
       });
