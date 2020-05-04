@@ -80,7 +80,9 @@
 　　　✔ No [people=8700]this guy[/people] on favorites.
 
 　　<title>Other Notes</title>
-　　　✎ Link to [animelist=810Teams?order=4&order2=6&status=2]my anime list with recommended ordering[/animelist].
+　　　✎ My Lists in Recommended Ordering [[animelist=810Teams?order=4&order2=6&status=2]Completed List[/animelist] -
+<<<< [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist] -
+<<<< [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]]
 　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
 　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
 
