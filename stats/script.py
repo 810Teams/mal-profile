@@ -57,12 +57,12 @@ def main():
             disassemble_key=['my_score', 'series_title']
         ),
         title='{}\'{} Series Types'.format(user.info.user_name, 's' * (user.info.user_name[-1] != 's')),
-        file_name='{}_series types'.format(user.info.user_name.lower())
+        file_name='series_types'
     )
     render_machine.render_bar_chart(
         user.anime_list.get_summed_scores(),
         title='{}\'{} Scored Titles'.format(user.info.user_name, 's' * (user.info.user_name[-1] != 's')),
-        file_name='{}_scored'.format(user.info.user_name.lower())
+        file_name='scored'
     )
     render_machine.render_bar_chart(
         user.anime_list.get_summed_grouped_scores(
@@ -70,7 +70,7 @@ def main():
             manual_sort=manual_sort
         ),
         title='{}\'{} Scored Titles (By Series Type)'.format(user.info.user_name, 's' * (user.info.user_name[-1] != 's')),
-        file_name='{}_scored_by_series_type'.format(user.info.user_name.lower())
+        file_name='scored_by_series_type'
     )
     render_machine.render_treemap(
         user.anime_list.get_grouped_anime_list(
@@ -79,7 +79,7 @@ def main():
             disassemble_key=['my_score', 'series_title']
         ),
         title='{}\'{} Treemap'.format(user.info.user_name, 's' * (user.info.user_name[-1] != 's')),
-        file_name='{}_treemap'.format(user.info.user_name.lower())
+        file_name='treemap'
     )
 
     try:
