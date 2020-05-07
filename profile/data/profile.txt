@@ -70,6 +70,7 @@
 　　　◆6 [review=335183]Another World[/review]
 <<<< ◆6 [review=335363]Fairy Tail[/review]
 <<<< ◆5 [review=335470]Kenja no Mago[/review]
+<<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review] <new>
 <<<< ◆4 [review=335889]Infinite Dendrogram[/review]
 
 <hr>

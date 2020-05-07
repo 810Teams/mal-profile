@@ -56,7 +56,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('</profile>', '[/color][/size]'),
     AutoReplacementData('<signature>', '[right][size=100][color={}][i]'.format(PALETTE['font'])),
     AutoReplacementData('</signature>', '[/i][/color][/size][/right]'),
-    AutoReplacementData('<hr>', ('[color={}]{}[/color]').format(PALETTE['hr'], 60 * '━')),
+    AutoReplacementData('<hr>', '[color={}]{}[/color]'.format(PALETTE['hr'], 60 * '━')),
+    AutoReplacementData('<new>', '[color={}](New!)[/color]'.format('red')),
     # Text Variables
     AutoReplacementData('<score_10>', '[color={}]10[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('<score_9>', '[color={}]9[/color]'.format(PALETTE['score'][9])),
@@ -129,6 +130,7 @@ def main():
     converter.convert(
         file_out_name=DIR + 'signature_fancy.txt',
         target_font_name='normal',
+        collapse='<<<<',
         auto_replacement_list=AUTO_REPLACEMENT_LIST
     )
 
