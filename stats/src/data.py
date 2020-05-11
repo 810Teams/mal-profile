@@ -51,7 +51,8 @@ class AnimeList:
         include_watching=False,
         include_onhold=False,
         include_dropped=False,
-        include_planned=False
+        include_planned=False,
+        tag_rules=None
     ):
         ''' Constructor '''
         self.data = data
@@ -59,6 +60,7 @@ class AnimeList:
         self.include_onhold = include_onhold
         self.include_dropped = include_dropped
         self.include_planned = include_planned
+        self.tag_rules = tag_rules
 
     def add_anime(self, anime):
         ''' Add anime object to the anime list by object '''

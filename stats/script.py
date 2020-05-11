@@ -47,6 +47,12 @@ def main():
     print('  SD: {:.2f}'.format(user.anime_list.get_sd()))
     print()
 
+    improper = ', '.join(get_improper_tagged())
+
+    print('- Improper Tagged Anime -')
+    print('  {}'.format(improper * (len(improper) != 0) + 'None, all anime are being tagged properly.' * (len(improper) == 0)))
+    print()
+
     render_machine = RenderMachine('charts/', style=DarkStyle)
     manual_sort = ['TV', 'Movie', 'Special', 'OVA', 'ONA', 'Music']
 
@@ -91,43 +97,50 @@ def main():
     except (FileNotFoundError, OSError, PermissionError):
         error('Something unexpected happened, please try again.')
 
-    experimental_zone()
-
     if platform.system() != 'Windows':
         print()
 
 
-def experimental_zone(enable=False):
-    ''' Experimental zone '''
-    if not enable:
-        return
-
+def get_improper_tagged():
+    ''' Get improper tagged anime title list '''
     loader = Loader('data/')
     loader.create_document(auto_fetch=True)
     user = loader.get_user_object(
         include_watching=True,
         include_onhold=True,
-        include_dropped=False,
-        include_planned=False
+        include_dropped=True,
+        include_planned=True
     )
+
+    anime_list = user.anime_list.get_anime_list(include_unscored=True)
+
+    tag_rules = [
+        ('anime',),
+        ('anime', 'childhood'),
+        ('anime', 'fate'),
+        ('anime', 'manner movie'),
+        ('anime', 'picture drama'),
+        ('anime', 'recap'),
+        ('music',),
+        ('cm/pv',),
+        ('cm/pv', 'fate'),
+        ('short',),
+        ('short', 'trash')
+    ]
+    tag_rules = [tuple(sorted([j.lower() for j in i])) for i in tag_rules]
+
+    improper = list()
+    improper += [i for i in anime_list if not isinstance(i.my_tags, str) and i.my_status in ('Watching', 'Completed', 'On-Hold')]
+    improper += [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in ('Dropped', 'Planned')]
+
+    temp = [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in ('Watching', 'Completed', 'On-Hold')]
     
-    # print()
-    # print('- Partial Averages -')
-    # print('  Top 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='top')))
-    # print('  Top 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='top')))
-    # print('  Top 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='top')))
-    # print('  Middle 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='middle')))
-    # print('  Bottom 50%: {:.2f}'.format(user.anime_list.get_partial_average(50, part='bottom')))
-    # print('  Bottom 20%: {:.2f}'.format(user.anime_list.get_partial_average(20, part='bottom')))
-    # print('  Bottom 10%: {:.2f}'.format(user.anime_list.get_partial_average(10, part='bottom')))
+    for i in range(len(temp)):
+        temp[i].my_tags = tuple(sorted([j.lower().strip() for j in temp[i].my_tags.split(',')]))
 
-    # print()
-    # anime_list = user.anime_list.get_anime_list(include_unscored=False)
-
-    # for i in anime_list:
-    #     print(i.series_title)
-    # for i in anime_list:
-    #     print(i.my_score)
-
+        if temp[i].my_tags not in tag_rules:
+            improper.append(temp[i])
+    
+    return [i.series_title for i in improper]
 
 main()
