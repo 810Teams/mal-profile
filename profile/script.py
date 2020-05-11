@@ -82,6 +82,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('[/review]', '[/url]'),
     AutoReplacementData('[twitter=', '[url=https://twitter.com/'),
     AutoReplacementData('[/twitter]', '[/url]'),
+    AutoReplacementData('[pixiv=', '[url=https://pixiv.net/'),
+    AutoReplacementData('[/pixiv]', '[/url]'),
     # Bullets Coloring
     AutoReplacementData('◆10', '[color={}]◆[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('◆9', '[color={}]◆[/color]'.format(PALETTE['score'][9])),

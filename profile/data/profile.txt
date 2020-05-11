@@ -1,5 +1,4 @@
-<profile><hr>
-
+<profile>
 　　<title>About Me</title>
 　　　✦ Nicknamed 'Saint' (セント)
 　　　✦ 20 Years old
@@ -92,7 +91,8 @@
 　　<title>Credits</title>
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
 　　　✒ Profile picture by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
-　　　✒ Wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
 　　　✒ List design by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
+　　　✒ List cover wallpaper by [pixiv=users/2327032]456[/pixiv] on Pixiv.
+　　　✒ List background wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
 
 <hr></profile>
