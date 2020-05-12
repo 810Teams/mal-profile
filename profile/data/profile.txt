@@ -5,37 +5,26 @@
 　　　✦ Thai, English, and Japanese
 
 　　<title>What I am</title>
-　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★
-
-　　<title>What I love</title>
-　　　✶ Games ✶ Anime ✶ Fate/Grand Order ✶ Aimer (エメ) ✶
+　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★ Perfectionist ★
 
 <hr>
 
-　　<title>Loved Genres</title>
-　　　❤ [genre=1]Action[/genre]
-<<<< ❤ [genre=10]Fantasy[/genre]
-<<<< ❤ [genre=16]Magic[/genre]
-<<<< ❤ [genre=31]Super Power[/genre]
-<<<< ❤ [genre=37]Supernatural[/genre] ❤
-
-　　<title>Liked Genres</title>
-　　　✤ [genre=2]Adventure[/genre]
-<<<< ✤ [genre=8]Drama[/genre]
-<<<< ✤ [genre=11]Game[/genre]
-<<<< ✤ [genre=23]School[/genre]
-<<<< ✤ [genre=24]Sci-Fi[/genre]
-<<<< ✤ [genre=27]Shounen[/genre] ✤
+　　<title>My Lists [color=#7f7f7f](Recommended Ordering)[/color]</title>
+　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
+<<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Shorts List[/animelist]
+<<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm/pv]CM/PV List[/animelist]
+<<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
+<<<< ✤ [mangalist=810Teams?order=4&order2=11&status=7&tag=manga]Manga List[/mangalist] ✤
 
 <hr>
 
-　　<title>My Scoring Criteria</title>
+　　<title>My Anime Scoring Criteria</title>
 　　　Scores are mainly based on enjoyment, impression, emotional impact, and memorability, resulting from various
 　　　elements of the anime, including story, storytelling, logic, uniqueness, animation ǫuality, eye-friendliness,
 　　　theme songs, insert songs, soundtracks, mood and tone, voice acting, character design, character personality,
 　　　character development, character story, and character purpose.
 
-　　<title>My Scoring System</title>
+　　<title>My Anime Scoring System</title>
 　　　🏆 [b][<score_10>] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
 　　　🥇 [b][<score_9>] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
 　　　🥈 [b][<score_8>] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
@@ -80,9 +69,6 @@
 　　　✔ No [people=8700]this guy[/people] on favorites.
 
 　　<title>Other Notes</title>
-　　　✎ My Lists in Recommended Ordering [[animelist=810Teams?order=4&order2=6&status=2]Completed List[/animelist] -
-<<<< [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist] -
-<<<< [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]]
 　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
 　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
 
@@ -90,9 +76,10 @@
 
 　　<title>Credits</title>
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
-　　　✒ Profile picture by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
-　　　✒ List design by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
-　　　✒ List cover wallpaper by [pixiv=users/2327032]456[/pixiv] on Pixiv.
-　　　✒ List background wallpaper by [twitter=anyotete]@anyotete[/twitter] on Twitter.
+　　　✒ [twitter=haya_kewi/status/1103227541156843520]Profile picture[/twitter] by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
+　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
+　　　✒ [pixiv=artworks/67048519]List cover wallpaper[/pixiv] by [pixiv=users/2327032]456[/pixiv] on Pixiv.
+　　　✒ [twitter=anyotete/status/1255482039442313216]List background wallpaper[/twitter] by [twitter=anyotete]@anyotete[/twitter] on Twitter.
+　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyforkusers/7517-akarin]akarin[/greasyfork] on Greasy Fork.
 
 <hr></profile>

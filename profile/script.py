@@ -31,9 +31,10 @@ PALETTE = {
         1: '#e67c73',
     },
     'score_dim': {
-        10: '#48b07e',
-        6: '#ffcd42',
-        4: '#f2a14a',
+        10: '#46ad7a', # '#57bb8a' dimmed by 10%
+        8: '#9bbd5f', # '#abc978' dimmed by 10%
+        6: '#ffc942', # '#ffd666' dimmed by 10%
+        4: '#f29e49', # '#f5b26c' dimmed by 10%
     },
     '#4202': [
         '#9579d1', # purple
@@ -70,10 +71,18 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('<score_2>', '[color={}]2[/color]'.format(PALETTE['score'][2])),
     AutoReplacementData('<score_1>', '[color={}]1[/color]'.format(PALETTE['score'][1])),
     # BB Code Tags Altering
+    AutoReplacementData('[mal=', '[url=https://myanimelist.net/'),
+    AutoReplacementData('[/mal]', '[/url]'),
+    AutoReplacementData('[forum=', '[url=https://myanimelist.net/forum/?topicid='),
+    AutoReplacementData('[/forum]', '[/url]'),
+    AutoReplacementData('[blog=', '[url=https://myanimelist.net/blog.php?eid='),
+    AutoReplacementData('[/blog]', '[/url]'),
     AutoReplacementData('[genre=', '[url=https://myanimelist.net/anime/genre/'),
     AutoReplacementData('[/genre]', '[/url]'),
     AutoReplacementData('[animelist=', '[url=https://myanimelist.net/animelist/'),
     AutoReplacementData('[/animelist]', '[/url]'),
+    AutoReplacementData('[mangalist=', '[url=https://myanimelist.net/mangalist/'),
+    AutoReplacementData('[/mangalist]', '[/url]'),
     AutoReplacementData('[profile=', '[url=https://myanimelist.net/profile/'),
     AutoReplacementData('[/profile]', '[/url]'),
     AutoReplacementData('[people=', '[url=https://myanimelist.net/people/'),
@@ -84,6 +93,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('[/twitter]', '[/url]'),
     AutoReplacementData('[pixiv=', '[url=https://pixiv.net/'),
     AutoReplacementData('[/pixiv]', '[/url]'),
+    AutoReplacementData('[greasyfork=', '[url=https://greasyfork.org/'),
+    AutoReplacementData('[/greaskfork]', '[/url]'),
     # Bullets Coloring
     AutoReplacementData('◆10', '[color={}]◆[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('◆9', '[color={}]◆[/color]'.format(PALETTE['score'][9])),
@@ -98,9 +109,7 @@ AUTO_REPLACEMENT_LIST = [
     # Auto bullets coloring
     AutoReplacementData('✦', '[color={}]✦[/color]'.format(PALETTE['#4202'][0])),
     AutoReplacementData('★', '[color={}]★[/color]'.format(PALETTE['#4202'][1])),
-    AutoReplacementData('✶', '[color={}]✶[/color]'.format(PALETTE['#4202'][2])),
-    AutoReplacementData('❤', '[color={}]❤[/color]'.format(PALETTE['#4202'][3])),
-    AutoReplacementData('✤', '[color={}]✤[/color]'.format(PALETTE['#4202'][4])),
+    AutoReplacementData('✤', '[color={}]✤[/color]'.format(PALETTE['#4202'][3])),
     AutoReplacementData('✔', '[b][color={}]✔[/color][/b]'.format(PALETTE['score_dim'][10])),
     AutoReplacementData('✎', '[color={}]✎[/color]'.format(PALETTE['score_dim'][6])),
     AutoReplacementData('✒', '[color={}]✒[/color]'.format(PALETTE['score_dim'][4])),
