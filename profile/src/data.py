@@ -101,9 +101,20 @@ class TextFileConverter:
         message = list(message)
 
         # Tag Transformation
+        is_in_bb_tag = False
         if isinstance(tag, TagData):
             i = 0
+    
             while i < len(message):
+                if message[i] == '[':
+                    is_in_bb_tag = True
+                elif message[i] == ']':
+                    is_in_bb_tag = False
+                
+                if is_in_bb_tag:
+                    i += 1
+                    continue
+
                 if message[i:i + len(tag.name) + 2] == list('<{}>'.format(tag.name)):
                     tag.state += 1
                     message = message[:i] + message[i + len(tag.name) + 2:]
