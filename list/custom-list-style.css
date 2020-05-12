@@ -92,8 +92,8 @@
 	 * min value: 0% / max value: 100%
 	 */
 	
-	--toggleStats: visible;
-	--togglePV: visible;
+	--toggleStats: hidden;
+	--togglePV: hidden;
 	--toggleInfoBG: visible;
 	--bgDimness: 15%;
 	--imageBrightness: 100%;
@@ -125,7 +125,7 @@
 	--textLinkHov: 196, 94%, 69%;
 	--textIcon: 0, 0%, 83%;
 	
-	--watching: 125, 59.3%, 43.3%;
+	--current: 125, 59.3%, 43.3%;
 	--completed: 223, 58%, 35.5%;
 	--on-hold: 46, 93.1%, 65.9%;
 	--dropped: 359, 54.8%, 40.8%;
@@ -792,7 +792,7 @@ body::before {
 	height: 2px;
 } [data-query*='status":1'] .list-block::before,
 [data-query*='status":1'] #status-menu::before {
-	--accent: var(--watching);
+	--accent: var(--current);
 } [data-query*='status":2'] .list-block::before,
 [data-query*='status":2'] #status-menu::before {
 	--accent: var(--completed);
@@ -866,9 +866,10 @@ body::before {
 	pointer-events: none;
 } #status-menu .status-button.all_anime::before {
 	content: "ALL";
-} #status-menu .status-button.watching::before,
-#status-menu .status-button.reading::before {
+} #status-menu .status-button.watching::before{
 	content: "WATCHING";
+} #status-menu .status-button.reading::before {
+	content: "READING";
 } #status-menu .status-button.completed::before {
 	content: "COMPLETED";
 } #status-menu .status-button.onhold::before {
@@ -1359,7 +1360,7 @@ body::before {
 	pointer-events: none;
 } .data.status.watching,
 .data.status.reading {
-	border-color: hsl(var(--watching));
+	border-color: hsl(var(--current));
 } .data.status.completed {
 	border-color: hsl(var(--completed));
 } .data.status.onhold {
@@ -1542,9 +1543,10 @@ body::before {
 	opacity: 1;
 }
 
-[data-query*='"status":7'] .watching ~ .data.score::before,
-[data-query*='"status":7'] .reading ~ .data.score::before {
+[data-query*='"status":7'] .watching ~ .data.score::before {
 	content: "Watching |";
+} [data-query*='"status":7'] .reading ~ .data.score::before {
+	content: "Reading |";
 } [data-query*='"status":7'] .completed ~ .data.score::before {
 	content: "Completed |";
 } [data-query*='"status":7'] .onhold ~ .data.score::before {
