@@ -94,7 +94,7 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('[pixiv=', '[url=https://pixiv.net/'),
     AutoReplacementData('[/pixiv]', '[/url]'),
     AutoReplacementData('[greasyfork=', '[url=https://greasyfork.org/'),
-    AutoReplacementData('[/greaskfork]', '[/url]'),
+    AutoReplacementData('[/greasyfork]', '[/url]'),
     # Bullets Coloring
     AutoReplacementData('◆10', '[color={}]◆[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('◆9', '[color={}]◆[/color]'.format(PALETTE['score'][9])),

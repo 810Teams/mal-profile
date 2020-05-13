@@ -11,7 +11,7 @@
 
 　　<title>My Lists [color=#7f7f7f](Recommended Ordering)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
-<<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Shorts List[/animelist]
+<<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm/pv]CM/PV List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [mangalist=810Teams?order=4&order2=11&status=7&tag=manga]Manga List[/mangalist] ✤
@@ -80,6 +80,6 @@
 　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
 　　　✒ [pixiv=artworks/67048519]List cover wallpaper[/pixiv] by [pixiv=users/2327032]456[/pixiv] on Pixiv.
 　　　✒ [twitter=anyotete/status/1255482039442313216]List background wallpaper[/twitter] by [twitter=anyotete]@anyotete[/twitter] on Twitter.
-　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyforkusers/7517-akarin]akarin[/greasyfork] on Greasy Fork.
+　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyfork=users/7517-akarin]akarin[/greasyfork] on Greasy Fork.
 
 <hr></profile>
