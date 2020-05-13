@@ -14,6 +14,10 @@ from src.utils import error
 import os
 import platform
 
+ENABLE_AUTO_CHART_OPEN = False
+MUST_TAGGED = ('Watching', 'Completed', 'On-Hold')
+MUST_UNTAGGED = ('Dropped', 'Planned')
+APPLY_TAG_RULES = ('Watching', 'Completed', 'On-Hold')
 
 def main():
     ''' Main function '''
@@ -25,6 +29,11 @@ def main():
         include_dropped=False,
         include_planned=False
     )
+    
+    improper_tagged = ', '.join(get_improper_tagged())
+
+    render_machine = RenderMachine('charts/', style=DarkStyle)
+    manual_sort = ['TV', 'Movie', 'Special', 'OVA', 'ONA', 'Music']
 
     print()
     print('- User Data -')
@@ -46,15 +55,9 @@ def main():
     print('  Median: {:g}'.format(user.anime_list.get_median()))
     print('  SD: {:.2f}'.format(user.anime_list.get_sd()))
     print()
-
-    improper = ', '.join(get_improper_tagged())
-
     print('- Improper Tagged Anime -')
-    print('  {}'.format(improper * (len(improper) != 0) + 'None, all anime are being tagged properly.' * (len(improper) == 0)))
+    print('  {}'.format(improper_tagged) if len(improper_tagged) > 0 else '  None, all anime are being tagged properly.')
     print()
-
-    render_machine = RenderMachine('charts/', style=DarkStyle)
-    manual_sort = ['TV', 'Movie', 'Special', 'OVA', 'ONA', 'Music']
 
     render_machine.render_pie_chart(
         user.anime_list.get_grouped_anime_list(
@@ -89,7 +92,9 @@ def main():
     )
 
     try:
-        if platform.system() == 'Windows':
+        if not ENABLE_AUTO_CHART_OPEN:
+            pass
+        elif platform.system() == 'Windows':
             notice('Opening chart files automatically is unsupported on Windows.')
         else:
             os.system('open charts/*')
@@ -111,30 +116,15 @@ def get_improper_tagged():
         include_dropped=True,
         include_planned=True
     )
-
     anime_list = user.anime_list.get_anime_list(include_unscored=True)
 
-    tag_rules = [
-        ('anime',),
-        ('anime', 'childhood'),
-        ('anime', 'fate'),
-        ('anime', 'manner movie'),
-        ('anime', 'picture drama'),
-        ('anime', 'recap'),
-        ('music',),
-        ('cm/pv',),
-        ('cm/pv', 'fate'),
-        ('short',),
-        ('short', 'trash')
-    ]
-    tag_rules = [tuple(sorted([j.lower() for j in i])) for i in tag_rules]
-
     improper = list()
-    improper += [i for i in anime_list if not isinstance(i.my_tags, str) and i.my_status in ('Watching', 'Completed', 'On-Hold')]
-    improper += [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in ('Dropped', 'Planned')]
-
-    temp = [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in ('Watching', 'Completed', 'On-Hold')]
+    improper += [i for i in anime_list if not isinstance(i.my_tags, str) and i.my_status in MUST_TAGGED] # not tagged in must tagged
+    improper += [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in MUST_UNTAGGED]   # tagged in must untagged
     
+    tag_rules = [tuple(sorted([j.lower().strip() for j in i.split(',')])) for i in open('TAG_RULES.txt')]
+    temp = [i for i in anime_list if isinstance(i.my_tags, str) and i.my_status in APPLY_TAG_RULES]
+
     for i in range(len(temp)):
         temp[i].my_tags = tuple(sorted([j.lower().strip() for j in temp[i].my_tags.split(',')]))
 
