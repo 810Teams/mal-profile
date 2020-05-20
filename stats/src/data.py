@@ -11,10 +11,29 @@ from math import sqrt
 
 class User:
     ''' User class '''
-    def __init__(self, info, anime_list):
+    def __init__(self, info, anime_list, do_refresh=True):
         ''' Constructor '''
         self.info = info
         self.anime_list = anime_list
+
+        if do_refresh:
+            self.refresh_info()
+
+    def refresh_info(self):
+        ''' Refresh info '''
+        full_anime_list = self.anime_list.get_full_anime_list(include_unscored=True)
+        self.info.user_total_watching = len([i for i in full_anime_list if i.my_status == 'Watching'])
+        self.info.user_total_completed = len([i for i in full_anime_list if i.my_status == 'Completed'])
+        self.info.user_total_onhold = len([i for i in full_anime_list if i.my_status == 'On-Hold'])
+        self.info.user_total_dropped = len([i for i in full_anime_list if i.my_status == 'Dropped'])
+        self.info.user_total_plantowatch = len([i for i in full_anime_list if i.my_status == 'Plan to Watch'])
+        self.info.user_total_anime = sum([
+            self.info.user_total_watching,
+            self.info.user_total_completed,
+            self.info.user_total_onhold,
+            self.info.user_total_dropped,
+            self.info.user_total_plantowatch
+        ])
 
 
 class Info:
@@ -92,6 +111,10 @@ class AnimeList:
             and (i.my_status != 'Plan to Watch' or self.include_planned)
             and (i.my_score != 0 or include_unscored)
         ]
+    
+    def get_full_anime_list(self, include_unscored=False):
+        ''' Get full anime list '''
+        return [i for i in self.data if i.my_score != 0 or include_unscored]
     
     def get_grouped_anime_list(
         self,
