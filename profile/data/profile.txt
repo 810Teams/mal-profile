@@ -25,16 +25,16 @@
 　　　character development, character story, and character purpose.
 
 　　<title>My Anime Scoring System</title>
-　　　🏆 [b][<score_10>] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
-　　　🥇 [b][<score_9>] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
-　　　🥈 [b][<score_8>] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
-　　　🥉 [b][<score_7>] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
-　　　🙆‍♂️ [b][<score_6>] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
-　　　🤷‍♂️ [b][<score_5>] Acceptable[/b] - A barely-passed anime, missing some elements, giving a minimal amount of joy.
-　　　🤦‍♂️ [b][<score_4>] Failure[/b] - A failed anime, missing some important elements, disappointing and unenjoyable to me.
-　　　🚮 [b][<score_3>] Problematic[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
-　　　💀 [b][<score_2>] Horrible[/b] - A horrible anime, an anime itself is the issue, giving a difficult experience.
-　　　💩 [b][<score_1>] Garbage[/b] - A piece of garbage, exists only to give me a traumatic experience.
+　　　🏆 [b][[10]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
+　　　🥇 [b][[9]] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
+　　　🥈 [b][[8]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
+　　　🥉 [b][[7]] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
+　　　🙆‍♂️ [b][[6]] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
+　　　🤷‍♂️ [b][[5]] Acceptable[/b] - A barely-passed anime, missing some elements, giving a minimal amount of joy.
+　　　🤦‍♂️ [b][[4]] Failure[/b] - A failed anime, missing some important elements, disappointing and unenjoyable to me.
+　　　🚮 [b][[3]] Problematic[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
+　　　💀 [b][[2]] Horrible[/b] - A horrible anime, an anime itself is the issue, giving a difficult experience.
+　　　💩 [b][[1]] Garbage[/b] - A piece of garbage, exists only to give me a traumatic experience.
 
 <hr>
 
@@ -51,20 +51,21 @@
 <<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
 <<<< ◆9 [review=337543]Yuru Camp△[/review]
 <<<< ◆8 [review=334226]Psycho-Pass[/review]
-<<<< ◆8 [review=337650]Heya Camp△[/review]
-　　　◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
+<<<< ◆8 [review=340085]Sankarea[/review] <new>
+　　　◆8 [review=337650]Heya Camp△[/review]
+<<<< ◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
 <<<< ◆7 [review=333051]Somali to Mori no Kamisama[/review]
-<<<< ◆7 [review=334171]Hotarubi no Mori e[/review]
-　　　◆6 [review=335183]Another World[/review]
+　　　◆7 [review=334171]Hotarubi no Mori e[/review]
+<<<< ◆6 [review=335183]Another World[/review]
 <<<< ◆6 [review=335363]Fairy Tail[/review]
 <<<< ◆5 [review=335470]Kenja no Mago[/review]
-<<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review] <new>
-<<<< ◆4 [review=335889]Infinite Dendrogram[/review]
+<<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
+　　　◆4 [review=335889]Infinite Dendrogram[/review]
 
 <hr>
 
 　　<title>Friend Request Acceptation</title>
-　　　✔ Has mean scores of [b]<score_5>[/b] or above, or unrated at all.
+　　　✔ Has mean scores of [b][5][/b] or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [people=8700]this guy[/people] on favorites.
 
