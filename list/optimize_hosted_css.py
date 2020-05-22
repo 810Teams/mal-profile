@@ -1,5 +1,5 @@
 '''
-    list.py
+    optimize_hosted_css.py
 '''
 
 from src.loader import Loader
@@ -7,7 +7,7 @@ from src.utils import notice
 
 import platform
 
-DIR = 'web/api/'
+DIR = 'web/hosted/'
 ANIME_IL = 'covers_anime_dataimagelink.css'
 MANGA_IL = 'covers_manga_dataimagelink.css'
 ANIME_IL_OPT = 'covers_anime_dataimagelink_optimized.css'

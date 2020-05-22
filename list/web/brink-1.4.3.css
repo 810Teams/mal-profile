@@ -65,10 +65,10 @@
 \*------------------------------*/
 
 /* @\import "https://malscraper.azurewebsites.net/covers/810Teams/presets/dataimagelink"; */
-/* @\import "https://810teams.github.io/mal-profile/list/web/api/covers_anime_dataimagelink.css"; */
-/* @\import "https://810teams.github.io/mal-profile/list/web/api/covers_manga_dataimagelink.css"; */
-@\import "https://810teams.github.io/mal-profile/list/web/api/covers_anime_dataimagelink_optimized.css";
-@\import "https://810teams.github.io/mal-profile/list/web/api/covers_manga_dataimagelink_optimized.css";
+/* @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink.css"; */
+/* @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink.css"; */
+@\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink_optimized.css";
+@\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink_optimized.css";
 @\import "https://fonts.googleapis.com/css?family=Sarabun:400,700";
 
 
