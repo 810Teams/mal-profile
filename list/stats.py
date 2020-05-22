@@ -3,9 +3,7 @@
 '''
 
 from pygal.style import DarkStyle
-from xml.dom import minidom
 
-from src.data import User
 from src.loader import Loader
 from src.render import RenderMachine
 from src.utils import notice
