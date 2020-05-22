@@ -28,8 +28,8 @@ def main():
     anime_imagelink_file = open('web/css_import_optimized/anime_imagelink.css', 'w', encoding='utf-8')
     manga_imagelink_file = open('web/css_import_optimized/manga_imagelink.css', 'w', encoding='utf-8')
 
-    anime_imagelink_file.write(' '.join(anime_imagelink))
-    manga_imagelink_file.write(' '.join(manga_imagelink))
+    anime_imagelink_file.write('\n'.join(anime_imagelink))
+    manga_imagelink_file.write('\n'.join(manga_imagelink))
 
     anime_imagelink_file.close()
     manga_imagelink_file.close()
