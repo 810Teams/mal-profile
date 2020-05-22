@@ -64,9 +64,9 @@
   !IMPORTS
 \*------------------------------*/
 
-@\import "https://malscraper.azurewebsites.net/covers/810Teams/presets/dataimagelink";
-@\import "https://raw.githubusercontent.com/810Teams/mal-profile/master/list/web/css_import_optimized/anime_imagelink.css";
-@\import "https://raw.githubusercontent.com/810Teams/mal-profile/master/list/web/css_import_optimized/manga_imagelink.css";
+/* @\import "https://malscraper.azurewebsites.net/covers/810Teams/presets/dataimagelink"; */
+@\import "https://810teams.github.io/mal-profile/list/web/api/covers_anime_dataimagelink_optimized";
+@\import "https://810teams.github.io/mal-profile/list/web/api/covers_manga_dataimagelink_optimized";
 @\import "https://fonts.googleapis.com/css?family=Sarabun:400,700";
 
 

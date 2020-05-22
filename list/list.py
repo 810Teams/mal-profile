@@ -19,14 +19,14 @@ def main():
     anime_ids = [i.series_animedb_id for i in user.anime_list.get_full_list(include_unscored=True)]
     manga_ids = [i.manga_mangadb_id for i in user.manga_list.get_full_list(include_unscored=True)]
 
-    anime_imagelink = [i.replace('\n', '') for i in open('web/css_import/covers_anime_dataimagelink.css')][2:]
-    manga_imagelink = [i.replace('\n', '') for i in open('web/css_import/covers_manga_dataimagelink.css')][2:]
+    anime_imagelink = [i.replace('\n', '') for i in open('web/api/covers_anime_dataimagelink.css')][2:]
+    manga_imagelink = [i.replace('\n', '') for i in open('web/api/covers_manga_dataimagelink.css')][2:]
 
     anime_imagelink = [i for i in anime_imagelink if int(i.split()[1].split('/')[2]) in anime_ids]
     manga_imagelink = [i for i in manga_imagelink if int(i.split()[1].split('/')[2]) in manga_ids]
 
-    anime_imagelink_file = open('web/css_import_optimized/anime_imagelink.css', 'w', encoding='utf-8')
-    manga_imagelink_file = open('web/css_import_optimized/manga_imagelink.css', 'w', encoding='utf-8')
+    anime_imagelink_file = open('web/api/covers_anime_dataimagelink_optimized.css', 'w', encoding='utf-8')
+    manga_imagelink_file = open('web/api/covers_manga_dataimagelink_optimized.css', 'w', encoding='utf-8')
 
     anime_imagelink_file.write('\n'.join(anime_imagelink))
     manga_imagelink_file.write('\n'.join(manga_imagelink))
