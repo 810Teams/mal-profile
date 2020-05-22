@@ -1,9 +1,12 @@
 # Python
 __pycache__
 
+# Project-Specific
+list/charts/
+list/data/
+
+# VSCode
+.vscode
+
 # MacOS
 .DS_Store
-
-# Custom
-stats/charts/
-stats/data/
