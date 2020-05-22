@@ -32,9 +32,10 @@ PALETTE = {
     },
     'score_dim': {
         10: '#46ad7a', # '#57bb8a' dimmed by 10%
-        8: '#9bbd5f', # '#abc978' dimmed by 10%
-        6: '#ffc942', # '#ffd666' dimmed by 10%
-        4: '#f29e49', # '#f5b26c' dimmed by 10%
+        8: '#9bbd5f',  # '#abc978' dimmed by 10%
+        6: '#ffc942',  # '#ffd666' dimmed by 10%
+        4: '#f29e49',  # '#f5b26c' dimmed by 10%
+        2: '#e67350'   # '#eb8e71' dimmed by 10%
     },
     '#4202': [
         '#9579d1', # purple
