@@ -7,10 +7,10 @@ This repository consists of assets and tools related to [myanimelist.net](https:
 - Easier Profile Creation Tool
 
 ## Hosted CSS
-- [Anime Data Image Link CSS](https://810teams.github.io/mal-profile/list/web/api/covers_anime_dataimagelink.css)
-- [Manga Data Image Link CSS](https://810teams.github.io/mal-profile/list/web/api/covers_manga_dataimagelink.css)
-- [Anime Data Image Link CSS (Optimized for 810Teams' List)](https://810teams.github.io/mal-profile/list/web/api/covers_anime_dataimagelink_optimized.css)
-- [Manga Data Image Link CSS (Optimized for 810Teams' List)](https://810teams.github.io/mal-profile/list/web/api/covers_manga_dataimagelink_optimized.css)
+- [Anime Data Image Link CSS](https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink.css)
+- [Manga Data Image Link CSS](https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink.css)
+- [Anime Data Image Link CSS (Optimized for 810Teams' List)](https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink_optimized.css)
+- [Manga Data Image Link CSS (Optimized for 810Teams' List)](https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink_optimized.css)
 
 ## Credits
 - Brink Theme List Style by [MAL-Public-List-Designs](https://github.com/ValerioLyndon/MAL-Public-List-Designs) by [ValerioLyndon](https://github.com/ValerioLyndon).
