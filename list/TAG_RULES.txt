@@ -5,8 +5,8 @@ anime, manner movie
 anime, picture drama
 anime, recap
 music
-cm/pv
-cm/pv, fate
+cm-pv
+cm-pv, fate
 short
 short, trash
 book, manga

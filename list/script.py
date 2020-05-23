@@ -61,7 +61,7 @@ def main():
         print('SD: {:.2f}'.format(user.anime_list.get_sd()))
         print()
         print('  Improper Tagged')
-        print('   {}'.format(improper_tagged_anime) if len(improper_tagged_anime) > 0 else '  None, all anime are being tagged properly.')
+        print('  {}'.format(improper_tagged_anime) if len(improper_tagged_anime) > 0 else '  None, all anime are being tagged properly.')
         print()
 
     if DISPLAY_MANGA_STATS:
@@ -82,7 +82,7 @@ def main():
         print('SD: {:.2f}'.format(user.manga_list.get_sd()))
         print()
         print('  Improper Tagged')
-        print('   {}'.format(improper_tagged_manga) if len(improper_tagged_manga) > 0 else '  None, all manga are being tagged properly.')
+        print('  {}'.format(improper_tagged_manga) if len(improper_tagged_manga) > 0 else '  None, all manga are being tagged properly.')
         print()
 
     render_machine.render_pie_chart(
