@@ -114,20 +114,20 @@
      * For help with HSL: https://www.w3schools.com/colors/colors_hsl.asp
      */
     
-    --bg: 196, 3%, 8%;
-    --bgAlt: 196, 3%, 12%;
-    --btn: 196, 3%, 14%;
-    --btnLight: 196, 2.7%, 16%;
-    --btnAccent: 196, 17%, 29%;
-    --border: 196, 5%, 5%;
-    --accent: 196, 94%, 66%;
-    
-    --textBright: 0, 0%, 100%;
-    --textMid: 0, 0%, 88%;
-    --textDim: 0, 0%, 80%;
-    --textProminent: 27, 87%, 67%;
-    --textLinkHov: 240, 50%, 80%;
-    --textIcon: 0, 0%, 83%;
+	--bg: 196, 3%, 8%;
+	--bgAlt: 196, 3%, 12%;
+	--btn: 196, 3%, 14%;
+	--btnLight: 196, 2.7%, 16%;
+	--btnAccent: 196, 17%, 29%;
+	--border: 196, 5%, 5%;
+	--accent: 196, 94%, 66%;
+	
+	--textBright: 0, 0%, 100%;
+	--textMid: 0, 0%, 88%;
+	--textDim: 0, 0%, 80%;
+	--textProminent: 27, 87%, 67%;
+	--textLinkHov: 196, 94%, 69%;
+	--textIcon: 0, 0%, 83%;
     
     --current: 125, 59.3%, 43.3%;
     --completed: 223, 58%, 35.5%;
@@ -2644,30 +2644,30 @@ div[style^="width: 300px;"] input {
 
 /* Variables */
 :root {
-    --statusButtonOpacity: 75%;		/* Status button opacity (unselected) ; DEFAULT at 60% */
-    --infoBGOpacity: 65%; 			/* Item information background opacity ; DEFAULT at 85% */
-    --statusBorderBottomWidth: 5px;	/* Status bottom border size (hover) ; DEFAULT at 4px */
+    --statusButtonOpacity: 75%;     /* Status button opacity (unselected) ; DEFAULT at 60% */
+    --infoBGOpacity: 65%;           /* Item information background opacity ; DEFAULT at 85% */
+    --statusBorderBottomWidth: 5px; /* Status bottom border size (hover) ; DEFAULT at 4px */
 }
 
 /* Anime and manga status differentiation and text brightening in status bar */
 #status-menu .status-button::before {
     color: hsla(var(--textDim), var(75%));
 } #status-menu .status-button.watching::before{
-	content: "WATCHING";
+    content: "WATCHING";
 } #status-menu .status-button.reading::before {
-	content: "READING";
+    content: "READING";
 } #status-menu .status-button.onhold::before {
-	content: "ON-HOLD";
+    content: "ON-HOLD";
 }
 
 /* Transparentize entry information background */
 .data.title::before {
-	background: hsla(var(--btn), var(--infoBGOpacity));
+    background: hsla(var(--btn), var(--infoBGOpacity));
 }
 
 /* Thickening entry bottom status bar */
 .data.status {
-	border-bottom-width: var(--statusBorderBottomWidth) !important;
+    border-bottom-width: var(--statusBorderBottomWidth) !important;
 }
 
 /* Anime and manga status differentiation in list */
@@ -2685,7 +2685,7 @@ div[style^="width: 300px;"] input {
     padding: 8px;
     background: hsl(var(--btn));
     border-radius: 4px;
-    box-shadow: -0.5px 0.7px 2.1px hsla(0,0%,0%,35%);
+    box-shadow: -0.5px 0.7px 2.1px hsla(0, 0%, 0%, 35%);
     margin: 0 auto 8px;
     color: hsl(var(--textDim));
     font-size: 14px;
