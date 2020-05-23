@@ -96,6 +96,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('[/pixiv]', '[/url]'),
     AutoReplacementData('[greasyfork=', '[url=https://greasyfork.org/'),
     AutoReplacementData('[/greasyfork]', '[/url]'),
+    AutoReplacementData('[alphac=', '[url=https://wall.alphacoders.com/big.php?i='),
+    AutoReplacementData('[/alphac]', '[/url]'),
     # Bullets Coloring
     AutoReplacementData('◆10', '[color={}]◆[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('◆9', '[color={}]◆[/color]'.format(PALETTE['score'][9])),

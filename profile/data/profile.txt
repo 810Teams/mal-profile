@@ -12,7 +12,7 @@
 　　<title>My Lists [color=#7f7f7f](Recommended Ordering)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
-<<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm/pv]CM/PV List[/animelist]
+<<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]CM/PV List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [mangalist=810Teams?order=4&order2=11&status=7&tag=manga]Manga List[/mangalist] ✤
 
@@ -80,8 +80,8 @@
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
 　　　✒ [twitter=haya_kewi/status/1103227541156843520]Profile picture[/twitter] by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
 　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
-　　　✒ [pixiv=artworks/67048519]List cover wallpaper[/pixiv] by [pixiv=users/2327032]456[/pixiv] on Pixiv.
 　　　✒ [twitter=anyotete/status/1255482039442313216]List background wallpaper[/twitter] by [twitter=anyotete]@anyotete[/twitter] on Twitter.
+　　　✒ List cover wallpapers ([alphac=852089]Anime List[/alphac], [alphac=852088]Manga List[/alphac]) from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
 　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyfork=users/7517-akarin]akarin[/greasyfork] on Greasy Fork.
 
 <hr></profile>
