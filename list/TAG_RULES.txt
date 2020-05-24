@@ -4,11 +4,13 @@ anime, fate, recap
 anime, manner movie
 anime, picture drama
 anime, recap
-music
-cm-pv
-cm-pv, fate
 short
 short, trash
+cm-pv
+cm-pv, fate
+cm-pv, hatsune miku
+music
+music, hatsune miku
 book, manga
 book, novel
 book, one-shot
