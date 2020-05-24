@@ -64,9 +64,8 @@
   !IMPORTS
 \*------------------------------*/
 
-/* @\import "https://malscraper.azurewebsites.net/covers/810Teams/presets/dataimagelink"; */
-/* @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink.css"; */
-/* @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink.css"; */
+/* @\import "https://malscraper.azurewebsites.net/covers/anime/810Teams/presets/dataimagelink"; */
+/* @\import "https://malscraper.azurewebsites.net/covers/manga/810Teams/presets/dataimagelink"; */
 @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink_optimized.css";
 @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_manga_dataimagelink_optimized.css";
 @\import "https://fonts.googleapis.com/css?family=Sarabun:400,700";
@@ -102,7 +101,7 @@
     --togglePV: hidden;
     --toggleInfoBG: visible;
     --toggleTopRatings: visible;
-    --bgDimness: 7.5%;
+    --bgDimness: 0%;
     --imageBrightness: 100%;
     --imageBrightnessHov: 50%;
     
@@ -2644,9 +2643,16 @@ div[style^="width: 300px;"] input {
 
 /* Variables */
 :root {
-    --statusButtonOpacity: 75%;     /* Status button opacity (unselected) ; DEFAULT at 60% */
-    --infoBGOpacity: 65%;           /* Item information background opacity ; DEFAULT at 85% */
-    --statusBorderBottomWidth: 5px; /* Status bottom border size (hover) ; DEFAULT at 4px */
+    --coverVignetteOpacity: 20%;     /* Cover wallpaper vignette opacity ; DEFAULT at 90% */
+    --statusButtonOpacity: 75%;      /* Status button opacity (unselected) ; DEFAULT at 60% */
+    --infoBGOpacity: 65%;            /* Item information background opacity ; DEFAULT at 85% */
+    --statusBorderBottomWidth: 5px;  /* Status bottom border size (hover) ; DEFAULT at 4px */
+}
+
+/* Cover wallpaper vignette */
+#cover-image-container::after {
+    background: radial-gradient(ellipse farthest-corner at center top, transparent 66.6667%, hsla(var(--bg), var(--coverVignetteOpacity)));
+    box-shadow: inset 0 -12px 8px -8px hsla(0, 0%, 0%, 50%);
 }
 
 /* Anime and manga status differentiation and text brightening in status bar */
@@ -2660,6 +2666,15 @@ div[style^="width: 300px;"] input {
     content: "ON-HOLD";
 }
 
+/* Anime and manga status differentiation in list */
+[data-query*='"status":7'] .watching ~ .data.score::before {
+    content: "Watching | ";
+} [data-query*='"status":7'] .reading ~ .data.score::before {
+    content: "Reading | ";
+} [data-query*='"status":7'] .onhold ~ .data.score::before {
+    content: "On-Hold | ";
+}
+
 /* Transparentize entry information background */
 .data.title::before {
     background: hsla(var(--btn), var(--infoBGOpacity));
@@ -2670,17 +2685,10 @@ div[style^="width: 300px;"] input {
     border-bottom-width: var(--statusBorderBottomWidth) !important;
 }
 
-/* Anime and manga status differentiation in list */
-[data-query*='"status":7'] .watching ~ .data.score::before {
-    content: "Watching | ";
-} [data-query*='"status":7'] .reading ~ .data.score::before {
-    content: "Reading | ";
-}
-
 /* Message box */
 .list-unit::before {
     display: block;
-    content: "WARNING\a You're currently not viewing any of my specific lists.\a Try picking up a specific list from my profile!";
+    content: "You're currently not viewing any of my specific lists.\a Try picking up a specific list from my profile!";
     width: 600px;
     padding: 8px;
     background: hsl(var(--btn));
@@ -2691,7 +2699,10 @@ div[style^="width: 300px;"] input {
     font-size: 14px;
     text-align: center;
     white-space: pre-wrap;
-} [data-query*='"status":7'][data-query*='"tag":"anime"'] .list-unit::before {
+}
+
+/* Anime list message boxes */
+[data-query*='"status":7'][data-query*='"tag":"anime"'] .list-unit::before {
     content: "You're currently viewing my anime list.\a Other specific lists can be checked out in my profile.";
 } [data-query*='"status":7'][data-query*='"tag":"short"'] .list-unit::before {
     content: "You're currently viewing my short list.\a Other specific lists can be checked out in my profile.";
@@ -2699,14 +2710,25 @@ div[style^="width: 300px;"] input {
     content: "You're currently viewing my cm/pv list.\a Other specific lists can be checked out in my profile.";
 } [data-query*='"status":7'][data-query*='"tag":"music"'] .list-unit::before {
     content: "You're currently viewing my music list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"manga"'] .list-unit::before {
-    content: "You're currently viewing my manga list.\a Other specific lists can be checked out in my profile.";
 } [data-query*='"status":7'][data-query*='"tag":"fate"'] .list-unit::before {
     content: "You've discovered my Fate list!\a Other specific lists can be checked out in my profile.";
+} [data-query*='"status":7'][data-query*='"tag":"hatsune miku"'] .list-unit::before {
+    content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile.";
+} [data-query*='"status":7'][data-query*='"tag":"manner movie"'] .list-unit::before {
+    content :"You've discovered my manner movie list!\a Other specific lists can be checked out in my profile.";
 } [data-query*='"status":7'][data-query*='"tag":"picture drama"'] .list-unit::before {
     content :"You've discovered my picture drama list!\a Other specific lists can be checked out in my profile.";
+} [data-query*='"status":7'][data-query*='"tag":"recap"'] .list-unit::before {
+    content :"You've discovered my recap list!\a Other specific lists can be checked out in my profile.";
 } [data-query*='"status":7'][data-query*='"tag":"trash"'] .list-unit::before {
     content: "You've discovered my trash list!\a Other specific lists can be checked out in my profile.";
+}
+
+/* Manga list message boxes */
+[data-query*='"status":7'][data-query*='"tag":"book"'] .list-unit::before {
+    content: "You're currently viewing my book list.\a Other specific lists can be checked out in my profile.";
+} [data-query*='"status":7'][data-query*='"tag":"manga"'] .list-unit::before {
+    content: "You're currently viewing my manga list.\a Other specific lists can be checked out in my profile.";
 }
 
 /*==============================*\
