@@ -9,7 +9,7 @@
 
 <hr>
 
-　　<title>My Lists [color=#7f7f7f](Recommended Ordering)[/color]</title>
+　　<title>My Lists [color=#7f7f7f](Organized Lists)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]CM/PV List[/animelist]
