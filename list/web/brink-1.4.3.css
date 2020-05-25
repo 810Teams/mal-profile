@@ -64,6 +64,7 @@
   !IMPORTS
 \*------------------------------*/
 
+/* @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelink"; */
 /* @\import "https://malscraper.azurewebsites.net/covers/anime/810Teams/presets/dataimagelink"; */
 /* @\import "https://malscraper.azurewebsites.net/covers/manga/810Teams/presets/dataimagelink"; */
 @\import "https://810teams.github.io/mal-profile/list/web/hosted/covers_anime_dataimagelink_optimized.css";
@@ -2701,34 +2702,84 @@ div[style^="width: 300px;"] input {
 }
 
 /* Anime list message boxes */
-[data-query*='"status":7'][data-query*='"tag":"anime"'] .list-unit::before {
+[data-work="anime"][data-query*='"status":7'][data-query*='"tag":"anime"'] .list-unit::before {
     content: "You're currently viewing my anime list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"short"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"short"'] .list-unit::before {
     content: "You're currently viewing my short list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"cm-pv"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"cm-pv"'] .list-unit::before {
     content: "You're currently viewing my cm/pv list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"music"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"music"'] .list-unit::before {
     content: "You're currently viewing my music list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"fate"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"fate"'] .list-unit::before {
     content: "You've discovered my Fate list!\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"hatsune miku"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"hatsune miku"'] .list-unit::before {
     content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"manner movie"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"manner movie"'] .list-unit::before {
     content :"You've discovered my manner movie list!\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"picture drama"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"picture drama"'] .list-unit::before {
     content :"You've discovered my picture drama list!\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"recap"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"recap"'] .list-unit::before {
     content :"You've discovered my recap list!\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"trash"'] .list-unit::before {
+} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"trash"'] .list-unit::before {
     content: "You've discovered my trash list!\a Other specific lists can be checked out in my profile.";
 }
 
 /* Manga list message boxes */
-[data-query*='"status":7'][data-query*='"tag":"book"'] .list-unit::before {
+[data-work="manga"][data-query*='"status":7'][data-query*='"tag":"book"'] .list-unit::before {
     content: "You're currently viewing my book list.\a Other specific lists can be checked out in my profile.";
-} [data-query*='"status":7'][data-query*='"tag":"manga"'] .list-unit::before {
+} [data-work="manga"][data-query*='"status":7'][data-query*='"tag":"manga"'] .list-unit::before {
     content: "You're currently viewing my manga list.\a Other specific lists can be checked out in my profile.";
 }
+
+/* Empty list message background removal */
+.list-table[data-items="[]"]::before,
+.list-table[data-items="[]"]::after {
+    background: none;
+}
+
+.list-table[data-items="[]"]::after {
+    content: "No entries found.";
+    white-space: pre-wrap;
+}
+
+[data-owner="1"] .list-table[data-items="[]"]::after {
+    content: "No entries found.";
+} [data-query*='"s":'] .list-table[data-items="[]"]::after {
+    content: "No entries found.";
+}
+
+/* Cover image */
+/* #cover-image {
+    opacity: 0%;
+}
+
+#cover-image-container::after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} [data-query*='"status":7'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":1'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":2'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":3'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":4'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":6'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+}
+
+.cover-block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse farthest-corner at center top, transparent 66.6667%, hsla(var(--bg), var(--coverVignetteOpacity)));
+} */
 
 /*==============================*\
   !MODS
