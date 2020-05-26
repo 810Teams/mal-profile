@@ -5,6 +5,11 @@
  * Original theme by Valerio Lyndon
  */
 
+/* Adjustable variables */
+:root {
+    --coverVignetteOpacity: 90%;
+}
+
 /* Transparentize original cover wallpaper */
 #cover-image {
     opacity: 0%;
