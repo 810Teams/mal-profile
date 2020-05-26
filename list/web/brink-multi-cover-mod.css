@@ -1,0 +1,41 @@
+/* Multiple Cover Wallpapers Mod
+ * Designed for Brink Theme
+ *
+ * Mod by 810Teams
+ * Original theme by Valerio Lyndon
+ */
+
+/* Transparentize original cover wallpaper */
+#cover-image {
+    opacity: 0%;
+}
+
+/* Multiple cover wallpapers */
+#cover-image-container::after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} [data-query*='"status":7'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":1'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":2'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":3'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":4'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+} [data-query*='"status":6'] #cover-image-container::after {
+    background-image: url('https://images3.alphacoders.com/852/852089.png');
+}
+
+/* Cover wallpaper vignette */
+.cover-block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse farthest-corner at center top, transparent 66.6667%, hsla(var(--bg), var(--coverVignetteOpacity)));
+}
