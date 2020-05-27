@@ -11,9 +11,10 @@
 
 　　<title>My Lists [color=#7f7f7f](Organized Lists)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
+<<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
+<<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]CM/PV List[/animelist]
-<<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [mangalist=810Teams?order=4&order2=11&status=7&tag=manga]Manga List[/mangalist] ✤
 
 <hr>
@@ -71,6 +72,7 @@
 
 　　<title>Other Notes</title>
 　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
+　　　✎ My lists are mainly organized by tags, so I recommend using them, viewing my lists will be much easier.
 　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
 　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
 
@@ -80,8 +82,9 @@
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
 　　　✒ [twitter=haya_kewi/status/1103227541156843520]Profile picture[/twitter] by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
 　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
+　　　✒ [alphac=852089]Anime list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
+　　　✒ [alphac=852088]Manga list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
 　　　✒ [twitter=anyotete/status/1255482039442313216]List background wallpaper[/twitter] by [twitter=anyotete]@anyotete[/twitter] on Twitter.
-　　　✒ List cover wallpapers ([alphac=852089]Anime List[/alphac], [alphac=852088]Manga List[/alphac]) from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
 　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyfork=users/7517-akarin]akarin[/greasyfork] on Greasy Fork.
 
 <hr></profile>
