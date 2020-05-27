@@ -2686,7 +2686,7 @@ div[style^="width: 300px;"] input {
 /* Message box */
 .list-unit::before {
     display: block;
-    content: "You're currently not viewing any of my specific lists.\a Try picking up a specific list from my profile!";
+    content: "You're currently not viewing any of my specific lists.\a Try picking up a specific list from my profile or clicking a tag!";
     width: 600px;
     padding: 8px;
     background: hsl(var(--btn));
@@ -2700,32 +2700,26 @@ div[style^="width: 300px;"] input {
 }
 
 /* Anime list message boxes */
-[data-work="anime"][data-query*='"status":7'][data-query*='"tag":"anime"'] .list-unit::before {
-    content: "You're currently viewing my anime list.\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"short"'] .list-unit::before {
-    content: "You're currently viewing my short list.\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"cm-pv"'] .list-unit::before {
-    content: "You're currently viewing my cm/pv list.\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"music"'] .list-unit::before {
-    content: "You're currently viewing my music list.\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"fate"'] .list-unit::before {
-    content: "You've discovered my Fate list!\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"hatsune miku"'] .list-unit::before {
-    content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"manner movie"'] .list-unit::before {
-    content :"You've discovered my manner movie list!\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"picture drama"'] .list-unit::before {
-    content :"You've discovered my picture drama list!\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"recap"'] .list-unit::before {
-    content :"You've discovered my recap list!\a Other specific lists can be checked out in my profile.";
-} [data-work="anime"][data-query*='"status":7'][data-query*='"tag":"trash"'] .list-unit::before {
-    content: "You've discovered my trash list!\a Other specific lists can be checked out in my profile.";
+[data-work="anime"][data-query*='"tag":"anime"'] .list-unit::before {
+    content: "You're currently viewing my anime list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"special"'] .list-unit::before {
+    content: "You're currently viewing my special list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"short"'] .list-unit::before {
+    content: "You're currently viewing my short list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"cm-pv"'] .list-unit::before {
+    content: "You're currently viewing my cm/pv list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"music"'] .list-unit::before {
+    content: "You're currently viewing my music list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"fate"'] .list-unit::before {
+    content: "You've discovered my Fate list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"hatsune miku"'] .list-unit::before {
+    content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"trash"'] .list-unit::before {
+    content: "You've discovered my trash list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
 }
 
 /* Manga list message boxes */
-[data-work="manga"][data-query*='"status":7'][data-query*='"tag":"book"'] .list-unit::before {
-    content: "You're currently viewing my book list.\a Other specific lists can be checked out in my profile.";
-} [data-work="manga"][data-query*='"status":7'][data-query*='"tag":"manga"'] .list-unit::before {
+[data-work="manga"] .list-unit::before {
     content: "You're currently viewing my manga list.\a Other specific lists can be checked out in my profile.";
 }
 
