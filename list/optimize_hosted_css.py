@@ -7,7 +7,7 @@ from src.utils import notice
 
 import platform
 
-DIR = 'web/hosted/'
+DIR = 'web/css/hosted/'
 ANIME_IL = 'covers_anime_dataimagelink.css'
 MANGA_IL = 'covers_manga_dataimagelink.css'
 ANIME_IL_OPT = 'covers_anime_dataimagelink_optimized.css'

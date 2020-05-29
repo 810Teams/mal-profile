@@ -9,8 +9,8 @@ import requests
 
 API_URL = 'https://cssminifier.com/raw'
 CSS_NAME = 'brink-1.4.3'
-CSS_PATH = 'web/{}.css'.format(CSS_NAME)
-MIN_CSS_PATH = 'web/minified/{}.min.css'.format(CSS_NAME)
+CSS_PATH = 'web/css/{}.css'.format(CSS_NAME)
+MIN_CSS_PATH = 'web/css/min/{}.min.css'.format(CSS_NAME)
 
 
 def main():
