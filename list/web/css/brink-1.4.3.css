@@ -2712,6 +2712,8 @@ div[style^="width: 300px;"] input {
     content: "You're currently viewing my music list.\a Other specific lists can be checked out in my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"fate"'] .list-unit::before {
     content: "You've discovered my Fate list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"recap"'] .list-unit::before {
+    content: "You've discovered my recap list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"hatsune miku"'] .list-unit::before {
     content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"trash"'] .list-unit::before {
