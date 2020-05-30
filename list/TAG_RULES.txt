@@ -1,6 +1,7 @@
 anime
 anime, fate
 anime, recap
+anime, fate, recap
 special
 special, fate
 short
