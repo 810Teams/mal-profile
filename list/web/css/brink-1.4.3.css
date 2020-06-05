@@ -97,7 +97,7 @@
     --toggleStats: hidden;
     --togglePV: hidden;
     --toggleInfoBG: visible;
-    --toggleTopRatings: visible;
+    --toggleTopRatings: hidden;
     --bgDimness: 0%;
     --imageBrightness: 100%;
     --imageBrightnessHov: 50%;
@@ -2645,6 +2645,7 @@ div[style^="width: 300px;"] input {
     --statusButtonOpacity: 75%;      /* Status button opacity (unselected) ; DEFAULT at 60% */
     --infoBGOpacity: 65%;            /* Item information background opacity ; DEFAULT at 85% */
     --statusBorderBottomWidth: 5px;  /* Status bottom border size (hover) ; DEFAULT at 4px */
+    --toggleSpecificBadge: visible;
 }
 
 /* Cover wallpaper vignette */
@@ -2741,6 +2742,59 @@ div[style^="width: 300px;"] input {
 } [data-query*='"s":'] .list-table[data-items="[]"]::after {
     content: "No entries found.";
 }
+
+/* Specific Badge */
+.data.title a[href^='/anime/10087']::before,
+.data.title a[href^='/anime/11741']::before,
+.data.title a[href^='/anime/23273']::before,
+.data.title a[href^='/anime/34798']::before,
+.data.title a[href^='/anime/35839']::before,
+.data.title a[href^='/anime/40591']::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 295px;
+    z-index: -1;
+    
+    width: 210px;
+    height: 6px;
+    border-top: 2px solid hsl(var(--goldRating));
+    border-radius: 6px 6px 0 0;
+
+    pointer-events: none;
+    visibility: var(--toggleSpecificBadge);
+}
+
+.data.title a[href^='/anime/10087']::after,
+.data.title a[href^='/anime/11741']::after,
+.data.title a[href^='/anime/23273']::after,
+.data.title a[href^='/anime/34798']::after,
+.data.title a[href^='/anime/35839']::after,
+.data.title a[href^='/anime/40591']::after {
+    content: "";
+    position: absolute;
+    bottom: 290px;
+    z-index: -1;
+    
+    height: 16px;
+    border-radius: 3px;
+    background: hsl(var(--goldRating));
+    
+    color: hsl(var(--bg));
+    font: bold 13px/13px var(--font);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: none;
+    
+    pointer-events: none;
+    visibility: var(--toggleSpecificBadge);
+}
+.data.title a[href^='/anime/10087']::after,
+.data.title a[href^='/anime/11741']::after { left: calc((212px - 140px)/2); width: 140px; content: "BEST FATE SERIES"; }
+.data.title a[href^='/anime/23273']::after { left: calc((212px - 156px)/2); width: 156px; content: "BEST SOUNDTRACKS"; }
+.data.title a[href^='/anime/34798']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST CAMPING"; }
+.data.title a[href^='/anime/35839']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST JOURNEY"; }
+.data.title a[href^='/anime/40591']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST ROM-COM"; }
 
 /*==============================*\
   !MODS
