@@ -20,10 +20,10 @@
 <hr>
 
 　　<title>My Anime Scoring Criteria</title>
-　　　Scores are mainly based on enjoyment, impression, emotional impact, and memorability, resulting from various
-　　　elements of the anime, including story, storytelling, logic, uniqueness, animation ǫuality, eye-friendliness,
-　　　theme songs, insert songs, soundtracks, mood and tone, voice acting, character design, character personality,
-　　　character development, character story, and character purpose.
+　　　Scores are mainly based on quality, enjoyment, impression, emotional impact, and memorability, resulting
+　　　from various elements of the anime, including story, storytelling, logic, uniqueness, animation ǫuality,
+　　　eye-friendliness, theme songs, insert songs, soundtracks, mood and tone, voice acting, character design,
+　　　character personality, character development, character story, and character purpose.
 
 　　<title>My Anime Scoring System</title>
 　　　🏆 [b][[10]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
@@ -69,7 +69,7 @@
 　　　✔ Has mean scores of [b][5][/b] or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [people=8700]this guy[/people] on favorites.
-　　　✔ Attach a personal message, including where you found me, etc.
+　　　✔ Not an empty friend request, attach a personal message.
 
 　　<title>Other Notes</title>
 　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.

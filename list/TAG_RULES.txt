@@ -1,9 +1,8 @@
 anime
 anime, fate
-anime, recap
-anime, fate, recap
 special
 special, fate
+special, recap
 short
 short, trash
 cm-pv
