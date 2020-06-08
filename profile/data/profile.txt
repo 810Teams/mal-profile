@@ -10,12 +10,12 @@
 <hr>
 
 　　<title>My Lists [color=#7f7f7f](Organized Lists)[/color]</title>
-　　　✤ [animelist=810Teams?order=4&order2=6&status=7&tag=anime]Anime List[/animelist]
+　　　✤ [animelist=810Teams?order=4&order2=1&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
-<<<< ✤ [animelist=810Teams?order=4&order2=6&status=7&tag=music]Music List[/animelist]
+<<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]CM/PV List[/animelist]
-<<<< ✤ [mangalist=810Teams?order=4&order2=11&status=7&tag=manga]Manga List[/mangalist] ✤
+<<<< ✤ [mangalist=810Teams?order=4&order2=1&status=7&tag=manga]Manga List[/mangalist] ✤
 
 <hr>
 
@@ -52,7 +52,7 @@
 <<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
 <<<< ◆9 [review=337543]Yuru Camp△[/review]
 <<<< ◆8 [review=334226]Psycho-Pass[/review]
-<<<< ◆8 [review=340085]Sankarea[/review] <new>
+<<<< ◆8 [review=340085]Sankarea[/review]
 　　　◆8 [review=337650]Heya Camp△[/review]
 <<<< ◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
 <<<< ◆7 [review=333051]Somali to Mori no Kamisama[/review]
