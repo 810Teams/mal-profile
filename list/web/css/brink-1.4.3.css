@@ -1,32 +1,32 @@
 /* "Brink" by Valerio Lyndon
  * Version 1.4.3
- * 
+ *
  * = TABLE OF CONTENTS =
- * 
+ *
  ! IMPORTS
- * 
+ *
  ! VARIABLES
  @ User
  @ Internal
- * 
+ *
  ! PAGE-BASE
  @ Scrollbars
  @ Generic
  @ Containers
- * 
+ *
  ! HEADER
- * 
+ *
  ! USER-MENU
- * 
+ *
  ! COVER
- * 
+ *
  ! STATUS-MENU
  @ Search
- * 
+ *
  ! SORT-BUTTONS
  @ Filters
  @ Sort-By
- * 
+ *
  ! LIST
  @ Item-Base
  @ Image
@@ -44,18 +44,18 @@
  @ Storage
  @ More-Info
  @ Loading-Icon
- * 
+ *
  ! OVERLAYS
  @ iFrames
  @ Rewatch-Box
  @ Filter-Menu
- * 
+ *
  ! FOOTER
- * 
+ *
  ! MEDIA-QUERIES
- * 
+ *
  ! FIXES
- * 
+ *
  ! MODS
  */
 
@@ -74,26 +74,26 @@
 
 :root {
     /* USER OPTIONS
-     * 
+     *
      * toggleStats / Toggles list statistics (found in the footer)
      * valid values: visible / hidden
-     * 
+     *
      * togglePV / Toggles anime preview & video links.
      * valid values: visible / hidden
-     * 
+     *
      * toggleInfoBG / Toggles background on list items for improved readability.
      * valid values: visible / hidden
-     * 
+     *
      * toggleTopRatings / Toggles banners on top of highly rated items.
      * valid values: visible / hidden
-     * 
+     *
      * bgDimness / Changes dimming of background / Higher = Dimmer.
      * min value: 0% / max value: 100%
-     * 
+     *
      * imageBrightness(Hov) / Changes lightness of cover images / Higher = Brighter.
      * min value: 0% / max value: 100%
      */
-    
+
     --toggleStats: hidden;
     --togglePV: hidden;
     --toggleInfoBG: visible;
@@ -101,15 +101,15 @@
     --bgDimness: 0%;
     --imageBrightness: 100%;
     --imageBrightnessHov: 50%;
-    
+
     /* THEME COLOURS
-     * 
+     *
      * Colours are HSL values but without their surrounding parentheses.
      * To get the correct values, simply strip away the surrounding parentheses and blurb.
      * For instance, "hsl(244, 42%, 82%)" would simply become "244, 42%, 82%".
      * For help with HSL: https://www.w3schools.com/colors/colors_hsl.asp
      */
-    
+
 	--bg: 196, 3%, 8%;
 	--bgAlt: 196, 3%, 12%;
 	--btn: 196, 3%, 14%;
@@ -117,20 +117,20 @@
 	--btnAccent: 196, 17%, 29%;
 	--border: 196, 5%, 5%;
 	--accent: 196, 94%, 66%;
-	
+
 	--textBright: 0, 0%, 100%;
 	--textMid: 0, 0%, 88%;
 	--textDim: 0, 0%, 80%;
-	--textProminent: 27, 87%, 67%;
+	--textProminent: 37, 87%, 67%;
 	--textLinkHov: 196, 94%, 69%;
 	--textIcon: 0, 0%, 83%;
-    
+
     --current: 125, 59.3%, 43.3%;
     --completed: 223, 58%, 35.5%;
     --paused: 46, 93.1%, 65.9%;
     --dropped: 359, 54.8%, 40.8%;
     --planned: 0, 0%, 76.5%;
-    
+
     --goldRating: var(--textProminent);
     --silverRating: var(--textDim);
 }
@@ -139,15 +139,15 @@
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*\
   @Internal
 \*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-    
+
 :root {
     /* INTERNALS
-     * 
+     *
      * More advanced variables.
      */
-    
+
     --font: "Sarabun", "Segoe UI", "Arial", "FontAwesome", sans-serif;
-    
+
     --timeText: 60ms;
     --timeButton: 160ms;
     --timeButtonLarge: 260ms;
@@ -157,7 +157,7 @@
     --bezierSmooth: cubic-bezier(.45,.32,.25,1);
     --bezierItemBounce: cubic-bezier(.6,.48,.7,1.45);
     --delayMenu: 333.4ms;
-    
+
     --arrowUp: url(https://files.catbox.moe/uure2q.svg);
     --arrowRt: url(https://files.catbox.moe/lqi5fy.svg);
     --arrowDn: url(https://files.catbox.moe/m9ot24.svg);
@@ -216,7 +216,7 @@
     border-width: 2px 0;
 } *::-webkit-scrollbar-thumb:hover {
     background-color: hsla(var(--accent), 70%);
-} 
+}
 
 *::-webkit-scrollbar-track {
     width: 5px;
@@ -275,12 +275,12 @@ div[style^="width: 300px;"] input {
     box-shadow: -0.5px 0.7px 2.1px hsla(0, 0%, 0%, 35%);
     outline: none;
     margin: 0;
-    
+
     color: hsl(var(--textBright));
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    
+
     transition: all var(--timeButton) var(--bezierFast);
 } .list-unit .list-status-title .stats a:hover,
 .list-table > tbody:first-of-type:hover::after,
@@ -315,16 +315,16 @@ body {
     background-image: none;
 } body.ownlist {
     position: relative;
-    
+
     min-width: 700px;
     min-height: 100%;
     padding: 42px 0 60px;
-    
+
     background-color: hsl(var(--bg)) !important;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+
     color: hsl(var(--textMid)) !important;
     font: 12px var(--font);
 }
@@ -334,7 +334,7 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    
+
     width: 100%;
     height: 100%;
     background: hsla(var(--bg), var(--bgDimness));
@@ -382,7 +382,7 @@ body::before {
     top: 0;
     left: 0;
     z-index: 100;
-    
+
     width: 100%;
     height: 42px;
     background: hsl(var(--bgAlt));
@@ -401,13 +401,13 @@ body::before {
 .header .header-title {
     top: 9px;
     left: 42px;
-    
+
     width: 44px;
     height: 24px;
     background: url(https://files.catbox.moe/8q5kjg.svg) left 4px / auto 20px no-repeat;
-    
+
     color: hsl(var(--textBright));
-    
+
     opacity: 0.94;
     transition: all var(--timeButton) var(--bezierFast);
 } .header .header-title:hover {
@@ -418,14 +418,14 @@ body::before {
 
 .header .header-menu {
     position: static;
-    
+
     display: flex;
     height: 32px;
     margin: 5px 12px 0 0;
     flex-flow: column nowrap;
     justify-content: center;
     float: right;
-    
+
     line-height: 13px;
 } [data-owner=""] .header .header-menu {
     padding-right: 139px;
@@ -457,7 +457,7 @@ body::before {
 .header .header-menu .header-info {
     height: 15px;
     margin: 0;
-    
+
     color: hsl(var(--textDim));
 }
 
@@ -484,7 +484,7 @@ body::before {
 #header-menu-dropdown {
     top: 5px;
     right: 12px;
-    
+
     display: block !important;
     background: none;
     border: none;
@@ -497,11 +497,11 @@ body::before {
     background: hsl(var(--btnLight));
     border: 2px solid hsl(var(--btnLight));
     border-radius: 3px;
-    
+
     color: hsl(var(--textBright));
     font: normal 0/26px var(--font);
     white-space: nowrap;
-    
+
     transition: all var(--timeButton) var(--bezierFast);
 } #header-menu-dropdown .icon-menu:hover {
     border-color: hsl(var(--btnAccent));
@@ -541,7 +541,7 @@ body::before {
     left: -228px;
     top: 42px;
     z-index: 200;
-    
+
     display: flex;
     width: 228px;
     height: calc(100% - 42px);
@@ -551,10 +551,10 @@ body::before {
     border-right: 2px solid hsl(var(--border));
     margin: 0 !important;
     flex-flow: column nowrap;
-    
+
     font-size: 0 !important;
     line-height: 0;
-    
+
     transition: all var(--timeMenu) var(--bezierSmooth) var(--delayMenu);
 } .list-menu-float:hover {
     left: 0;
@@ -567,16 +567,16 @@ body::before {
     position: fixed;
     left: 0;
     top: 0;
-    
+
     width: 42px;
     height: 42px;
     box-sizing: initial;
     background: url(https://files.catbox.moe/0tnlh6.svg) center / auto no-repeat;
-    
+
     color: hsl(var(--textBright));
     font: 21px/42px "FontAwesome";
     text-align: center;
-    
+
     transition: inherit;
 } /* Icon for logged out users */
 .list-container::before {
@@ -596,18 +596,18 @@ body::before {
     position: absolute;
     left: 0;
     top: -42px;
-    
+
     width: 179px;
     height: 42px;
     padding-left: 47px;
     border-right: 2px solid hsl(var(--border));
     background: inherit;
     box-sizing: initial;
-    
+
     color: transparent;
     font: bold 16px/42px var(--font);
     text-align: left;
-    
+
     transition: color calc(var(--timeMenu) * 0.3) ease-in-out var(--delayMenu);
     pointer-events: none;
 } .list-menu-float:hover::before {
@@ -621,11 +621,11 @@ body::before {
     top: 0;
     left: 0;
     z-index: 190;
-    
+
     width: 100%;
     height: 100%;
     background: hsla(0, 0%, 0%, 0%);
-    
+
     transition: all var(--timeMenu) var(--bezierSmooth) var(--delayMenu);
     pointer-events: none;
 } .list-menu-float:hover ~ #list-container::after {
@@ -638,9 +638,9 @@ body::before {
     width: 100% !important;
     height: auto;
     background: none !important;
-    
+
     text-align: left;
-    
+
     transition: all var(--timeButton) var(--bezierFast);
 }
 
@@ -653,7 +653,7 @@ body::before {
 .ownlist .list-menu-float .icon-menu.setting .text .link-list-setting,
 .ownlist .list-menu-float .icon-menu.setting .text .link-style-setting {
     position: static;
-    
+
     width: 100%;
     height: 40px;
     padding: 10px 20px 10px 16px;
@@ -661,11 +661,11 @@ body::before {
     border: none;
     border-left: 4px solid transparent;
     overflow: visible;
-    
+
     color: hsl(var(--textBright));
     font: 15px/20px var(--font);
     text-align: left;
-    
+
     opacity: 1;
     transition: inherit;
 } .ownlist .list-menu-float .icon-menu:hover::after,
@@ -681,10 +681,10 @@ body::before {
 
 .ownlist .list-menu-float .icon-menu.setting .text {
     position: static;
-    
+
     width: 100%;
     height: auto;
-    
+
     opacity: 1;
 }
 
@@ -712,11 +712,11 @@ body::before {
     position: absolute;
     top: -8px;
     left: 10px;
-    
+
     width: calc(100% - 20px);
     height: 1px;
     background: hsla(var(--textBright), 12%);
-    
+
     pointer-events: none;
 }
 
@@ -755,7 +755,7 @@ body::before {
     position: absolute;
     bottom: 0;
     left: 0;
-    
+
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse farthest-corner at center top, transparent 66.6667%, hsla(var(--bg), 90%));
@@ -777,7 +777,7 @@ body::before {
     position: absolute;
     top: -62px;
     left: 0;
-    
+
     width: 100%;
     height: 2px;
     background: hsl(var(--bg)) linear-gradient(to right, hsla(var(--accent), 1), hsla(var(--accent), 0.55));
@@ -810,7 +810,7 @@ body::before {
 
 #status-menu {
     position: relative;
-    
+
     width: 100%;
     height: 42px;
     padding: 0 calc(198px + 0.07 * (100vw - 980px));
@@ -831,7 +831,7 @@ body::before {
 
 #status-menu .status-menu {
     position: static;
-    
+
     display: flex;
     height: 42px;
     min-width: 570px;
@@ -839,7 +839,7 @@ body::before {
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
-    
+
     pointer-events: auto;
 }
 
@@ -852,7 +852,7 @@ body::before {
 
     font: 0/30px var(--font);
     text-shadow: -0.6px 0.84px 1.68px #000;
-    
+
     transform: none;
 }
 
@@ -911,7 +911,7 @@ body::before {
     border-radius: 3px;
     box-shadow: -0.5px 0.7px 2.1px hsla(0, 0%, 0%, 35%);
     margin: 0;
-    
+
     transition:
         box-shadow var(--timeMenu) var(--bezierFast),
         border-color var(--timeButton) var(--bezierFast);
@@ -925,7 +925,7 @@ body::before {
     background: none;
     padding: 2px 6px 2px 30px;
     border: none;
-    
+
     color: hsl(var(--textDim));
     line-height: 28px;
 } #status-menu .search-container #search-box input:focus {
@@ -938,9 +938,9 @@ body::before {
     position: absolute;
     top: 0;
     left: 4px;
-    
+
     width: 24px;
-    
+
     color: hsl(var(--textIcon));
     font-size: 16px;
     line-height: 30px;
@@ -961,7 +961,7 @@ body::before {
     top: -40px;
     left: 20px;
     z-index: 30;
-    
+
     width: 80px;
     height: 67px;
     background: none;
@@ -973,7 +973,7 @@ body::before {
 
 .list-unit .list-status-title .stats {
     position: static;
-    
+
     font-size: 0;
     white-space: nowrap;
 }
@@ -997,11 +997,11 @@ body::before {
     top: -40px;
     left: calc(109px + 0.035 * (100vw - 980px));
     z-index: 35;
-    
+
     width: calc(80px + 0.035 * (100vw - 980px));
     height: 32px;
     background: none !important;
-    
+
     pointer-events: none;
 } .list-table > tbody:first-of-type:hover {
     pointer-events: auto;
@@ -1013,16 +1013,16 @@ body::before {
     top: 0;
     left: 0;
     z-index: -1;
-    
+
     display: block;
     width: 100%;
-    
+
     pointer-events: auto;
 }
 
 .list-table > tbody:first-of-type::before {
     content: "";
-    
+
     display: block;
     width: calc(100% + 24px);
     height: 44px;
@@ -1033,7 +1033,7 @@ body::before {
 .list-table .list-table-header {
     position: relative;
     left: 50%;
-    
+
     display: inline-flex;
     min-width: calc(100% + 24px);
     height: auto;
@@ -1042,7 +1042,7 @@ body::before {
     box-shadow: -1.2px 1.68px 3.36px hsla(0, 0%, 0%, 50%);
     flex-flow: column nowrap;
     overflow: hidden;
-    
+
     opacity: 0;
     transform: translateX(-50%);
     transition: all var(--timeButtonLarge) var(--bezierFast);
@@ -1057,7 +1057,7 @@ body::before {
     padding: 0 !important;
     background: none;
     border: none;
-    
+
     font-size: 0 !important;
     line-height: 0;
     text-align: center !important;
@@ -1069,13 +1069,13 @@ body::before {
     padding: 0 8px;
     border-left: 2px solid hsl(var(--btn));
     border-right: 2px solid transparent;
-    
+
     color: hsl(var(--textBright)) !important;
     font-size: 13px !important;
     line-height: 30px;
     font-weight: normal;
     text-indent: -1px;
-    
+
     transition: all var(--timeButton) var(--bezierFast) !important;
 } .list-table .list-table-header .header-title a:hover {
     background: hsl(var(--btnLight));
@@ -1148,7 +1148,7 @@ body::before {
         width: calc(224px * 5);
         padding: 48px calc((224px * 2.5) - 90px);
     }
-    
+
     .list-table[data-items="[]"]::after {
         background:
         linear-gradient(
@@ -1167,7 +1167,7 @@ body::before {
         width: calc(224px * 7);
         padding: 48px calc((224px * 3.5) - 90px);
     }
-    
+
     .list-table[data-items="[]"]::after {
         background:
         linear-gradient(
@@ -1188,16 +1188,16 @@ body::before {
 .list-item {
     position: relative;
     z-index: 1;
-    
+
     display: block;
     width: 210px;
     height: 300px;
     background: none !important;
     margin: calc((300px * -0.025) + 12px) calc((210px * -0.025) + 12px);
     flex: 0 0 auto;
-    
+
     color: hsl(var(--textBright));
-    
+
     transform: scale(0.95);
     transition: all var(--timeItem) var(--bezierItemBounce);
 } .list-item:hover {
@@ -1256,15 +1256,15 @@ body::before {
 .data.storage,
 .data.retail {
     position: relative;
-    
+
     max-width: 100%;
     min-height: 15px;
     padding-left: 15px !important;
     margin-bottom: 4px;
-    
+
     text-align: left !important;
     overflow-wrap: break-word;
-    
+
     cursor: default;
 }
 
@@ -1285,10 +1285,10 @@ body::before {
     position: absolute;
     top: 0;
     left: -3px;
-    
+
     width: 16px;
     height: 15px;
-    
+
     color: hsl(var(--textIcon));
     text-align: center;
 }
@@ -1304,7 +1304,7 @@ body::before {
     position: absolute;
     left: 0;
     top: 0;
-    
+
     width: 100% !important;
     height: 100% !important;
     border: none !important;
@@ -1312,7 +1312,7 @@ body::before {
 }
 
 .data.image {
-    z-index: -1;	
+    z-index: -1;
     background: hsla(var(--bg), 70%);
     border-radius: 6px;
     box-shadow: -1.2px 1.68px 3.36px hsla(0, 0%, 0%, 35%);
@@ -1347,13 +1347,13 @@ body::before {
     left: 0;
     top: 0;
     z-index: 15 !important;
-    
+
     width: 100% !important;
     height: 100%;
     background: none !important;
     border-bottom-width: 4px !important;
     border-radius: 6px;
-    
+
     pointer-events: none;
 } .data.status.watching,
 .data.status.reading {
@@ -1379,11 +1379,11 @@ body::before {
     bottom: 0;
     left: 0;
     z-index: 9;
-    
+
     width: 100%;
     padding: 5px 0 27px !important;
     order: 95;
-    
+
     opacity: 1;
 }
 
@@ -1393,12 +1393,12 @@ body::before {
     top: 0;
     left: 0;
     z-index: -1;
-    
+
     width: 100%;
     height: 100%;
     background: hsla(var(--btn), 85%);
     border-radius: 0 0 6px 6px;
-    
+
     /*Toggle*/
     visibility: var(--toggleInfoBG);
 }
@@ -1409,7 +1409,7 @@ body::before {
     max-height: 64px;
     padding: 5px 12px;
     overflow: hidden;
-    
+
     font-size: 13px !important;
     line-height: 18px;
 }
@@ -1420,32 +1420,32 @@ body::before {
     bottom: 12px;
     right: 7.5px;
     z-index: 1;
-    
+
     width: auto;
     height: 15px;
     background: none;
     margin: 0;
-    
+
     font-size: 0;
     text-indent: 0;
     text-shadow: 0.84px 0.6px 1.68px #000;
-    
+
     opacity: 1 !important;
     transform: rotate(90deg);
     transform-origin: right bottom;
-    
+
     /*Toggle*/
     visibility: var(--togglePV);
 }
 
 [class^="icon-watch"]::after {
     content: "\f144  VIDEOS";
-    
+
     color: hsl(var(--textDim));
     font-size: 12px;
     line-height: 1;
     letter-spacing: 1.5px;
-    
+
     transition: color var(--timeText) var(--bezierFast);
 } .title [class^="icon-watch"]:hover::after {
     color: hsl(var(--textLinkHov));
@@ -1457,16 +1457,16 @@ body::before {
     position: absolute;
     bottom: 270px;
     left: 7.5px;
-    
+
     height: 15px;
-    
+
     color: hsl(var(--textProminent)) !important;
     font-size: 12px !important;
     line-height: 1;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     text-shadow: 0.84px 0.6px 1.68px #000;
-    
+
     transform: rotate(90deg);
     transform-origin: left top;
     pointer-events: none;
@@ -1477,12 +1477,12 @@ body::before {
     position: absolute;
     bottom: 267px;
     right: 6px;
-    
+
     width: auto;
     margin: 0 !important;
-    
+
     font-size: 0 !important;
-    
+
     opacity: 0;
     transition: inherit;
 } .list-item:hover .add-edit-more {
@@ -1496,11 +1496,11 @@ body::before {
 .add-edit-more a {
     display: block;
     padding: 6px;
-    
+
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
+
     transition: all var(--timeText) var(--bezierFast);
 } .add-edit-more span:nth-of-type(1) a {
     padding-right: 4.5px;
@@ -1606,14 +1606,14 @@ body:not([data-query*='order":4']) .data .score-10::before {
     left: -12px;
     bottom: 282px;
     z-index: -1;
-    
+
     width: 210px;
     height: 6px;
     border-top: 2px solid hsl(var(--goldRating));
     border-radius: 6px 6px 0 0;
-    
+
     pointer-events: none;
-    
+
     /*Toggle*/
     visibility: var(--toggleTopRatings);
 } body:not([data-query*='order":4']) .data .score-9::before {
@@ -1627,18 +1627,18 @@ body:not([data-query*='order":4']) .data .score-10::after {
     left: 43px;
     bottom: 277px;
     z-index: -1;
-    
+
     width: 100px;
     height: 16px;
     border-radius: 3px;
     background: hsl(var(--goldRating));
-    
+
     color: hsl(var(--bg));
     font: bold 13px/13px var(--font);
     text-align: center;
     letter-spacing: 1px;
     text-shadow: none;
-    
+
     pointer-events: none;
     visibility: var(--toggleTopRatings);
 } body:not([data-query*='order":4']) .data .score-9::after {
@@ -1741,13 +1741,13 @@ span:nth-of-type(2)::after {
     position: absolute;
     top: 3px;
     right: 0;
-    
+
     display: inline-block;
-    
+
     color: hsla(var(--textIcon), 0%) !important;
     font-size: 12px !important;
     text-shadow: none;
-    
+
     transition: all var(--timeItem) var(--bezierFast);
 } .list-table .list-item:hover .data [class^="icon-add-"] {
     color: hsl(var(--textIcon)) !important;
@@ -1781,13 +1781,13 @@ span:nth-of-type(2)::after {
     position: absolute;
     top: 51px;
     right: 6px;
-    
+
     width: calc(50% - 6px);
     padding: 0 6px 0 0 !important;
     height: 148px;
     overflow-x: hidden;
     overflow-y: auto;
-} 
+}
 
 .data.tags div,
 .data.tags a {
@@ -1798,7 +1798,7 @@ span:nth-of-type(2)::after {
     display: block;
     min-height: 15px;
     margin-bottom: 4px;
-    
+
     font-size: 0;
     line-height: 0;
     text-align: right;
@@ -1834,16 +1834,16 @@ span:nth-of-type(2)::after {
     position: absolute;
     top: 0;
     right: 6px;
-    
+
     display: block;
     width: calc(100% - 6px) !important;
     height: 99% !important;
     border-style: solid;
     border-radius: 3px;
     overflow: auto;
-    
+
     word-break: break-all;
-    
+
     resize: none;
 }
 
@@ -1855,10 +1855,10 @@ span:nth-of-type(2)::after {
 .data.number {
     height: 15px;
     margin: -1px 0 24px;
-    
+
     font-size: 14px;
     font-weight: bold;
-    
+
     opacity: 0.53;
     cursor: default;
 }
@@ -2033,13 +2033,13 @@ span:nth-of-type(2)::after {
     left: 0;
     bottom: 0;
     z-index: 25;
-    
+
     width: 100%;
     height: 100%;
     border: none !important;
     border-radius: 5px;
     overflow: hidden;
-    
+
     opacity: 0;
     transition: all calc(var(--timeItem) * 1.5) var(--bezierFast);
     animation: var(--timeItem) var(--bezierFast) backwards fade-in;
@@ -2065,7 +2065,7 @@ span:nth-of-type(2)::after {
     margin-top: 37px;
     overflow-x: hidden;
     overflow-y: auto;
-    
+
     pointer-events: auto;
 }
 
@@ -2105,7 +2105,7 @@ span:nth-of-type(2)::after {
     height: 24px;
     background: url(https://files.catbox.moe/qs9f3v.svg) center / auto no-repeat;
     margin: 0 auto;
-    
+
     font-size: 0;
     animation: 1.2s cubic-bezier(.35,0,.35,1) 0s infinite both loading;
 }
@@ -2125,7 +2125,7 @@ span:nth-of-type(2)::after {
 
 #fancybox-overlay {
     background: #000 !important;
-    
+
     opacity: 0.78 !important;
 }
 
@@ -2238,7 +2238,7 @@ div[style^="width: 300px;"] input {
 #advanced-options {
     position: fixed;
     top: calc(50px + 10vh);
-    
+
     width: calc(630px + 0.111 * (100vw - 700px));
     min-width: 630px;
     max-width: 730px;
@@ -2247,7 +2247,7 @@ div[style^="width: 300px;"] input {
     background: hsl(var(--bg));
     box-shadow: -1.6px 2.24px 4.48px hsla(0, 0%, 0%, 70%);
     border: none;
-    
+
     color: hsl(var(--textMid));
     font-family: var(--font);
 }
@@ -2257,7 +2257,7 @@ div[style^="width: 300px;"] input {
     position: absolute;
     top: -2px;
     left: 0;
-    
+
     width: 100%;
     height: 2px;
     background: hsl(var(--bg)) linear-gradient(to right, hsla(var(--accent), 1), hsla(var(--accent), 0.55));
@@ -2277,7 +2277,7 @@ div[style^="width: 300px;"] input {
     width: 100%;
     height: 32px;
     border: none;
-    
+
     font-size: 15px;
     line-height: 28px;
     text-align: left;
@@ -2319,7 +2319,7 @@ div[style^="width: 300px;"] input {
     border-radius: 3px;
     margin-right: 2%;
     flex: 0 1 auto;
-    
+
     color: hsl(var(--textMid));
     font: 13px/16px var(--font);
 }
@@ -2392,10 +2392,10 @@ div[style^="width: 300px;"] input {
     background: hsl(var(--btn)) !important;
     border: 2px solid hsl(var(--btnLight)) !important;
     margin: 0;
-    
+
     color: hsl(var(--textMid)) !important;
     line-height: 18px;
-    
+
     transition: all var(--timeButton) var(--bezierFast);
 } #advanced-options .sort-widget input[type=radio] + label:first-of-type {
     border-radius: 3px 0 0 3px;
@@ -2434,12 +2434,12 @@ div[style^="width: 300px;"] input {
     position: absolute;
     bottom: 0;
     left: 0;
-    
+
     width: 100%;
     height: 60px;
     padding: 22px 0;
     background: none;
-    
+
     font: 13px/16px var(--font);
 }
 
@@ -2462,16 +2462,16 @@ div[style^="width: 300px;"] input {
     position: absolute;
     bottom: -32px;
     left: 0;
-    
+
     display: block !important;
     width: 100%;
     height: 16px;
     background: none;
     margin: 0 auto;
-    
+
     color: hsla(var(--textDim), 50%);
     font: 12px/16px var(--font);
-    
+
     /*Toggle*/
     visibility: var(--toggleStats);
 }
@@ -2486,13 +2486,13 @@ div[style^="width: 300px;"] input {
     .list-block {
         min-height: calc(100vh - (184px + (700px * 0.3)));
     }
-    
+
     /* Overlays */
     body #fancybox-wrap {
         left: calc(50% - (190px + (700px * 0.2))) !important;
         width: calc(380px + (700px * 0.4)) !important;
     }
-    
+
     #advanced-options {
         position: absolute;
         padding: 0 calc(40px) 12px;
@@ -2504,53 +2504,53 @@ div[style^="width: 300px;"] input {
     .list-block {
         padding-top: 44px;
     }
-    
+
     #status-menu {
         height: 0;
         margin-top: 50px;
     } #status-menu:not(.fixed) {
         padding: 0;
     }
-    
+
     #status-menu:not(.fixed) .status-menu {
         position: relative;
         top: -42px;
     }
-    
+
     #status-menu:not(.fixed) .search-container {
         top: 49px;
         left: calc(50% - 32px);
         width: 250px;
     }
-    
+
     #status-menu.fixed .status-button {
         pointer-events: none;
         opacity: 0;
     }
-    
+
     #status-menu.fixed .search-container {
         width: calc(100% - 29px);
     }
-    
+
     .status-menu-container.fixed + div.list-block {
         margin-top: 53px;
     }
-    
+
     .list-block::before {
         top: -53px;
     }
-    
+
     /* Buttons */
-    
+
     .list-unit .list-status-title {
         top: 4px;
         left: calc(50% - 218px);
     }
-    
+
     .list-unit .list-status-title .stats a {
         width: 84px;
     }
-    
+
     .list-table > tbody:first-of-type {
         top: 4px;
         left: calc(50% - 125px);
@@ -2572,15 +2572,15 @@ div[style^="width: 300px;"] input {
     } #status-menu:not(.fixed) .search-container {
         right: calc(8px + (50% - 1804px * 0.5));
     }
-    
+
     .list-unit .list-status-title {
         left: calc(8px + (50% - 1804px * 0.5));
     }
-    
+
     .list-unit .list-status-title .stats a {
         width: calc(80px + (1804px * 0.0175));
     }
-    
+
     .list-table > tbody:first-of-type {
         left: calc(97px + (1804px * 0.0175) + (50% - 1804px * 0.5));
         width: calc(80px + (1804px * 0.0175));
@@ -2627,7 +2627,7 @@ div[style^="width: 300px;"] input {
     .list-item {
         will-change: transform;
     }
-    
+
     /* Visual Tweaks */
     .data.title {
         padding-top: 2px !important;
@@ -2719,6 +2719,8 @@ div[style^="width: 300px;"] input {
     content: "You've discovered my Hatsune Miku list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"trash"'] .list-unit::before {
     content: "You've discovered my trash list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"best"'] .list-unit::before {
+    content: "You've discovered my best list!\a Other specific lists can be checked out in my profile or by clicking a tag.";
 }
 
 /* Manga list message boxes */
@@ -2743,19 +2745,25 @@ div[style^="width: 300px;"] input {
     content: "No entries found.";
 }
 
-/* Specific Badge */
+/* Specific Badges */
 .data.title a[href^='/anime/10087']::before,
 .data.title a[href^='/anime/11741']::before,
+.data.title a[href^='/anime/11111']::before,
+.data.title a[href^='/anime/17265']::before,
 .data.title a[href^='/anime/23273']::before,
+.data.title a[href^='/anime/32281']::before,
+.data.title a[href^='/anime/33352']::before,
 .data.title a[href^='/anime/34798']::before,
+.data.title a[href^='/anime/35180']::before,
 .data.title a[href^='/anime/35839']::before,
+.data.title a[href^='/anime/38040']::before,
 .data.title a[href^='/anime/40591']::before {
     content: "";
     position: absolute;
     left: 0px;
     bottom: 295px;
     z-index: -1;
-    
+
     width: 210px;
     height: 6px;
     border-top: 2px solid hsl(var(--goldRating));
@@ -2765,36 +2773,38 @@ div[style^="width: 300px;"] input {
     visibility: var(--toggleSpecificBadge);
 }
 
-.data.title a[href^='/anime/10087']::after,
-.data.title a[href^='/anime/11741']::after,
-.data.title a[href^='/anime/23273']::after,
-.data.title a[href^='/anime/34798']::after,
-.data.title a[href^='/anime/35839']::after,
-.data.title a[href^='/anime/40591']::after {
+.data.title a::after {
     content: "";
     position: absolute;
     bottom: 290px;
     z-index: -1;
-    
+
     height: 16px;
     border-radius: 3px;
     background: hsl(var(--goldRating));
-    
+
     color: hsl(var(--bg));
     font: bold 13px/13px var(--font);
     text-align: center;
     letter-spacing: 1px;
     text-shadow: none;
-    
+
     pointer-events: none;
-    visibility: var(--toggleSpecificBadge);
+    visibility: hidden;
 }
+
 .data.title a[href^='/anime/10087']::after,
-.data.title a[href^='/anime/11741']::after { left: calc((212px - 140px)/2); width: 140px; content: "BEST FATE SERIES"; }
-.data.title a[href^='/anime/23273']::after { left: calc((212px - 156px)/2); width: 156px; content: "BEST SOUNDTRACKS"; }
-.data.title a[href^='/anime/34798']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST CAMPING"; }
-.data.title a[href^='/anime/35839']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST JOURNEY"; }
-.data.title a[href^='/anime/40591']::after { left: calc((212px - 120px)/2); width: 120px; content: "BEST ROM-COM"; }
+.data.title a[href^='/anime/11741']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "BEST FATE SERIES"; }
+.data.title a[href^='/anime/11111']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST HORROR"; }
+.data.title a[href^='/anime/17265']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 100px)/2); width: 100px; content: "BEST GAME"; }
+.data.title a[href^='/anime/23273']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 160px)/2); width: 160px; content: "BEST SOUNDTRACKS"; }
+.data.title a[href^='/anime/32281']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "BEST ANIMATION"; }
+.data.title a[href^='/anime/33352']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "MOST EMOTIONAL"; }
+.data.title a[href^='/anime/34798']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 130px)/2); width: 130px; content: "MOST RELAXING"; }
+.data.title a[href^='/anime/35180']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 160px)/2); width: 160px; content: "BEST SLICE OF LIFE"; }
+.data.title a[href^='/anime/35839']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST JOURNEY"; }
+.data.title a[href^='/anime/38040']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST COMEDY"; }
+.data.title a[href^='/anime/40591']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 190px)/2); width: 190px; content: "BEST ROMANTIC COMEDY"; }
 
 /*==============================*\
   !MODS
