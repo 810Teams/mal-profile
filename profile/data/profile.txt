@@ -1,7 +1,7 @@
 <profile>
 　　<title>About Me</title>
 　　　✦ Nicknamed 'Saint' (セント)
-　　　✦ 20 Years old
+　　　✦ 21 Years old
 　　　✦ Thai, English, and Japanese
 
 　　<title>What I am</title>
@@ -9,7 +9,7 @@
 
 <hr>
 
-　　<title>My Lists [color=#7f7f7f](Organized Lists)[/color]</title>
+　　<title>My Organized Lists [color=#7f7f7f](Recommended)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=1&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=music]Music List[/animelist]
@@ -39,7 +39,7 @@
 
 <hr>
 
-　　<title>My Reviews</title>
+　　<title>My Anime Reviews</title>
 　　　◆10 [review=333070]Violet Evergarden[/review]
 <<<< ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review]
 <<<< ◆10 [review=333217]Kimi no Na wa[/review]
@@ -69,22 +69,22 @@
 　　　✔ Has mean scores of [b][5][/b] or above, or unrated at all.
 　　　✔ Not a hater or toxic anime fan.
 　　　✔ No [people=8700]this guy[/people] on favorites.
-　　　✔ Not an empty friend request, attach a personal message.
+　　　✔ Not an empty friend request, [u]please attach a personal message[/u].
 
 　　<title>Other Notes</title>
 　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
 　　　✎ My lists are mainly organized by tags, so I recommend using them, viewing my lists will be much easier.
-　　　✎ Any question is fine, as long as you respect my personal preferences. You respect mine, I respect yours.
-　　　✎ I am happy to chat or discuss anything. Please feel free to send me a message or contact me via [twitter=810TeamsEX]my Twitter[/twitter].
+　　　✎ I'm happy to chat or discuss anything. Please feel free to send a message or comment on my profile.
+　　　✎ If you can't send me a message and a friend request, it means that I've blocked you for some reasons.
 
 <hr>
 
 　　<title>Credits</title>
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
 　　　✒ [twitter=haya_kewi/status/1103227541156843520]Profile picture[/twitter] by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
+　　　✒ [twitter=100percent_park/status/1209060854768889856]Forum avatar[/twitter] by [twitter=100percent_park]@100percent_park[/twitter] on Twitter.
 　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
-　　　✒ [alphac=852089]Anime list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
-　　　✒ [alphac=852088]Manga list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
+　　　✒ [alphac=852089]Anime list cover wallpaper[/alphac] and [alphac=852088]Manga list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].
 　　　✒ [twitter=anyotete/status/1255482039442313216]List background wallpaper[/twitter] by [twitter=anyotete]@anyotete[/twitter] on Twitter.
 　　　✒ [greasyfork=scripts/7125-myanimelist-mal-tags-updater]Tags updater[/greasyfork] by [greasyfork=users/7517-akarin]akarin[/greasyfork] on Greasy Fork.
 

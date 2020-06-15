@@ -56,8 +56,8 @@ AUTO_REPLACEMENT_LIST = [
     # New Tags
     AutoReplacementData('<profile>', '[size=120][color={}]'.format(PALETTE['font'])),
     AutoReplacementData('</profile>', '[/color][/size]'),
-    AutoReplacementData('<signature>', '[right][size=100][color={}][i]'.format(PALETTE['font'])),
-    AutoReplacementData('</signature>', '[/i][/color][/size][/right]'),
+    AutoReplacementData('<signature>', '[center][size=100][color={}][i]'.format(PALETTE['font'])),
+    AutoReplacementData('</signature>', '[/i][/color][/size][/center]'),
     AutoReplacementData('<hr>', '[color={}]{}[/color]'.format(PALETTE['hr'], 60 * '━')),
     AutoReplacementData('<new>', '[color={}](New!)[/color]'.format('red')),
     # Text Variables
