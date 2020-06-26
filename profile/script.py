@@ -59,7 +59,7 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('<signature>', '[center][size=100][color={}][i]'.format(PALETTE['font'])),
     AutoReplacementData('</signature>', '[/i][/color][/size][/center]'),
     AutoReplacementData('<hr>', '[color={}]{}[/color]'.format(PALETTE['hr'], 60 * '━')),
-    AutoReplacementData('<new>', '[color={}](New!)[/color]'.format('red')),
+    AutoReplacementData('<new>', '[i][color={}](New!)[/color][/i]'.format('red')),
     # Text Variables
     AutoReplacementData('[10]', '[color={}]10[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('[9]', '[color={}]9[/color]'.format(PALETTE['score'][9])),
@@ -98,6 +98,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('[/greasyfork]', '[/url]'),
     AutoReplacementData('[alphac=', '[url=https://wall.alphacoders.com/big.php?i='),
     AutoReplacementData('[/alphac]', '[/url]'),
+    AutoReplacementData('[16p=', '[url=https://www.16personalities.com/profiles/'),
+    AutoReplacementData('[/16p]', '[/url]'),
     # Bullets Coloring
     AutoReplacementData('◆10', '[color={}]◆[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('◆9', '[color={}]◆[/color]'.format(PALETTE['score'][9])),

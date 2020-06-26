@@ -3,29 +3,28 @@
 　　　✦ Nicknamed 'Saint' (セント)
 　　　✦ 21 Years old
 　　　✦ Thai, English, and Japanese
+　　　✦ [16p=cf27b082bf9e5]Intj-t[/16p] (Architect)
 
 　　<title>What I am</title>
 　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★ Perfectionist ★
 
 <hr>
 
-　　<title>My Organized Lists [color=#7f7f7f](Recommended)[/color]</title>
+　　<title>My Lists [color=#8f8f8f](Organized)[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=1&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=music]Music List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
-<<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]CM/PV List[/animelist]
-<<<< ✤ [mangalist=810Teams?order=4&order2=1&status=7&tag=manga]Manga List[/mangalist] ✤
+<<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]Cm/pv List[/animelist]
+<<<< ✤ [mangalist=810Teams?order=4&order2=1&status=7&tag=book]Manga List[/mangalist] ✤
 
 <hr>
 
-　　<title>My Anime Scoring Criteria</title>
-　　　Scores are mainly based on quality, enjoyment, impression, emotional impact, and memorability, resulting
-　　　from various elements of the anime, including story, storytelling, logic, uniqueness, animation ǫuality,
-　　　eye-friendliness, theme songs, insert songs, soundtracks, mood and tone, voice acting, character design,
-　　　character personality, character development, character story, and character purpose.
+　　<title>My Scoring Criteria</title>
+　　　Scores are mainly based on quality, enjoyment, and impression, resulting from various elements of the anime,
+　　　mainly including story, animation, sound, and characters, everything literally counts!
 
-　　<title>My Anime Scoring System</title>
+　　<title>My Scoring System</title>
 　　　🏆 [b][[10]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
 　　　🥇 [b][[9]] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
 　　　🥈 [b][[8]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
@@ -39,7 +38,7 @@
 
 <hr>
 
-　　<title>My Anime Reviews</title>
+　　<title>My Reviews</title>
 　　　◆10 [review=333070]Violet Evergarden[/review]
 <<<< ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review]
 <<<< ◆10 [review=333217]Kimi no Na wa[/review]
@@ -50,32 +49,34 @@
 <<<< ◆9 [review=333450]Irozuku Sekai no Ashita kara[/review]
 　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review]
 <<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
-<<<< ◆9 [review=337543]Yuru Camp△[/review]
+<<<< ◆9 [review=344302]Nakitai Watashi wa Neko wo Kaburu[/review] <new>
+　　　◆9 [review=337543]Yuru Camp△[/review]
 <<<< ◆8 [review=334226]Psycho-Pass[/review]
 <<<< ◆8 [review=340085]Sankarea[/review]
-　　　◆8 [review=337650]Heya Camp△[/review]
+<<<< ◆8 [review=337650]Heya Camp△[/review]
 <<<< ◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
-<<<< ◆7 [review=333051]Somali to Mori no Kamisama[/review]
-　　　◆7 [review=334171]Hotarubi no Mori e[/review]
+　　　◆7 [review=333051]Somali to Mori no Kamisama[/review]
+<<<< ◆7 [review=334171]Hotarubi no Mori e[/review]
 <<<< ◆6 [review=335183]Another World[/review]
 <<<< ◆6 [review=335363]Fairy Tail[/review]
 <<<< ◆5 [review=335470]Kenja no Mago[/review]
-<<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
-　　　◆4 [review=335889]Infinite Dendrogram[/review]
+　　　◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
+<<<< ◆4 [review=335889]Infinite Dendrogram[/review]
+<<<< ◆3 [review=345598]Plunderer[/review] <new>
 
 <hr>
 
 　　<title>Friend Request Acceptation</title>
 　　　✔ Has mean scores of [b][5][/b] or above, or unrated at all.
-　　　✔ Not a hater or toxic anime fan.
+　　　✔ Not a hater.
 　　　✔ No [people=8700]this guy[/people] on favorites.
 　　　✔ Not an empty friend request, [u]please attach a personal message[/u].
 
 　　<title>Other Notes</title>
 　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
 　　　✎ My lists are mainly organized by tags, so I recommend using them, viewing my lists will be much easier.
-　　　✎ I'm happy to chat or discuss anything. Please feel free to send a message or comment on my profile.
-　　　✎ If you can't send me a message and a friend request, it means that I've blocked you for some reasons.
+　　　✎ I'm happy to chat or discuss anything, so please feel free to message me.
+　　　✎ Ignoring my greeting message is considered rude.
 
 <hr>
 
