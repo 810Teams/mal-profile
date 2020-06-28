@@ -22,7 +22,11 @@ def main():
     min_data.close()
 
     print()
-    notice('Minified CSS `{}` has been created.'.format(CSS_NAME))
+    notice('Minified CSS `{}` has been created, minified from {} to {} characters.'.format(
+        CSS_NAME,
+        len(''.join(list(open(CSS_PATH)))),
+        len(response.text)
+    ))
 
     # Windows' cmd fix
     if platform.system() != 'Windows':
