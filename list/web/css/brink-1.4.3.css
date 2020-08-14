@@ -2713,16 +2713,16 @@ div[style^="width: 300px;"] input {
     content: "You're currently viewing my cm/pv list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"music"'] .list-unit::before {
     content: "You're currently viewing my music list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"best"'] .list-unit::before {
+}
+
+[data-work="anime"][data-query*='"tag":"best"'] .list-unit::before {
     content: "You've discovered my best list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
+} [data-work="anime"][data-query*='"tag":"aimer"'] .list-unit::before {
+    content: "You've discovered my Aimer list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"fate"'] .list-unit::before {
     content: "You've discovered my Fate list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"recap"'] .list-unit::before {
-    content: "You've discovered my recap list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"hatsune miku"'] .list-unit::before {
     content: "You've discovered my Hatsune Miku list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"trash"'] .list-unit::before {
-    content: "You've discovered my trash list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
 }
 
 /* Manga list message boxes */
@@ -2749,7 +2749,7 @@ div[style^="width: 300px;"] input {
     content: "No entries found.";
 }
 
-/* Specific Badges */
+/* Specific entry badges */
 .data.title a[href^='/anime/10087']::before,
 .data.title a[href^='/anime/11741']::before,
 .data.title a[href^='/anime/11111']::before,
@@ -2758,8 +2758,10 @@ div[style^="width: 300px;"] input {
 .data.title a[href^='/anime/32281']::before,
 .data.title a[href^='/anime/33352']::before,
 .data.title a[href^='/anime/34798']::before,
+.data.title a[href^='/anime/34984']::before,
 .data.title a[href^='/anime/35180']::before,
 .data.title a[href^='/anime/35839']::before,
+.data.title a[href^='/anime/37991']::before,
 .data.title a[href^='/anime/38040']::before {
     content: "";
     position: absolute;
@@ -2804,8 +2806,10 @@ div[style^="width: 300px;"] input {
 .data.title a[href^='/anime/32281']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "BEST ANIMATION"; }
 .data.title a[href^='/anime/33352']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "MOST EMOTIONAL"; }
 .data.title a[href^='/anime/34798']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 130px)/2); width: 130px; content: "MOST RELAXING"; }
+.data.title a[href^='/anime/34984']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 150px)/2); width: 150px; content: "BEST ENDING SONG"; }
 .data.title a[href^='/anime/35180']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 160px)/2); width: 160px; content: "BEST SLICE OF LIFE"; }
 .data.title a[href^='/anime/35839']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST JOURNEY"; }
+.data.title a[href^='/anime/37991']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "BEST JOJO SERIES"; }
 .data.title a[href^='/anime/38040']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST COMEDY"; }
 
 /*==============================*\
