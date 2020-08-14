@@ -8,9 +8,12 @@
 　　<title>What I am</title>
 　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★ Perfectionist ★
 
+　　<title>Favorite Genres</title>
+　　　❤ [genre=8]Drama[/genre] ❤ [genre=37]Supernatural[/genre] ❤ [genre=36]Slice of Life[/genre] ❤ [genre=27]Shounen[/genre] ❤ [genre=16]Magic[/genre] ❤ [genre=42]Seinen[/genre] ❤
+
 <hr>
 
-　　<title>My Lists [color=#8f8f8f](Organized)[/color]</title>
+　　<title>My Lists [color=#57BB8A]([/color][color=#63BD87]R[/color][color=#70BF84]e[/color][color=#7DC181]c[/color][color=#8AC37E]o[/color][color=#97C57C]m[/color][color=#A4C779]m[/color][color=#B1C976]e[/color][color=#BECB73]n[/color][color=#CBCD71]d[/color][color=#D8CF6E]e[/color][color=#E5D16B]d[/color][color=#F2D368])[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=1&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=music]Music List[/animelist]
@@ -27,57 +30,43 @@
 
 　　<title>My Scoring System</title>
 　　　🏆 [b][[10]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
-　　　🥇 [b][[9]] Ideal[/b] - An excellent anime, surprisingly well composed, leaving an impression.
-　　　🥈 [b][[8]] Superior[/b] - A great anime, solid and well-rounded, giving a great experience.
-　　　🥉 [b][[7]] Standard[/b] - A good anime, having everything an anime should have, enjoyable to me.
-　　　🙆‍♂️ [b][[6]] Ordinary[/b] - A decent anime, containing some weak elements, giving a decent joy.
-　　　🤷‍♂️ [b][[5]] Acceptable[/b] - A passable anime, missing some elements, giving a minimal amount of joy.
-　　　🙅‍♂️ [b][[4]] Failure[/b] - A failed anime, containing an obvious issue, disappointing and unenjoyable.
-　　　🤦‍♂️ [b][[3]] Bad[/b] - A bad anime, containing a serious issue, giving a displeasing feeling.
-　　　💀 [b][[2]] Problematic[/b] - An anime itself is the issue, giving a difficult experience.
-　　　💩 [b][[1]] Trash[/b] - Something horrifying, insulting, or offensively bad, which I want to unsee.
+　　　🥇 [b][[9]] Excellent[/b] - An ideal anime, undeniably great and surprisingly well composed, leaving an impression.
+　　　🥈 [b][[8]] Great[/b] - A great anime, giving a solid and well-rounded experience, very enjoyable to me.
+　　　🥉 [b][[7]] Good[/b] - A standard anime, having everything an anime should have, enjoyable to me.
+　　　🙆‍♂️ [b][[6]] Fine[/b] - An ordinary anime, having some notable good but not strong points, giving a decent joy.
+　　　🤷‍♂️ [b][[5]] Passable[/b] - An acceptable anime, being neither good nor bad, giving a minimal amount of joy.
+　　　🙅‍♂️ [b][[4]] Poor[/b] - A failed anime, lacking something important or containing an obvious issue, disappointing to me.
+　　　🤦‍♂️ [b][[3]] Bad[/b] - A bad anime, containing a serious issue, giving a displeasing or uncomfortable feelings.
+　　　💀 [b][[2]] Problematic[/b] - An anime itself is the issue, sensing no effort in production, giving a difficult experience.
+　　　💩 [b][[1]] Horrifying[/b] - Something horrifying, insulting, or offensively bad, which i resent and want to unsee.
 
 <hr>
 
-　　<title>My Reviews</title>
-　　　◆10 [review=333070]Violet Evergarden[/review]
-<<<< ◆10 [review=333038]Shigatsu wa Kimi no Uso[/review]
-<<<< ◆10 [review=333217]Kimi no Na wa[/review]
-<<<< ◆10 [review=332885]Sora Yori mo Tooi Basho[/review]
-　　　◆10 [review=333436]Tenki no Ko[/review]
-<<<< ◆10 [review=333750]Fullmetal Alchemist: Brotherhood[/review]
-<<<< ◆10 [review=334043]Fate/Zero[/review]
-<<<< ◆9 [review=333450]Irozuku Sekai no Ashita kara[/review]
+　　<title>My Featured Reviews</title>
 　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review]
-<<<< ◆9 [review=337070]Tsuki ga Kirei[/review]
-<<<< ◆9 [review=344302]Nakitai Watashi wa Neko wo Kaburu[/review] <new>
-　　　◆9 [review=337543]Yuru Camp△[/review]
-<<<< ◆8 [review=334226]Psycho-Pass[/review]
-<<<< ◆8 [review=340085]Sankarea[/review]
+<<<< ◆9 [review=344302]Nakitai Watashi wa Neko wo Kaburu[/review]
 <<<< ◆8 [review=337650]Heya Camp△[/review]
-<<<< ◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
-　　　◆7 [review=333051]Somali to Mori no Kamisama[/review]
-<<<< ◆7 [review=334171]Hotarubi no Mori e[/review]
+　　　◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
 <<<< ◆6 [review=335183]Another World[/review]
-<<<< ◆6 [review=335363]Fairy Tail[/review]
-<<<< ◆5 [review=335470]Kenja no Mago[/review]
-　　　◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
-<<<< ◆4 [review=335889]Infinite Dendrogram[/review]
-<<<< ◆3 [review=345598]Plunderer[/review] <new>
+<<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
+　　　◆4 [review=335889]Infinite Dendrogram[/review]
+<<<< ◆3 [review=345598]Plunderer[/review]
 
 <hr>
 
 　　<title>Friend Request Acceptation</title>
 　　　✔ Has mean scores of [b][5][/b] or above, or unrated at all.
-　　　✔ Not a hater.
+　　　✔ Not a hater or a toxic anime fan.
 　　　✔ No [people=8700]this guy[/people] on favorites.
 　　　✔ Not an empty friend request, [u]please attach a personal message[/u].
 
 　　<title>Other Notes</title>
-　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
 　　　✎ My lists are mainly organized by tags, so I recommend using them, viewing my lists will be much easier.
+　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
+　　　✎ Specials are scored by the watching value and time worthiness, having a score of [b][5][/b] being most neutral.
+　　　✎ Music videos are scored by my taste in music and animation quality combined.
+　　　✎ Music videos with a music that doesn't match my taste will be left unscored.
 　　　✎ I'm happy to chat or discuss anything, so please feel free to message me.
-　　　✎ Ignoring my greeting message is considered rude.
 
 <hr>
 

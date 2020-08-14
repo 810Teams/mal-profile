@@ -60,6 +60,8 @@ AUTO_REPLACEMENT_LIST = [
     AutoReplacementData('</signature>', '[/i][/color][/size][/center]'),
     AutoReplacementData('<hr>', '[color={}]{}[/color]'.format(PALETTE['hr'], 60 * '━')),
     AutoReplacementData('<new>', '[i][color={}](New!)[/color][/i]'.format('red')),
+    AutoReplacementData('<latest_h>', '[i][color=#E67C73]([/color][color=#E88671]L[/color][color=#EB9070]a[/color][color=#EE9A6E]t[/color][color=#F1A46D]e[/color][color=#F3AE6B]s[/color][color=#F6B86A]t[/color][color=#F9C268]![/color][color=#FCCC67])[/color][/i]'),
+    AutoReplacementData('<latest_c>', '[i][color=#9579D1]([/color][color=#9280D2]L[/color][color=#8F87D3]a[/color][color=#8D8ED4]t[/color][color=#8A95D5]e[/color][color=#889CD6]s[/color][color=#85A3D7]t[/color][color=#83AAD8]![/color][color=#80B1D9])[/color][/i]'),
     # Text Variables
     AutoReplacementData('[10]', '[color={}]10[/color]'.format(PALETTE['score'][10])),
     AutoReplacementData('[9]', '[color={}]9[/color]'.format(PALETTE['score'][9])),
@@ -114,6 +116,7 @@ AUTO_REPLACEMENT_LIST = [
     # Auto bullets coloring
     AutoReplacementData('✦', '[color={}]✦[/color]'.format(PALETTE['#4202'][0])),
     AutoReplacementData('★', '[color={}]★[/color]'.format(PALETTE['#4202'][1])),
+    AutoReplacementData('❤', '[size=80][color={}]❤[/color][/size]'.format(PALETTE['#4202'][2])),
     AutoReplacementData('✤', '[color={}]✤[/color]'.format(PALETTE['#4202'][3])),
     AutoReplacementData('✔', '[b][color={}]✔[/color][/b]'.format(PALETTE['score_dim'][10])),
     AutoReplacementData('✎', '[color={}]✎[/color]'.format(PALETTE['score_dim'][6])),
