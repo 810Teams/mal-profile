@@ -2702,34 +2702,49 @@ div[style^="width: 300px;"] input {
     white-space: pre-wrap;
 }
 
-/* Anime list message boxes */
-[data-work="anime"][data-query*='"tag":"anime"'] .list-unit::before {
-    content: "You're currently viewing my anime list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"special"'] .list-unit::before {
-    content: "You're currently viewing my special list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"short"'] .list-unit::before {
-    content: "You're currently viewing my short list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"cm-pv"'] .list-unit::before {
-    content: "You're currently viewing my cm/pv list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"music"'] .list-unit::before {
-    content: "You're currently viewing my music list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+[data-owner-name="810Teams_EX"] .list-unit::before {
+    content: "You're currently viewing my music list.";
 }
 
-[data-work="anime"][data-query*='"tag":"best"'] .list-unit::before {
+/* Anime list message boxes */
+[data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"anime"'] .list-unit::before {
+    content: "You're currently viewing my anime list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+} [data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"special"'] .list-unit::before {
+    content: "You're currently viewing my special list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+} [data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"short"'] .list-unit::before {
+    content: "You're currently viewing my short list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+} [data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"cm-pv"'] .list-unit::before {
+    content: "You're currently viewing my cm/pv list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+}
+
+/* Secret anime list message boxes */
+[data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"best"'] .list-unit::before {
     content: "You've discovered my best list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"aimer"'] .list-unit::before {
-    content: "You've discovered my Aimer list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="anime"][data-query*='"tag":"fate"'] .list-unit::before {
+} [data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"fate"'] .list-unit::before {
     content: "You've discovered my Fate list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
+}
+
+/* Music list message box */
+[data-owner-name="810Teams"][data-work="anime"][data-query*='"tag":"music"'] .list-unit::before {
+    content: "You're currently viewing my music list.\a Please visit my alternate account for all music video scores.";
+} [data-owner-name="810Teams_EX"][data-work="anime"] .list-unit::before {
+    content: "You're currently viewing my music list.\a This list is on my alternate account which contains all music video scores.";
+}
+
+[data-work="anime"][data-query*='"tag":"aimer"'] .list-unit::before {
+    content: "You've discovered my Aimer list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
 } [data-work="anime"][data-query*='"tag":"hatsune miku"'] .list-unit::before {
     content: "You've discovered my Hatsune Miku list!\a Other specific lists can be picked up from my profile or by clicking a tag.";
 }
 
+
 /* Manga list message boxes */
-[data-work="manga"][data-query*='"tag":"book"'] .list-unit::before {
+[data-owner-name="810Teams"][data-work="manga"][data-query*='"tag":"book"'] .list-unit::before {
     content: "You're currently viewing my book list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
-} [data-work="manga"][data-query*='"tag":"manga"'] .list-unit::before {
+} [data-owner-name="810Teams"][data-work="manga"][data-query*='"tag":"manga"'] .list-unit::before {
     content: "You're currently viewing my manga list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
+} [data-owner-name="810Teams"][data-work="manga"][data-query*='"tag":"one-shot"'] .list-unit::before {
+    content: "You're currently viewing my one-shot list.\a Other specific lists can be picked up from my profile or by clicking a tag.";
 }
 
 /* Empty list message background removal */
@@ -2807,7 +2822,7 @@ div[style^="width: 300px;"] input {
 .data.title a[href^='/anime/33352']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "MOST EMOTIONAL"; }
 .data.title a[href^='/anime/34798']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 130px)/2); width: 130px; content: "MOST RELAXING"; }
 .data.title a[href^='/anime/34984']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 150px)/2); width: 150px; content: "BEST ENDING SONG"; }
-.data.title a[href^='/anime/35180']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 160px)/2); width: 160px; content: "BEST SLICE OF LIFE"; }
+.data.title a[href^='/anime/35180']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 160px)/2); width: 160px; content: "BEST SEINEN DRAMA"; }
 .data.title a[href^='/anime/35839']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST JOURNEY"; }
 .data.title a[href^='/anime/37991']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 140px)/2); width: 140px; content: "BEST JOJO SERIES"; }
 .data.title a[href^='/anime/38040']::after { visibility: var(--toggleSpecificBadge); left: calc((212px - 120px)/2); width: 120px; content: "BEST COMEDY"; }
