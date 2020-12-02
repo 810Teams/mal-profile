@@ -9,14 +9,14 @@
 　　　★ University Student ★ Programmer ★ Casual Gamer ★ Anime Lover ★ Introvert ★ Perfectionist ★
 
 　　<title>Favorite Genres</title>
-　　　❤ [genre=8]Drama[/genre] ❤ [genre=37]Supernatural[/genre] ❤ [genre=36]Slice of Life[/genre] ❤ [genre=27]Shounen[/genre] ❤ [genre=16]Magic[/genre] ❤ [genre=42]Seinen[/genre] ❤
+　　　❤ [genre=8]Drama[/genre] ❤ [genre=36]Slice of Life[/genre] ❤ [genre=37]Supernatural[/genre] ❤ [genre=16]Magic[/genre] ❤ [genre=42]Seinen[/genre] ❤
 
 <hr>
 
 　　<title>My Lists [color=#57BB8A]([/color][color=#63BD87]R[/color][color=#70BF84]e[/color][color=#7DC181]c[/color][color=#8AC37E]o[/color][color=#97C57C]m[/color][color=#A4C779]m[/color][color=#B1C976]e[/color][color=#BECB73]n[/color][color=#CBCD71]d[/color][color=#D8CF6E]e[/color][color=#E5D16B]d[/color][color=#F2D368])[/color]</title>
 　　　✤ [animelist=810Teams?order=4&order2=1&status=7&tag=anime]Anime List[/animelist]
 <<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=special]Special List[/animelist]
-<<<< ✤ [animelist=810Teams?order=4&order2=1&status=7&tag=music]Music List[/animelist]
+<<<< ✤ [animelist=810Teams_EX?order=4&order2=1&status=7]Music List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=short]Short List[/animelist]
 <<<< ✤ [animelist=810Teams?order=1&status=7&tag=cm-pv]Cm/pv List[/animelist]
 <<<< ✤ [mangalist=810Teams?order=4&order2=1&status=7&tag=book]Manga List[/mangalist] ✤
@@ -24,9 +24,9 @@
 <hr>
 
 　　<title>My Scoring Criteria</title>
-　　　Scores are mainly based on my overall satisfaction, involving the anime quality, enjoyment, and impression,
-　　　depending on various elements of the anime, including story, storytelling, logic, uniqueness, animation,
-　　　songs, soundtracks, character design, character development, and character aspects.
+　　　Scores are mainly based on my overall satisfaction, involving the anime quality, enjoyment, impression,
+　　　emotional impact, and memorability, depending on various elements of the anime, including story, storytelling,
+　　　logic, uniqueness, animation, songs, soundtracks, character design, character development, and character aspects.
 
 　　<title>My Scoring System</title>
 　　　🏆 [b][[10]] Masterpiece[/b] - A true masterpiece, outstanding and perfectly composed, leaving a strong impression.
@@ -45,11 +45,12 @@
 　　<title>My Featured Reviews</title>
 　　　◆9 [review=335913]Emiya-san Chi no Kyou no Gohan[/review]
 <<<< ◆9 [review=344302]Nakitai Watashi wa Neko wo Kaburu[/review]
+　　　◆9 [review=354047]Nettaigyo wa Yuki ni Kogareru[/review] <latest_h>
 <<<< ◆8 [review=337650]Heya Camp△[/review]
-　　　◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
-<<<< ◆6 [review=335183]Another World[/review]
+<<<< ◆8 [review=337641]Heya Camp△: Sauna to Gohan to Sanrin Bike[/review]
+　　　◆6 [review=335183]Another World[/review]
 <<<< ◆4 [review=338757]Ashita Sekai ga Owaru toshitemo[/review]
-　　　◆4 [review=335889]Infinite Dendrogram[/review]
+<<<< ◆4 [review=335889]Infinite Dendrogram[/review]
 <<<< ◆3 [review=345598]Plunderer[/review]
 
 <hr>
@@ -64,15 +65,15 @@
 　　　✎ My lists are mainly organized by tags, so I recommend using them, viewing my lists will be much easier.
 　　　✎ In a simpler term, a score of [b][5][/b] means neutral, [b][6][/b] or above is positive, and [b][4][/b] or below is negative.
 　　　✎ Specials are scored by the watching value and time worthiness, having a score of [b][5][/b] being most neutral.
-　　　✎ Music videos are scored by my taste in music and animation quality combined.
-　　　✎ Music videos with a music that doesn't match my taste will be left unscored.
+　　　✎ Music videos are scored on my [profile=810Teams_EX]alternate account[/profile] to prevent scores mixing up.
+　　　✎ Music videos are scored by my music preferences and the animation quality combined.
 　　　✎ I'm happy to chat or discuss anything, so please feel free to message me.
 
 <hr>
 
 　　<title>Credits</title>
 　　　✒ Profile made using [url=https://fsymbols.com/generators/smallcaps/]small caps font generator[/url], [url=https://qaz.wtf/u/convert.cgi?text=Directed+from+810Teams%27+MAL+Profile]unicode converter[/url], and [url=https://coolsymbol.com/]coolsymbols.com[/url].
-　　　✒ [twitter=haya_kewi/status/1103227541156843520]Profile picture[/twitter] by [twitter=haya_kewi]@haya_kewi[/twitter] on Twitter.
+　　　✒ [twitter=03_Bara_/status/1333689101363515392?s=20]Profile picture[/twitter] by [twitter=03_Bara_]@03_Bara_[/twitter] on Twitter.
 　　　✒ [twitter=100percent_park/status/1209060854768889856]Forum avatar[/twitter] by [twitter=100percent_park]@100percent_park[/twitter] on Twitter.
 　　　✒ [blog=805506]List design[/blog] by [profile=Valerio_Lyndon]Valerio_Lyndon[/profile].
 　　　✒ [alphac=852089]Anime list cover wallpaper[/alphac] and [alphac=852088]Manga list cover wallpaper[/alphac] from [url=https://wall.alphacoders.com/]wall.alphacoders.com[/url].

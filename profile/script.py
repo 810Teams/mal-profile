@@ -128,7 +128,7 @@ def main():
     ''' Main function '''
     print()
 
-    # Profile
+    # Profile (810Teams)
     converter = TextFileConverter(
         file_in_name=DIR + 'profile.txt',
         original_font_name='normal'
@@ -140,6 +140,20 @@ def main():
         collapse='<<<<',
         tag=TagData('title', target_font_name='math_sans_bold_italic')
     )
+
+    # Profile (810Teams_EX)
+    converter = TextFileConverter(
+        file_in_name=DIR + 'profile_ex.txt',
+        original_font_name='normal'
+    )
+    converter.convert(
+        file_out_name=DIR + 'profile_ex_fancy.txt',
+        target_font_name='small_caps',
+        auto_replacement_list=AUTO_REPLACEMENT_LIST,
+        collapse='<<<<',
+        tag=TagData('title', target_font_name='math_sans_bold_italic')
+    )
+
 
     # Signature
     converter = TextFileConverter(
