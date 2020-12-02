@@ -4,6 +4,7 @@ __pycache__
 # Project-specific
 list/charts/
 list/data/
+list/web/css/min/
 
 # VSCode
 .vscode
