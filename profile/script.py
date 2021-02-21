@@ -54,11 +54,12 @@ PALETTE = {
 }
 AUTO_REPLACEMENT_LIST = [
     # New Tags
-    AutoReplacementData('<profile>', '[size=120][color={}]'.format(PALETTE['font'])),
-    AutoReplacementData('</profile>', '[/color][/size]'),
+    AutoReplacementData('<profile>', '[center][size=120][color={}]'.format(PALETTE['font'])),
+    AutoReplacementData('</profile>', '[/color][/size][/center]'),
     AutoReplacementData('<signature>', '[center][size=100][color={}][i]'.format(PALETTE['font'])),
     AutoReplacementData('</signature>', '[/i][/color][/size][/center]'),
     AutoReplacementData('<hr>', '[color={}]{}[/color]'.format(PALETTE['hr'], 60 * '━')),
+    AutoReplacementData('<hr_s>', '[color={}]{}[/color]'.format(PALETTE['hr'], 36 * '━')),
     AutoReplacementData('<new>', '[i][color={}](New!)[/color][/i]'.format('red')),
     AutoReplacementData('<latest_h>', '[i][color=#E67C73]([/color][color=#E88671]L[/color][color=#EB9070]a[/color][color=#EE9A6E]t[/color][color=#F1A46D]e[/color][color=#F3AE6B]s[/color][color=#F6B86A]t[/color][color=#F9C268]![/color][color=#FCCC67])[/color][/i]'),
     AutoReplacementData('<latest_c>', '[i][color=#9579D1]([/color][color=#9280D2]L[/color][color=#8F87D3]a[/color][color=#8D8ED4]t[/color][color=#8A95D5]e[/color][color=#889CD6]s[/color][color=#85A3D7]t[/color][color=#83AAD8]![/color][color=#80B1D9])[/color][/i]'),

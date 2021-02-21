@@ -2,10 +2,6 @@ anime
 anime, fate
 anime, best
 anime, fate, best
-anime, aimer
-anime, fate, aimer
-anime, aimer, best
-anime, fate, aimer, best
 special
 special, fate
 short

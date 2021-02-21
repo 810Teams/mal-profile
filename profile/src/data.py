@@ -64,7 +64,7 @@ class TextFileConverter:
         collapse=None,
         tag=None
     ):
-        file_in = [i.replace('\n', '') for i in open(self.file_in_name, encoding='utf-8')]
+        file_in = [i.replace('\n', str()) for i in open(self.file_in_name, encoding='utf-8')]
         file_out = open(file_out_name, 'w', encoding='utf-8')
 
         # Transform line-by-line
@@ -78,8 +78,9 @@ class TextFileConverter:
 
         file_in = '\n'.join(file_in)
 
-        if collapse != None:
-            file_in = file_in.replace('\n{}'.format(collapse), '')
+        if collapse is not None:
+            file_in = file_in.replace('\n{}'.format(collapse), str())
+            file_in = file_in.replace('{}\n'.format(collapse), str())
 
         file_out.write(file_in)
         file_out.close()
@@ -144,7 +145,7 @@ class TextFileConverter:
                 except (IndexError, ValueError):
                     pass
         
-        message = ''.join(message)
+        message = str().join(message)
         
         return message
     
