@@ -111,6 +111,14 @@ class TextFileConverter:
                     is_in_bb_tag = True
                 elif message[i] == ']':
                     is_in_bb_tag = False
+
+                    try:
+                        if message[i - 4:i + 1] == list('[img]'):
+                            is_in_bb_tag = True
+                        elif message[i - 5:i + 1] == list('[/img]'):
+                            is_in_bb_tag = False
+                    except IndexError:
+                        pass
                 
                 if is_in_bb_tag:
                     i += 1
@@ -138,6 +146,14 @@ class TextFileConverter:
                 is_in_bb_tag = True
             elif message[i] == ']':
                 is_in_bb_tag = False
+
+                try:
+                    if message[i - 4:i + 1] == list('[img]'):
+                        is_in_bb_tag = True
+                    elif message[i - 5:i + 1] == list('[/img]'):
+                        is_in_bb_tag = False
+                except IndexError:
+                    pass
             
             if not is_in_bb_tag:
                 try:
